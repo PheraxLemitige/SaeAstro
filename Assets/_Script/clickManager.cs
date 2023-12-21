@@ -29,6 +29,13 @@ public class ClickManager : MonoBehaviour {
 	}
 
     public void clickPlanets(string planet) {
+
+        GameObject clickedPlanet = GameObject.Find("ClickedPlanetManager");
+        ClickedPlanetManager scriptClickedPlanet = clickedPlanet.GetComponent<ClickedPlanetManager>();
+        scriptClickedPlanet.setPlanetClicked(planet);
+        DontDestroyOnLoad(clickedPlanet);
+        DontDestroyOnLoad(this);
+
         GameObject gameObjectCible = GameObject.Find(planet);
         PlanetManager scriptCible = gameObjectCible.GetComponent<PlanetManager>();
         if (scriptCible != null) {

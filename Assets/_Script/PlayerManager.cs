@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
@@ -10,10 +11,31 @@ public class PlayerManager : MonoBehaviour
     float positionY;
     float positionZ;
 
+    private bool change = false;
+    private string sceneName;
+
+    
+
     void Start() {
         positionX = transform.position.x;
         positionY = transform.position.y;
         positionZ = transform.position.z;
+    }
+
+    void Update()
+    {
+        if (change)
+        {
+            if(sceneName != null && sceneName != SceneManager.GetActiveScene().name)
+            {
+                Debug.Log("Je passe!");
+                Vector3 newVector = new Vector3(positionX, positionY, positionZ);
+                transform.position = newVector;
+                change = false;
+            }
+            
+        }
+        //Debug.Log(SceneManager.GetActiveScene().name);
     }
 
     public void playerClickPlanet(float positionSunx, float positionSunz, float positionActux, float positionActuy, float positionActuz, GameObject centrePlanet) {
@@ -32,8 +54,13 @@ public class PlayerManager : MonoBehaviour
         //transform.Translate(Vector3.right * Time.deltaTime);
     }
 
-    public void setPosition(float x, float y, float z)
+    public void setPosition(float x, float y, float z, string scene)
     {
-        transform.position = new Vector3(x, y, z);
+        sceneName = scene;
+        Debug.Log("Je roule!");
+        positionX = x;
+        positionY = y;
+        positionZ = z;
+        change = true;
     }
 }

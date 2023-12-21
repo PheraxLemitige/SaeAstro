@@ -50,6 +50,7 @@ public class PlanetManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
+        DontDestroyOnLoad(this);
         if (SceneManager.GetActiveScene().name == "solarScene") {
             scalePlanet = 0.0025f;
             scaleEllipse = 0.0065f;
@@ -184,12 +185,14 @@ public class PlanetManager : MonoBehaviour
         PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
         
         if(isClicked){
+            
             SceneManager.LoadScene(2);
-            scriptCible.setPosition(positionSunx + (positionActux / 5) * 4, 300, positionSunz + (positionActuz / 5) * 4);
+            scriptCible.setPosition(500, 0, 500, (SceneManager.GetActiveScene().name));
         }
         else{
+            
             SceneManager.LoadScene(1);
-            scriptCible.setPosition(500, 500, 500);
+            scriptCible.setPosition(500, 500, 500, (SceneManager.GetActiveScene().name));
         }
         Debug.Log(SceneManager.GetActiveScene().name);
     }
