@@ -50,7 +50,6 @@ public class PlanetManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        DontDestroyOnLoad(this);
         if (SceneManager.GetActiveScene().name == "solarScene") {
             scalePlanet = 0.0025f;
             scaleEllipse = 0.0065f;
@@ -90,7 +89,7 @@ public class PlanetManager : MonoBehaviour
         float x = (positionSunx) + largeurEllipse * Mathf.Sin(epsi);
         float y = (positionSuny) + hauteurEllipse * Mathf.Sin(epsi);
         float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
-        
+
 
         if (!interactable.attachedToHand) {
             if (isGrab) {
@@ -105,8 +104,8 @@ public class PlanetManager : MonoBehaviour
                 }
                     
             }
-            else if(isClicked){     
-
+            else if(isClicked){
+                Debug.Log("Je danse");
                 transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
                 transform.position = new Vector3(positionActux, positionActuy, positionActuz);
             }
@@ -132,8 +131,23 @@ public class PlanetManager : MonoBehaviour
         return isGrab;
     }
 
+    private string haveJsonInFile(string scene)
+    {
+        string jsonContent;
+        if (scene != "solarScene")
+        {
+            jsonContent = File.ReadAllText("./Assets/_Script/PlanetsCliquedVariables.json");
+        }
+        else
+        {
+            jsonContent = File.ReadAllText("./Assets/_Script/PlanetsVariables.json");
+        }
+        return jsonContent;
+    }
+
     private void loadVariables() {
-        string jsonContent = File.ReadAllText("./Assets/_Script/PlanetsVariables.json");
+        
+        string jsonContent = haveJsonInFile(SceneManager.GetActiveScene().name);
         Planets planets = JsonConvert.DeserializeObject<Planets>(jsonContent);
         PlanetsVariables planetsVariables = null;
         switch (gameObject.name) {
@@ -181,20 +195,21 @@ public class PlanetManager : MonoBehaviour
 
     public void onClick() {
         isClicked = !isClicked;
-        GameObject gameObjectCible = GameObject.Find("Player Variant");
-        PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+        Debug.Log("Je danse");
+        //GameObject gameObjectCible = GameObject.Find("Player Variant");
+        //PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
         
-        if(isClicked){
+        //if(isClicked){
             
-            SceneManager.LoadScene(2);
-            scriptCible.setPosition(500, 0, 500, (SceneManager.GetActiveScene().name));
-        }
-        else{
+        //    SceneManager.LoadScene(2);
+        //    scriptCible.setPosition(500, 0, 500, (SceneManager.GetActiveScene().name));
+        //}
+        //else{
             
-            SceneManager.LoadScene(1);
-            scriptCible.setPosition(500, 500, 500, (SceneManager.GetActiveScene().name));
-        }
-        Debug.Log(SceneManager.GetActiveScene().name);
+        //    SceneManager.LoadScene(1);
+        //    scriptCible.setPosition(500, 500, 500, (SceneManager.GetActiveScene().name));
+        //}
+        //Debug.Log(SceneManager.GetActiveScene().name);
     }
 
     private void OnCollisionEnter(Collision collision) {

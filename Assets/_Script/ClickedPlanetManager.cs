@@ -6,15 +6,26 @@ using UnityEngine.SceneManagement;
 public class ClickedPlanetManager : MonoBehaviour
 {
     private string namePlanetClicked;
+    private string scenaName;
     // Start is called before the first frame update
     void Start() {
-        
+        DontDestroyOnLoad(this);
+        scenaName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
     void Update() {
-        if (SceneManager.GetActiveScene().name == "ClickedSolarScene")
-            Debug.Log(namePlanetClicked);
+        if (SceneManager.GetActiveScene().name != scenaName)
+        {
+            GameObject planetCible = GameObject.Find(namePlanetClicked);
+            PlanetManager scriptPlanete = planetCible.GetComponent<PlanetManager>();
+            scriptPlanete.onClick();
+
+            GameObject gameObjectCible = GameObject.Find("Player Variant");
+            PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+            scriptCible.setPosition(500, 0, 500);
+            scenaName = SceneManager.GetActiveScene().name;
+        }
     }
 
     public void setPlanetClicked(string planetName) {

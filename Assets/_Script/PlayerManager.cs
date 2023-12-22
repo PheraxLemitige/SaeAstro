@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     
 
     void Start() {
+        sceneName = SceneManager.GetActiveScene().name;
         positionX = transform.position.x;
         positionY = transform.position.y;
         positionZ = transform.position.z;
@@ -24,6 +25,7 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
+        
         if (change)
         {
             if(sceneName != null && sceneName != SceneManager.GetActiveScene().name)
@@ -32,6 +34,7 @@ public class PlayerManager : MonoBehaviour
                 Vector3 newVector = new Vector3(positionX, positionY, positionZ);
                 transform.position = newVector;
                 change = false;
+                sceneName = SceneManager.GetActiveScene().name;
             }
             
         }
@@ -54,9 +57,8 @@ public class PlayerManager : MonoBehaviour
         //transform.Translate(Vector3.right * Time.deltaTime);
     }
 
-    public void setPosition(float x, float y, float z, string scene)
+    public void setPosition(float x, float y, float z)
     {
-        sceneName = scene;
         Debug.Log("Je roule!");
         positionX = x;
         positionY = y;
