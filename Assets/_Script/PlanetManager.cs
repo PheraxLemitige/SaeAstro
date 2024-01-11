@@ -55,8 +55,8 @@ public class PlanetManager : MonoBehaviour
             scaleEllipse = 0.0065f;
         }
         else {
-            scalePlanet = 1f;
-            scaleEllipse = 1f;
+            scalePlanet = 1.50f;
+            scaleEllipse = 1.50f;
         }
 
         loadVariables();
@@ -91,8 +91,8 @@ public class PlanetManager : MonoBehaviour
         float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
 
 
-        if (!interactable.attachedToHand) {
-            if (isGrab) {
+        if (!interactable.attachedToHand || SceneManager.GetActiveScene().name == "ClickedSolarScene") {
+            if (isGrab && SceneManager.GetActiveScene().name == "solarScene") {
                 timer += Time.deltaTime;
                 if (timer > waitTime)
                 {
@@ -178,9 +178,18 @@ public class PlanetManager : MonoBehaviour
         }
 
         if (planetsVariables != null) {
+            if(SceneManager.GetActiveScene().name == "solarScene")
+            {
+                longueurEllipse = planetsVariables.ellipseLength * scaleEllipse;
+                largeurEllipse = planetsVariables.ellipseWidth * scaleEllipse;
+            }
+            else
+            {
+                longueurEllipse = planetsVariables.ellipseClickedLength * scaleEllipse;
+                largeurEllipse = planetsVariables.ellipseClickedWidth * scaleEllipse;
+            }
             taillePlanete = planetsVariables.size * scalePlanet;
-            longueurEllipse = planetsVariables.ellipseLength * scaleEllipse;
-            largeurEllipse = planetsVariables.ellipseWidth * scaleEllipse;
+            
             hauteurEllipse = planetsVariables.ellipseHeight * scaleEllipse;
             rotationx = planetsVariables.rotationx;
             rotationy = planetsVariables.rotationy;

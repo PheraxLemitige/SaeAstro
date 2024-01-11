@@ -23,7 +23,7 @@ public class ClickedPlanetManager : MonoBehaviour
 
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-            scriptCible.setPosition(500, 0, 500);
+            scriptCible.setPosition(0 + (planetCible.transform.position.x / 4) * 2, 0, 0 + (planetCible.transform.position.z / 4) * 2);
             scenaName = SceneManager.GetActiveScene().name;
         }
     }

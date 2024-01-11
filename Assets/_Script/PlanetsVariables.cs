@@ -9,6 +9,8 @@ public class PlanetsVariables
     public float ellipseLength;
     public float ellipseWidth;
     public float ellipseHeight;
+    public float ellipseClickedLength;
+    public float ellipseClickedWidth;
     public float rotationx;
     public float rotationy;
     public float rotationz;
