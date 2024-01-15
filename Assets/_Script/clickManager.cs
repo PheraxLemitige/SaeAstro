@@ -25,6 +25,8 @@ public class ClickManager : MonoBehaviour {
         else
         {
             SceneManager.LoadScene(1);
+            GameObject gameObjectCible = GameObject.Find("Player Variant");
+            Destroy(gameObjectCible);
         }
     }
 

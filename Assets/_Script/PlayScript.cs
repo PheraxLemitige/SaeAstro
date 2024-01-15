@@ -20,6 +20,8 @@ public class PlayScript : MonoBehaviour
     public void OnPlay ()
     {
         SceneManager.LoadScene(1);
+        GameObject gameObjectCible = GameObject.Find("Player Variant");
+        gameObjectCible.transform.position = new Vector3(1.5f, -0.75f, 2);
     }
 
     public void OnQuit ()
