@@ -14,9 +14,11 @@ public class ClickManager : MonoBehaviour {
     public void clickPlanets(string planet) {
 
         isClicked = !isClicked;
+        Debug.Log("Je suis ici");
 
         GameObject clickedPlanet = GameObject.Find("ClickedPlanetManager");
         ClickedPlanetManager scriptClickedPlanet = clickedPlanet.GetComponent<ClickedPlanetManager>();
+        Debug.Log(planet);
         scriptClickedPlanet.setPlanetClicked(planet);
         if (isClicked)
         {
@@ -25,8 +27,8 @@ public class ClickManager : MonoBehaviour {
         else
         {
             SceneManager.LoadScene(1);
-            GameObject gameObjectCible = GameObject.Find("Player Variant");
-            Destroy(gameObjectCible);
+            //GameObject gameObjectCible = GameObject.Find("Player Variant");
+            //Destroy(gameObjectCible);
         }
     }
 

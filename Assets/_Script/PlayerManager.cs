@@ -7,9 +7,9 @@ using Valve.VR.InteractionSystem;
 
 public class PlayerManager : MonoBehaviour
 {
-    float positionX;
-    float positionY;
-    float positionZ;
+    double positionX;
+    double positionY;
+    double positionZ;
 
     private bool change = false;
     private string sceneName;
@@ -31,7 +31,7 @@ public class PlayerManager : MonoBehaviour
             if(sceneName != null && sceneName != SceneManager.GetActiveScene().name)
             {
                 Debug.Log("Je passe!");
-                Vector3 newVector = new Vector3(positionX, positionY, positionZ);
+                Vector3 newVector = new Vector3((float)positionX, (float)positionY, (float)positionZ);
                 transform.position = newVector;
                 change = false;
                 sceneName = SceneManager.GetActiveScene().name;
@@ -50,14 +50,14 @@ public class PlayerManager : MonoBehaviour
     }
 
     public void initialPlace() {
-        Vector3 newVector = new Vector3(positionX, positionY, positionZ);
+        Vector3 newVector = new Vector3((float)positionX, (float)positionY, (float)positionZ);
         transform.position = newVector;
         transform.localScale = new Vector3(500, 500, 500);
         //transform.LookAt(centreSun.transform.position);
         //transform.Translate(Vector3.right * Time.deltaTime);
     }
 
-    public void setPosition(float x, float y, float z)
+    public void setPosition(double x, double y, double z)
     {
         Debug.Log("Je roule!");
         positionX = x;

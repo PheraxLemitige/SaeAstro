@@ -127,8 +127,22 @@ public class SatelliteManager : MonoBehaviour
         }
     }
 
+    private string haveJsonInFile(string scene)
+    {
+        string jsonContent;
+        if (scene != "solarScene")
+        {
+            jsonContent = File.ReadAllText("./Assets/_Script/SatelliteClickedVariables.json");
+        }
+        else
+        {
+            jsonContent = File.ReadAllText("./Assets/_Script/SatelliteVariables.json");
+        }
+        return jsonContent;
+    }
+
     private void loadVariables() {
-        string jsonContent = File.ReadAllText("./Assets/_Script/SatelliteVariables.json");
+        string jsonContent = haveJsonInFile(SceneManager.GetActiveScene().name);
         Satellite satellite = JsonConvert.DeserializeObject<Satellite>(jsonContent);
         SatelliteVariables satelliteVariables = null;
         switch (gameObject.name) {

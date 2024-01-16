@@ -6,6 +6,8 @@ using System.IO;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using System.Net.NetworkInformation;
 
 public class PlanetManager : MonoBehaviour
 {
@@ -68,6 +70,13 @@ public class PlanetManager : MonoBehaviour
         positionSuny = centreSun.transform.position.y;
         positionSunz = centreSun.transform.position.z;
         // Permet de récupérer l'ensemble des positions x, y et z du soleil
+
+        float x = (positionSunx) + largeurEllipse * Mathf.Sin(epsi);
+        float y = (positionSuny) + hauteurEllipse * Mathf.Sin(epsi);
+        float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
+
+        transform.position = new Vector3(x, y, z);
+
         positionActux = transform.position.x;
         positionActuy = transform.position.y;
         positionActuz = transform.position.z;
@@ -88,7 +97,7 @@ public class PlanetManager : MonoBehaviour
 
         float x = (positionSunx) + largeurEllipse * Mathf.Sin(epsi);
         float y = (positionSuny) + hauteurEllipse * Mathf.Sin(epsi);
-        float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
+        float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);   
 
 
         if (!interactable.attachedToHand || SceneManager.GetActiveScene().name == "ClickedSolarScene") {
@@ -106,8 +115,21 @@ public class PlanetManager : MonoBehaviour
             }
             else if(isClicked){
                 Debug.Log("Je danse");
-                transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
-                transform.position = new Vector3(positionActux, positionActuy, positionActuz);
+                GameObject planet;
+                if (this.name == "Saturn")
+                {
+                    planet = this.transform.GetChild(2).gameObject;
+                    GameObject ring = this.transform.GetChild(0).gameObject;
+                    ring.transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
+                    Vector3 lockedZposRing = ring.transform.position;
+                    lockedZposRing.z = positionActuz;
+                    ring.transform.position = lockedZposRing;
+                }
+                else
+                {
+                    planet = this.transform.GetChild(1).gameObject;
+                }
+                planet.transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
             }
             else 
             {
@@ -178,16 +200,8 @@ public class PlanetManager : MonoBehaviour
         }
 
         if (planetsVariables != null) {
-            if(SceneManager.GetActiveScene().name == "solarScene")
-            {
-                longueurEllipse = planetsVariables.ellipseLength * scaleEllipse;
-                largeurEllipse = planetsVariables.ellipseWidth * scaleEllipse;
-            }
-            else
-            {
-                longueurEllipse = planetsVariables.ellipseClickedLength * scaleEllipse;
-                largeurEllipse = planetsVariables.ellipseClickedWidth * scaleEllipse;
-            }
+            longueurEllipse = planetsVariables.ellipseLength * scaleEllipse;
+            largeurEllipse = planetsVariables.ellipseWidth * scaleEllipse;
             taillePlanete = planetsVariables.size * scalePlanet;
             
             hauteurEllipse = planetsVariables.ellipseHeight * scaleEllipse;
@@ -204,7 +218,7 @@ public class PlanetManager : MonoBehaviour
 
     public void onClick() {
         isClicked = !isClicked;
-        Debug.Log("Je danse");
+        Debug.Log("Je click");
         //GameObject gameObjectCible = GameObject.Find("Player Variant");
         //PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
         
@@ -227,5 +241,19 @@ public class PlanetManager : MonoBehaviour
             if (collision.gameObject.name == "Sphere") // Sphere collider du soleil
                 transform.position = new Vector3(0, 20000, 0); // chut
         }
+    }
+
+    public void textVisibiliteTrue()
+    {
+        GameObject textePlanete;
+        if (this.name == "Saturn")
+        {
+            textePlanete = this.transform.GetChild(4).gameObject;
+        }
+        else
+        {
+            textePlanete = this.transform.GetChild(3).gameObject;
+        }
+        textePlanete.SetActive(true);
     }
 }
