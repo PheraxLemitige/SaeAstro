@@ -27,6 +27,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
         }
         else {
             GameObject gameObjectCible = GameObject.Find(e.target.name);
+            Debug.Log(gameObjectCible);
             PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
             Debug.Log(planetManager.getIsGrab());
             if (gameObjectCible.tag == "Planet") {

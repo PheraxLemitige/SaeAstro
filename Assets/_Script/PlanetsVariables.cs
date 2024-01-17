@@ -29,4 +29,5 @@ public class Planets
     public PlanetsVariables Saturn;
     public PlanetsVariables Uranus;
     public PlanetsVariables Neptune;
+    public PlanetsVariables Pluto;
 }

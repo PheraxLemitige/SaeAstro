@@ -197,6 +197,9 @@ public class PlanetManager : MonoBehaviour
             case "Neptune":
                 planetsVariables = planets.Neptune;
                 break;
+            case "Pluto":
+                planetsVariables = planets.Pluto;
+                break;
         }
 
         if (planetsVariables != null) {

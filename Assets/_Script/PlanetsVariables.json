@@ -102,5 +102,18 @@
     "rotationz": 0.0,
     "speed": 0.05,
     "waitTime": 5.0
-  }
+  },
+  "Pluto": {
+    "size": 40.0,
+    "ellipseLength": 2498.0,
+    "ellipseWidth": 2468,
+    "ellipseHeight": 0.0,
+    "ellipseClickedLength": 2598.0,
+    "ellipseClickedWidth": 2568.0,
+    "rotationx": 2.8,
+    "rotationy": -10.0,
+    "rotationz": 0.0,
+    "speed": 0.05,
+    "waitTime": 5.0
+   }
 }

@@ -16,7 +16,7 @@ public class ClickedPlanetManager : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name != "solarScene")
+        if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name != "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
         {
             GameObject planetCible = GameObject.Find(namePlanetClicked);
             PlanetManager scriptPlanete = planetCible.GetComponent<PlanetManager>();
@@ -25,10 +25,27 @@ public class ClickedPlanetManager : MonoBehaviour
 
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-            scriptCible.setPosition(0 + (planetCible.transform.position.x / 4) * 2, 0, 0 + (planetCible.transform.position.z / 4) * 2);
+            double positionz;
+            if (planetCible.name == "Saturn" || planetCible.name == "Jupiter")
+            {
+                positionz = planetCible.transform.position.z + 500;
+            }
+            else if(planetCible.name == "Uranus")
+            {
+                positionz = planetCible.transform.position.z + 400;
+            }
+            else if (planetCible.name == "saturn")
+            {
+                positionz = planetCible.transform.position.z + 350;
+            }
+            else
+            {
+                positionz = planetCible.transform.position.z + 300;
+            }
+            scriptCible.setPosition(0, 0, positionz);
             scenaName = SceneManager.GetActiveScene().name;
         }
-        else
+        else if(SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
         {
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();

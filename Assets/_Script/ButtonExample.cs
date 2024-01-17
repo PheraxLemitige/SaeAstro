@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
@@ -16,7 +18,10 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void OnButtonDown(Hand hand)
         {
-            StartCoroutine(DoPlant());
+            SceneManager.LoadScene(3);
+            GameObject gameObjectCible = GameObject.Find("Player Variant");
+            PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+            scriptCible.setPosition(564.76, 12.31, -134.65);
         }
 
         private IEnumerator DoPlant()
