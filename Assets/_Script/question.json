@@ -1,0 +1,37 @@
+{
+	"mercury" : [
+		{
+			"question" : "Qu'elle est le type de planète de Mercure?",
+			"reponse1" : {
+				"reponse" : "Rocheuse",
+				"isTrueResponse" : true
+			},
+			"reponse2" : {
+				"reponse" : "Gazeuse",
+				"isTrueResponse" : false
+			}
+		},
+		{
+			"question" : "Qu'elle est la température de Mercure?",
+			"reponse1" : {
+				"reponse" : "-10°C et +620°C",
+				"isTrueResponse" : false
+			},
+			"reponse2" : {
+				"reponse" : "-180°C et +430°C",
+				"isTrueResponse" : true
+			}
+		},
+		{
+			"question" : "Mercure est la cinquiéme planète du systéme solaire?",
+			"reponse1" : {
+				"reponse" : "Vrai",
+				"isTrueResponse" : false
+			},
+			"reponse2" : {
+				"reponse" : "Faux",
+				"isTrueResponse" : true
+			}
+		}
+	]
+}

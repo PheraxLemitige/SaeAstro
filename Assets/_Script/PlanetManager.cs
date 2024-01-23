@@ -114,7 +114,6 @@ public class PlanetManager : MonoBehaviour
                     
             }
             else if(isClicked){
-                Debug.Log("Je danse");
                 GameObject planet;
                 if (this.name == "Saturn")
                 {
@@ -246,17 +245,21 @@ public class PlanetManager : MonoBehaviour
         }
     }
 
-    public void textVisibiliteTrue()
+    public void visibiliteTrue()
     {
         GameObject textePlanete;
+        GameObject buzzer;
         if (this.name == "Saturn")
         {
             textePlanete = this.transform.GetChild(4).gameObject;
+            buzzer = this.transform.GetChild(5).gameObject;
         }
         else
         {
             textePlanete = this.transform.GetChild(3).gameObject;
+            buzzer = this.transform.GetChild(4).gameObject;
         }
         textePlanete.SetActive(true);
+        buzzer.SetActive(true);
     }
 }
