@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using System;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
@@ -18,41 +19,40 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void OnButtonDown(Hand hand)
         {
-            SceneManager.LoadScene(3);
-            GameObject gameObjectCible = GameObject.Find("Player Variant");
-            PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-            scriptCible.setPosition(564.76, 12.31, -134.65);
-        }
-
-        private IEnumerator DoPlant()
-        {
-            GameObject planting = GameObject.Instantiate<GameObject>(prefab);
-            planting.transform.position = this.transform.position;
-            planting.transform.rotation = Quaternion.Euler(0, Random.value * 360f, 0);
-
-            planting.GetComponentInChildren<MeshRenderer>().material.SetColor("_TintColor", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
-
-            Rigidbody rigidbody = planting.GetComponent<Rigidbody>();
-            if (rigidbody != null)
-                rigidbody.isKinematic = true;
-
-
-            Vector3 initialScale = Vector3.one * 0.01f;
-            Vector3 targetScale = Vector3.one * (1 + (Random.value * 0.25f));
-
-            float startTime = Time.time;
-            float overTime = 0.5f;
-            float endTime = startTime + overTime;
-
-            while (Time.time < endTime)
+            if(this.name == "planetTeleportQuiz")
             {
-                planting.transform.localScale = Vector3.Slerp(initialScale, targetScale, (Time.time - startTime) / overTime);
-                yield return null;
+                Debug.Log("It's time to Quiz");
+                SceneManager.LoadScene(3);
+                GameObject gameObjectCible = GameObject.Find("Player Variant");
+                PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+                scriptCible.setPosition(564.76, 12.31, -134.65);
+                GameObject gameObjectClickCible = GameObject.Find("clickManager");
+                ClickManager scriptClickCible = gameObjectClickCible.GetComponent<ClickManager>();
+                scriptClickCible.clickQuiz();
             }
+            else if(this.name == "response1")
+            {
+                Debug.Log("Reponse 1");
+                GameObject gameObjectCible = GameObject.Find("QuizManager");
+                QuizManager scriptCible = gameObjectCible.GetComponent<QuizManager>();
 
-
-            if (rigidbody != null)
-                rigidbody.isKinematic = false;
+                scriptCible.chooseResponse("reponse1");
+            }
+            else if (this.name == "response2")
+            {
+                Debug.Log("Reponse 2");
+                GameObject gameObjectCible = GameObject.Find("QuizManager");
+                QuizManager scriptCible = gameObjectCible.GetComponent<QuizManager>();
+                scriptCible.chooseResponse("reponse2");
+            }
+            else if(this.name == "quitSceneQuiz")
+            {
+                SceneManager.LoadScene(1);
+                GameObject gameObjectCible = GameObject.Find("Player Variant");
+                PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+                scriptCible.setPosition(5.0, -0.7, 5.0);
+            }
         }
+
     }
 }

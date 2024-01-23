@@ -32,8 +32,11 @@ public class ClickManager : MonoBehaviour {
         }
     }
 
-        public void renderObject(GameObject objet, bool visibility) {
+    public void renderObject(GameObject objet, bool visibility) {
         LineRenderer objectRender = objet.transform.GetComponent<LineRenderer>();
         objectRender.enabled = visibility;
+    }
+    public void clickQuiz() {
+        this.isClicked = false;
     }
 }

@@ -38,6 +38,12 @@ public class PlayerManager : MonoBehaviour
                 sceneName = SceneManager.GetActiveScene().name;
                 
             }
+            else
+            {
+                Vector3 newVector = new Vector3((float)positionX, (float)positionY, (float)positionZ);
+                transform.position = newVector;
+                change = false;
+            }
             
         }
         //Debug.Log(SceneManager.GetActiveScene().name);
@@ -61,7 +67,6 @@ public class PlayerManager : MonoBehaviour
 
     public void setPosition(double x, double y, double z)
     {
-        Debug.Log("Je roule!");
         positionX = x;
         positionY = y;
         positionZ = z;
