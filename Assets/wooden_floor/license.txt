@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wooden Floor
+* source:	https://sketchfab.com/3d-models/wooden-floor-54b0c7906b9047478aed14eb1b697f80
+* author:	cealford (https://sketchfab.com/cealford)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wooden Floor" (https://sketchfab.com/3d-models/wooden-floor-54b0c7906b9047478aed14eb1b697f80) by cealford (https://sketchfab.com/cealford) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

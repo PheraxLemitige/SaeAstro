@@ -1,0 +1,11 @@
+Model Information:
+* title:	Portable Replicator - Coffee Selected
+* source:	https://sketchfab.com/3d-models/portable-replicator-coffee-selected-fa53f027fd9142eba76b7cf775102c2d
+* author:	nickheitzman (https://sketchfab.com/nickheitzman)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Portable Replicator - Coffee Selected" (https://sketchfab.com/3d-models/portable-replicator-coffee-selected-fa53f027fd9142eba76b7cf775102c2d) by nickheitzman (https://sketchfab.com/nickheitzman) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
