@@ -16,7 +16,7 @@ public class ClickedPlanetManager : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name != "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
+        if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "ClickedSolarScene")
         {
             GameObject planetCible = GameObject.Find(namePlanetClicked);
             PlanetManager scriptPlanete = planetCible.GetComponent<PlanetManager>();

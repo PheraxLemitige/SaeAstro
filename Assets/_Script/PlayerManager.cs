@@ -14,9 +14,8 @@ public class PlayerManager : MonoBehaviour
     private bool change = false;
     private string sceneName;
 
-    
-
     void Start() {
+        SceneManager.LoadScene("MenuPrincipal");
         sceneName = SceneManager.GetActiveScene().name;
         positionX = transform.position.x;
         positionY = transform.position.y;

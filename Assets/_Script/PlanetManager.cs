@@ -256,6 +256,7 @@ public class PlanetManager : MonoBehaviour
         else
         {
             textePlanete = this.transform.GetChild(3).gameObject;
+            Debug.Log(this.gameObject.name);
         }
         textePlanete.SetActive(true);
     }
