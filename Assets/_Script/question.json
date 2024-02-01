@@ -1,7 +1,7 @@
 {
 	"mercury" : [
 		{
-			"question" : "Qu'elle est le type de plan�te de Mercure?",
+			"question" : "Quel est le type de planète de Mercure?",
 			"reponse1" : {
 				"reponse" : "Rocheuse",
 				"isTrueResponse" : true
@@ -12,18 +12,18 @@
 			}
 		},
 		{
-			"question" : "Qu'elle est la temp�rature de Mercure?",
+			"question" : "Quelle est la température de Mercure?",
 			"reponse1" : {
-				"reponse" : "-10�C et +620�C",
+				"reponse" : "-10°C et +620°C",
 				"isTrueResponse" : false
 			},
 			"reponse2" : {
-				"reponse" : "-180�C et +430�C",
+				"reponse" : "-180°C et +430°C",
 				"isTrueResponse" : true
 			}
 		},
 		{
-			"question" : "Mercure est la cinqui�me plan�te du syst�me solaire?",
+			"question" : "Mercure est la cinquième planète du systéme solaire?",
 			"reponse1" : {
 				"reponse" : "Vrai",
 				"isTrueResponse" : false
@@ -31,6 +31,541 @@
 			"reponse2" : {
 				"reponse" : "Faux",
 				"isTrueResponse" : true
+			}
+		},
+		{
+			"question" : "Mercure possède-t-elle une atmosphère ?", 
+			"reponse1" : {
+				"reponse" : "Oui", 
+				"isTrueResponse" : false
+			},
+			"reponse2" : {
+				"reponse" : "Non", 
+				"isTrueResponse" : true
+			}
+		},
+		{
+			"question" : "Quelle est la distance entre la Terre et Mercure ?",
+			"reponse1" : {
+				"reponse" : "92 millions de km",
+				"isTrueResponse" : true
+			}, 
+			"reponse2" : {
+				"reponse" : "75 millions de km", 
+				"isTrueResponse" : false 
+			}
+		}
+	], 
+	"venus": [
+		{
+			"question": "Quel est le type de planète de Vénus?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Vénus?",
+			"reponse1": {
+				"reponse": "470°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "300°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la distance entre la Terre et Vénus?",
+			"reponse1": {
+				"reponse": "41 millions de km",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "50 millions de km",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Est-ce que Vénus possède des anneaux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Vénus est la planète la plus chaude du système solaire, vrai ou faux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"earth": [
+		{
+			"question": "Quel est le type de planète de la Terre?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de la Terre?",
+			"reponse1": {
+				"reponse": "15°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "10°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "La Terre possède combien de satellites naturels ?",
+			"reponse1": {
+				"reponse": "1",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "3",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "La Terre est la planète la plus proche du Soleil",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Combien d'humains y a-t-il sur Terre ?",
+			"reponse1": {
+				"reponse": "Environ 8 milliards",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Environ 10 milliards",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"mars": [
+		{
+			"question": "Quel est le type de planète de Mars?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Mars est-elle la quatrième planète du système solaire ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Mars?",
+			"reponse1": {
+				"reponse": "-63°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "56°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Mars est de couleur rouge car elle est chaude, vrai ou faux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quel est le nom des petits robots envoyés sur Mars ?",
+			"reponse1": {
+				"reponse": "Rover",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Explorer",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"jupiter": [
+		{
+			"question": "Quel est le type de planète de Jupiter?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quel est le diamètre de Jupiter?",
+			"reponse1": {
+				"reponse": "139 820 km",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "126 250 km",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Jupiter?",
+			"reponse1": {
+				"reponse": "Entre -161 et -108 °C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Entre -195 °C et -135 °C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Laquelle de ces affirmations est vraie ?",
+			"reponse1": {
+				"reponse": "Jupiter est la plus grande planète du système solaire.",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Jupiter n'a aucun satellite.",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "A quoi correspond la grosse 'tâche' sur Jupiter ?",
+			"reponse1": {
+				"reponse": "Une grande fissure",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Un grand cyclone",
+				"isTrueResponse": true
+			}
+		}
+	],
+	"saturn": [
+		{
+			"question": "Quel est le type de planète de Saturne?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Saturne?",
+			"reponse1": {
+				"reponse": "-179°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "-186°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la distance entre la Terre et Saturne?",
+			"reponse1": {
+				"reponse": "1 milliard de kilomètres",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "1,3 milliard de kilomètres",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Saturne est la septième planète du système solaire, vrai ou faux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": false
+			}, 
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Saturne possède-t-elle des anneaux ?",
+			"reponse1": {
+				"reponse": "Oui",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Non",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"uranus": [
+		{
+			"question": "Quel est le type de planète d'Uranus?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne d'Uranus?",
+			"reponse1": {
+				"reponse": "-226 °C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "-212 °C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la distance entre la Terre et Uranus?",
+			"reponse1": {
+				"reponse": "2,3 milliards de kilomètres",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "2,6 milliards de kilomètres",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle information supplémentaire sur Uranus est vraie?",
+			"reponse1": {
+				"reponse": "Uranus a une mauvaise odeur d'œuf pourri !",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Uranus a une odeur agréable de fleurs",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Laquelle de ces affirmations est vraie ?",
+			"reponse1": {
+				"reponse": "Uranus est la planète du système solaire la plus chaude",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Uranus est la planète du système solaire la plus froide",
+				"isTrueResponse": true
+			}
+		}
+	],
+	"neptune": [
+		{
+			"question": "Quel est le type de planète de Neptune?",
+			"reponse1": {
+				"reponse": "Rocheuse",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Gazeuse",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quel est le diamètre de Neptune?",
+			"reponse1": {
+				"reponse": "49 244 km",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "50 673 km",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Neptune?",
+			"reponse1": {
+				"reponse": "-213°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "-226°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Neptune est la planète la plus froide du système solaire. Vrai ou faux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Neptune est la planète la plus éloignée du Soleil. Vrai ou faux ?",
+			"reponse1": {
+				"reponse": "Vrai",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Faux",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"pluto": [
+		{
+			"question": "Pluton est-elle classifiée comme une planète ?",
+			"reponse1": {
+				"reponse": "Oui",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "Non",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quelle est la température moyenne de Pluton?",
+			"reponse1": {
+				"reponse": "-223°C",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "-235°C",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la distance entre la Terre et Pluton?",
+			"reponse1": {
+				"reponse": "environ 4,8 milliards de kilomètres",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "environ 5,1 milliards de kilomètres",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quel est le diamètre de Pluton",
+			"reponse1": {
+				"reponse": "2 194 km",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": " 2 372 km",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Pluton est-elle entourée de plein d'astéroïdes ?",
+			"reponse1": {
+				"reponse": "Oui",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Non",
+				"isTrueResponse": false
+			}
+		}
+	],
+	"moon": [
+		{
+			"question": "La Lune est-elle un satellite naturel ou artificiel ?",
+			"reponse1": {
+				"reponse": "Satellite naturel",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Satellite artificiel",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quel est le diamètre de la Lune?",
+			"reponse1": {
+				"reponse": "3 474 km",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "3 344 km",
+				"isTrueResponse": false
+			}
+		},
+		{
+			"question": "Quelle est la distance entre la Terre et la Lune?",
+			"reponse1": {
+				"reponse": "394 900 km",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "384 400 km",
+				"isTrueResponse": true
+			}
+		},
+		{
+			"question": "Quel est le nom du premier Homme à avoir posé les pieds sur la Lune ?",
+			"reponse1": {
+				"reponse": "Neil Armstrong",
+				"isTrueResponse": true
+			},
+			"reponse2": {
+				"reponse": "Niles Armstrong",
+				"isTrueResponse": false
+			}
+		}, 
+		{
+			"question": "En quelle année les Hommes ont posé pour la première fois les pieds sur la Lune ?",
+			"reponse1": {
+				"reponse": "1956",
+				"isTrueResponse": false
+			},
+			"reponse2": {
+				"reponse": "1969",
+				"isTrueResponse": true
 			}
 		}
 	]
