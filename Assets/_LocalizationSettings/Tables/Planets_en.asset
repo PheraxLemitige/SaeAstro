@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Planets_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: a086deced704b8c45bedde0f274a52ee, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 64056860672
+    m_Localized: "Planet type: Telluric \nDiameter: 3031 Mi\nTemperature: Between
+      430\xB0C and -180\xB0C\nDistance with Earth: 57 million Mi "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85493948416
+    m_Localized: "Planet type: Telluric\nDiameter: 7521 Mi \nTemperature: 470\xB0C
+      \nDistance with Earth: 25 million MI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230549757952
+    m_Localized: "Planet Type: Telluric\nDiameter: 7917 Mi \nTemperature: 15\xB0C "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 293564981248
+    m_Localized: "Planet Type: Telluric\nDiameter: 4212 Mi\nTemperature: -63\xB0C
+      \nDistance with Earth: 38 million Mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 344165064704
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 86880 Mi \nTemperature: Between
+      -161\xB0C and -108\xB0C\nDistance with Earth: 484 million Mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389165752320
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 72364 Mi\nTemperature: -179\xB0C
+      \nDistance with Earth: 807 million Mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 426209845248
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 31518 Mi\nTemperature: -226\xB0C
+      \nDistance with Earth: 1.4 billion Mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 467783786496
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 30598 Mi\nTemperature: -213\xB0C
+      \nDistance with Earth: 2.6 billion Mi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 505163423744
+    m_Localized: "Classification: Dwarf Planet \nDiameter: 1473 Mi\nTemperature:
+      -223\xB0C \nDistance with Earth: 2,9 billion Mi "
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

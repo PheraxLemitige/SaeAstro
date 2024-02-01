@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Museum_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 48c69717b4668404daed3d460e709c6d, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 25347629056
+    m_Localized: 'Sputnik1:
+
+      Sputnik is the first artificial satellite of the
+      Earth, Exactly like the one that show you the way on your phone! It was launch
+      in 1957.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726064832512
+    m_Localized: "Martial rocks: \nThese rocks has been collected directly from Mars
+      and are studied on Earth to know if, one day; there had been life on this planet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1249144872960
+    m_Localized: "Ariane V: \nAriane V is a rocket that helps putting satellites
+      in space. It is different from other rockets whom purpose is to launch men
+      in space. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1309039534080
+    m_Localized: "Cosmonaut: \nThe spacesuit is an equipment worn by astronauts,
+      cosmonauts and spacionauts, allowing them to go in space. It assures the welfare
+      of it's wearer, giving them oxygen and thermal protection."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1397593874432
+    m_Localized: "Lunar rocks: \nThese rocks had been collected on the Moon, the
+      natural satellite of the Earth. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1451012530176
+    m_Localized: "Picture of the first steps on the Moon (1969): \n\"It's a small
+      step for a man, but a big jump for humanity !\"\nThese words had been pronounced
+      by Neil Armstrong while he was stepping on the Moon the 20 of July 1969. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1638044934144
+    m_Localized: "Falcon Millenium: \nThe Falcon Millenium is a spaceship from the
+      movie franchise \"Star Wars\". Space had always been a source of inspiration
+      and fantasm for us humans. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1555060629504
+    m_Localized: "Blue Giant: \nA Blue Giant is a star, like our Sun, that is hotter
+      than it. It is so hot that it adopts this fluorescent blue color."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1701295038464
+    m_Localized: "Exoplanet Kepler 22b: \nAn exoplanet is a planet that is located
+      in a different solar system than ours ! They turn around a different star than
+      the Sun. They are very similar to our planets. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779908878336
+    m_Localized: "Black Hole: \nA black hope appears when a star dies out. This is
+      a great black mass that absorbs anything in it's way, even light, which means
+      that we can't even see a black hole !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837895131136
+    m_Localized: "Rover: \nA rover is a vehicule build with the purpose to explore
+      planets that aren't our Earth. It's goal is to explore the environment on this
+      planets. It is able to take samples from it's ground. "
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

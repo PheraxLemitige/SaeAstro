@@ -35,7 +35,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6251844301107200
-    m_Localized: 
+    m_Localized: Languages
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25062999359627264
+    m_Localized: Return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25063247893110784
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25063895493648384
+    m_Localized: Museum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25064134510256128
+    m_Localized: Solar System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 25064276743299072
+    m_Localized: Scenes
     m_Metadata:
       m_Items: []
   references:

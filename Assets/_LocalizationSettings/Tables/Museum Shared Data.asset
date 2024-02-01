@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Museum Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Museum
+  m_TableCollectionNameGuidString: 48c69717b4668404daed3d460e709c6d
+  m_Entries:
+  - m_Id: 25347629056
+    m_Key: Sputnik1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 726064832512
+    m_Key: MarsRock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1249144872960
+    m_Key: Ariane5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1309039534080
+    m_Key: Cosmonaut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1397593874432
+    m_Key: MoonRock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1451012530176
+    m_Key: FirstManOnTheMoon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1555060629504
+    m_Key: BigBlue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1638044934144
+    m_Key: FalconMillenium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1701295038464
+    m_Key: Kepler22b
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1779908878336
+    m_Key: BlackHole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1837895131136
+    m_Key: Rover
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4275313559809818629
+  references:
+    version: 2
+    RefIds:
+    - rid: 4275313559809818629
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1706792135620

@@ -23,6 +23,16 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48c69717b4668404daed3d460e709c6d
+    m_Address: Assets/_LocalizationSettings/Tables/Museum Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a086deced704b8c45bedde0f274a52ee
+    m_Address: Assets/_LocalizationSettings/Tables/Planets Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c0515ade48d276c4eaec4f53973d9444, type: 2}
   m_SchemaSet:

@@ -35,6 +35,9 @@ public class WristMenu : MonoBehaviour {
     void visible(bool visible) {
         foreach (Transform child in this.transform)
             child.gameObject.SetActive(visible);
+
+        if (!visible)
+            DefaultMenu(true);
     }
 
     public void DefaultMenu(bool b) {
@@ -70,6 +73,7 @@ public class WristMenu : MonoBehaviour {
         GameObject playerVariant = GameObject.Find("Player Variant");
         PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
         playerManager.setPosition(373, -0.5, 552);
+        DefaultMenu(true);
     }
 
     public void OnMuseum() {
@@ -77,6 +81,7 @@ public class WristMenu : MonoBehaviour {
         GameObject playerVariant = GameObject.Find("Player Variant");
         PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
         playerManager.setPosition(0, 0, 0);
+        DefaultMenu(true);
     }
 
     public void OnSolarSystem(){
@@ -84,6 +89,7 @@ public class WristMenu : MonoBehaviour {
         GameObject playerVariant = GameObject.Find("Player Variant");
         PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
         playerManager.setPosition(5.0, -0.7, 5.0);
+        DefaultMenu(true);
     }
 
     public void changeFR() {
