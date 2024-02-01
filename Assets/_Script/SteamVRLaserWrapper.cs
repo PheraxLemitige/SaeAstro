@@ -25,6 +25,12 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 e.target.GetComponentInParent<Button>().onClick.Invoke();
             
         }
+        else if (e.target.name == "Coque") {
+            Debug.Log("J'ai cliqué sur la coque de la fusée");
+
+            // Ajoute le code de téléportation ici
+            SceneManager.LoadScene(5);
+        }
         else {
             GameObject gameObjectCible = GameObject.Find(e.target.name);
             Debug.Log(gameObjectCible);
