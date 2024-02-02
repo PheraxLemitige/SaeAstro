@@ -58,6 +58,11 @@ MonoBehaviour:
     m_Localized: Scenes
     m_Metadata:
       m_Items: []
+  - m_Id: 25065043101360128
+    m_Localized: "Cliquez sur la fus\xE9e pour \xEAtre dans le syst\xE8me solaire
+      !"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
