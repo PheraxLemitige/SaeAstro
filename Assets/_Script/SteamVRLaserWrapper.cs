@@ -8,6 +8,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
     private SteamVR_LaserPointer steamVrLaserPointer;
     private bool isClicked = false;
     private string planetClicked = "";
+    private bool satelliteClicked = false; 
 
     private void Awake() {
         steamVrLaserPointer = gameObject.GetComponent<SteamVR_LaserPointer>();
@@ -17,6 +18,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
     }
 
     private void OnPointerClick(object sender, PointerEventArgs e) {
+        Debug.Log(e.target.name);
         //setLaserVisible(true);
 
         if (e.target.name == "Button") {
@@ -25,34 +27,65 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 e.target.GetComponentInParent<Button>().onClick.Invoke();
             
         }
-        else if (e.target.name == "Coque") {
-            Debug.Log("J'ai cliqué sur la coque de la fusée");
+        else if (e.target.name == "Fusee") {
+
+            // Ajoute le code de téléportation ici
+            SceneManager.LoadScene(2);
+        }
+        else if (e.target.name == "Musee")
+        {
 
             // Ajoute le code de téléportation ici
             SceneManager.LoadScene(5);
+
+            GameObject gameObjectCible = GameObject.Find("Player Variant");
+            PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
+            scriptCible.setPosition(-0.1, 0.0009, -0.2);
         }
-        else {
+        else if(e.target.tag == "Planet")
+        {
             GameObject gameObjectCible = GameObject.Find(e.target.name);
-            Debug.Log(gameObjectCible);
             PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
-            Debug.Log(planetManager.getIsGrab());
-            if (gameObjectCible.tag == "Planet") {
-                if (!isClicked && !planetManager.getIsGrab()) {
-                    GameObject gameObjectClick = GameObject.Find("clickManager");
-                    ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
-                    if (clickScript != null)
-                        clickScript.clickPlanets(e.target.name);
-                    isClicked = true;
-                    planetClicked = e.target.name;
-                }
-                else if(planetClicked != "") {
-                    GameObject gameObjectClick = GameObject.Find("clickManager");
-                    ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
-                    if (clickScript != null)
-                        clickScript.clickPlanets(planetClicked);
-                    isClicked = false;
-                    planetClicked = "";
-                }
+            if (!isClicked && !planetManager.getIsGrab()) {
+                GameObject gameObjectClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
+                if (clickScript != null)
+                    clickScript.clickPlanets(e.target.name);
+                isClicked = true;
+                planetClicked = e.target.name;
+            }
+            
+            else if(planetClicked != "") {
+                GameObject gameObjectClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
+                if (clickScript != null)
+                    clickScript.clickPlanets(planetClicked);
+                isClicked = false;
+                planetClicked = "";
+            }
+        }
+        else if (e.target.tag == "Satellite")
+        {
+            GameObject gameObjectSatellite = GameObject.Find(e.target.name);
+            SatelliteManager satelliteManager = gameObjectSatellite.GetComponent<SatelliteManager>();
+            if (!satelliteClicked)
+            {
+                GameObject gameObjectSatelliteClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectSatelliteClick.GetComponent<ClickManager>();
+
+                if (clickScript != null)
+                    clickScript.clickSatellite();
+
+                satelliteClicked = !satelliteClicked;
+            }
+
+            else 
+            {
+                GameObject gameObjectClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
+                if (clickScript != null)
+                    clickScript.clickSatellite();
+                satelliteClicked = false;
             }
         }
     }

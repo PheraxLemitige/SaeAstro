@@ -220,17 +220,18 @@ public class PlanetManager : MonoBehaviour
 
     public void onClick() {
         isClicked = !isClicked;
-        Debug.Log("Je click");
+        Debug.Log("PlanetManager");
+        Debug.Log(isClicked);
         //GameObject gameObjectCible = GameObject.Find("Player Variant");
         //PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-        
+
         //if(isClicked){
-            
+
         //    SceneManager.LoadScene(2);
         //    scriptCible.setPosition(500, 0, 500, (SceneManager.GetActiveScene().name));
         //}
         //else{
-            
+
         //    SceneManager.LoadScene(1);
         //    scriptCible.setPosition(500, 500, 500, (SceneManager.GetActiveScene().name));
         //}

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class ClickManager : MonoBehaviour {
 
     private bool isClicked = false;
+    private bool isSatelliteClicked = false;
 
     void Start()
     {
@@ -22,11 +23,37 @@ public class ClickManager : MonoBehaviour {
         scriptClickedPlanet.setPlanetClicked(planet);
         if (isClicked)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
         else
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
+            //GameObject gameObjectCible = GameObject.Find("Player Variant");
+            //Destroy(gameObjectCible);
+        }
+        if (isSatelliteClicked)
+        {
+            isSatelliteClicked = false;
+            scriptClickedPlanet.setSatelliteClicked();
+        }
+    }
+
+    public void clickSatellite()
+    {
+        Debug.Log("Satellite cliqué !");
+
+        isSatelliteClicked = !isSatelliteClicked;
+        GameObject clickedSatellite = GameObject.Find("ClickedPlanetManager");
+        ClickedPlanetManager scriptClickedSatellite = clickedSatellite.GetComponent<ClickedPlanetManager>();
+
+        scriptClickedSatellite.setSatelliteClicked();
+        if (isSatelliteClicked)
+        {
+            SceneManager.LoadScene(3);
+        }
+        else
+        {
+            SceneManager.LoadScene(2);
             //GameObject gameObjectCible = GameObject.Find("Player Variant");
             //Destroy(gameObjectCible);
         }

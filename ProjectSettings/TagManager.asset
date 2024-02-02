@@ -8,6 +8,7 @@ TagManager:
   - TrackingObject
   - Planet
   - Actors
+  - Satellite
   layers:
   - Default
   - TransparentFX

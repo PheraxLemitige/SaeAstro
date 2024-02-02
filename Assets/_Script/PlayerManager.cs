@@ -46,6 +46,20 @@ public class PlayerManager : MonoBehaviour
             
         }
         //Debug.Log(SceneManager.GetActiveScene().name);
+
+        // Cette condition va permettre de détecter si le joueur est dans le téléporteur ou non
+        if(sceneName == "MenuPrincipal")
+        {
+            Debug.Log("Je suis dans le menu principal");
+            GameObject teleporter = GameObject.Find("TeleportPoint");
+            Debug.Log(teleporter.transform.position.x);
+            Debug.Log(teleporter.transform.position.y);
+            Debug.Log(teleporter.transform.position.z);
+            if (this.positionX == teleporter.transform.position.x && this.positionZ == teleporter.transform.position.z) // Position du téléporteur
+            {
+                Debug.Log("Je suis sur le téléporter");
+            }
+        }
     }
 
     public void playerClickPlanet(float positionSunx, float positionSunz, float positionActux, float positionActuy, float positionActuz, GameObject centrePlanet) {

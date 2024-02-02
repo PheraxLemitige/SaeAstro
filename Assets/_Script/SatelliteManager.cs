@@ -46,7 +46,7 @@ public class SatelliteManager : MonoBehaviour
     private float waitTime;
     private float timer = 0.0f;
     private bool isGrab;
-    private bool isClicked;
+    private bool isClicked = false;
 
     // Start is called before the first frame update
     void Start() {
@@ -169,15 +169,12 @@ public class SatelliteManager : MonoBehaviour
     }
 
     public void onClick() {
+        Debug.Log("Click Satellite");
+
         isClicked = !isClicked;
-        GameObject gameObjectCible = GameObject.Find("Player Variant");
-        PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-        if(isClicked){
-            scriptCible.playerClickPlanet(positionPlanetx, positionPlanetz, positionActux, positionActuy, positionActuz, gameObject);
-        }
-        else{
-            scriptCible.initialPlace();
-        }
+
+        Debug.Log(isClicked);
+        
     }
 
     private void OnCollisionEnter(Collision collision) {
