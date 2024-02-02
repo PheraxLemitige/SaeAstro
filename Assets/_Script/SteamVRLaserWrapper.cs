@@ -63,6 +63,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                     clickScript.clickPlanets(planetClicked);
                 isClicked = false;
                 planetClicked = "";
+                
             }
         }
         else if (e.target.tag == "Satellite")
@@ -87,6 +88,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 if (clickScript != null)
                     clickScript.clickSatellite();
                 satelliteClicked = false;
+                isClicked = false;
             }
         }
     }

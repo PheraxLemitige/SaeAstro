@@ -106,10 +106,9 @@ public class SatelliteManager : MonoBehaviour
                 }
                     
             }
-            else if(isClicked){     
-
-                transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
-                transform.position = new Vector3(positionActux, positionActuy, positionActuz);
+            else if(isClicked){
+                GameObject planet = this.transform.GetChild(1).gameObject;
+                planet.transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
             }
             else 
             {
@@ -183,5 +182,15 @@ public class SatelliteManager : MonoBehaviour
             if (collision.gameObject.name == "Sphere") // Sphere collider du soleil
                 transform.position = new Vector3(0, 20000, 0); // chut
         }
+    }
+    public void visibiliteTrue()
+    {
+        GameObject textePlanete;
+        GameObject buzzer;
+     
+        textePlanete = this.transform.GetChild(3).gameObject;
+        buzzer = this.transform.GetChild(4).gameObject;
+        textePlanete.SetActive(true);
+        buzzer.SetActive(true);
     }
 }

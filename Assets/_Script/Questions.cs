@@ -17,6 +17,7 @@ public class Questions
     public Question[] Uranus;
     public Question[] Neptune;
     public Question[] Pluto;
+    public Question[] Moon;
 }
 
 [System.Serializable]
@@ -45,19 +46,21 @@ public class QuestionFaire
     public List<int> Uranus;
     public List<int> Neptune;
     public List<int> Pluto;
+    public List<int> Moon;
 
     public QuestionFaire()
     {
-        this.Mercury = new List<int>() { 0, 1, 2 };
-        this.Venus = new List<int>() { 0, 1, 2 };
-        this.Earth = new List<int>() { 0, 1, 2 };
-        this.Mars = new List<int>() { 0, 1, 2 };
-        this.Jupiter = new List<int>() { 0, 1, 2 };
-        this.Saturn = new List<int>() { 0, 1, 2 };
-        this.Uranus = new List<int>() { 0, 1, 2 };
-        this.Neptune = new List<int>() { 0, 1, 2 };
-        this.Pluto = new List<int>() { 0, 1, 2 };
-}
+        this.Mercury = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Venus = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Earth = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Mars = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Jupiter = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Saturn = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Uranus = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Neptune = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Pluto = new List<int>() { 0, 1, 2, 3, 4 };
+        this.Moon = new List<int>() { 0, 1, 2, 3, 4 };
+    }
 
 
     public void retirerElt(string elt, int index)

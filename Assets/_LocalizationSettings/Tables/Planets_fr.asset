@@ -63,6 +63,11 @@ MonoBehaviour:
       -223\xB0C \r\nDistance Terre: 4,8 milliards km \r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 383974627225600
+    m_Localized: "Classification: Satellite naturel \r\nDiam\xE8tre: 3474,8 km\r\nTemp\xE9rature
+      moyenne: Entre -248 et 123 \xB0C\r\nDistance avec la Terre: 384\u202F400 km\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

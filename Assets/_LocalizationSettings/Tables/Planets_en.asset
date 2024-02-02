@@ -19,47 +19,52 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 64056860672
-    m_Localized: "Planet type: Telluric \nDiameter: 3031 Mi\nTemperature: Between
+    m_Localized: "Planet type: Telluric \nDiameter: 3,031 Mi\nTemperature: Between
       430\xB0C and -180\xB0C\nDistance with Earth: 57 million Mi "
     m_Metadata:
       m_Items: []
   - m_Id: 85493948416
-    m_Localized: "Planet type: Telluric\nDiameter: 7521 Mi \nTemperature: 470\xB0C
+    m_Localized: "Planet type: Telluric\nDiameter: 7,521 Mi \nTemperature: 470\xB0C
       \nDistance with Earth: 25 million MI"
     m_Metadata:
       m_Items: []
   - m_Id: 230549757952
-    m_Localized: "Planet Type: Telluric\nDiameter: 7917 Mi \nTemperature: 15\xB0C "
+    m_Localized: "Planet Type: Telluric\nDiameter: 7,917 Mi \nTemperature: 15\xB0C "
     m_Metadata:
       m_Items: []
   - m_Id: 293564981248
-    m_Localized: "Planet Type: Telluric\nDiameter: 4212 Mi\nTemperature: -63\xB0C
+    m_Localized: "Planet Type: Telluric\nDiameter: 4,212 Mi\nTemperature: -63\xB0C
       \nDistance with Earth: 38 million Mi"
     m_Metadata:
       m_Items: []
   - m_Id: 344165064704
-    m_Localized: "Planet Type: Gas Giant\nDiameter: 86880 Mi \nTemperature: Between
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 86,880 Mi \nTemperature: Between
       -161\xB0C and -108\xB0C\nDistance with Earth: 484 million Mi"
     m_Metadata:
       m_Items: []
   - m_Id: 389165752320
-    m_Localized: "Planet Type: Gas Giant\nDiameter: 72364 Mi\nTemperature: -179\xB0C
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 72,364 Mi\nTemperature: -179\xB0C
       \nDistance with Earth: 807 million Mi"
     m_Metadata:
       m_Items: []
   - m_Id: 426209845248
-    m_Localized: "Planet Type: Gas Giant\nDiameter: 31518 Mi\nTemperature: -226\xB0C
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 31,518 Mi\nTemperature: -226\xB0C
       \nDistance with Earth: 1.4 billion Mi"
     m_Metadata:
       m_Items: []
   - m_Id: 467783786496
-    m_Localized: "Planet Type: Gas Giant\nDiameter: 30598 Mi\nTemperature: -213\xB0C
+    m_Localized: "Planet Type: Gas Giant\nDiameter: 30,598 Mi\nTemperature: -213\xB0C
       \nDistance with Earth: 2.6 billion Mi"
     m_Metadata:
       m_Items: []
   - m_Id: 505163423744
-    m_Localized: "Classification: Dwarf Planet \nDiameter: 1473 Mi\nTemperature:
-      -223\xB0C \nDistance with Earth: 2,9 billion Mi "
+    m_Localized: "Classification: Dwarf Planet \nDiameter: 1,473 Mi\nTemperature:
+      -223\xB0C \nDistance with Earth: 2.9 billion Mi "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 383974627225600
+    m_Localized: "Classification: Natural Satellite \nDiameter: 2,159.1 Mi\nTemperature:
+      Between -248\xB0C and 123\xB0C \nDistance with Earth: 238,855 Mi "
     m_Metadata:
       m_Items: []
   references:

@@ -6,6 +6,7 @@ using TMPro;
 using Newtonsoft.Json;
 using System.IO;
 using System.Numerics;
+using UnityEngine.Localization.Settings;
 
 public class QuizManager : MonoBehaviour
 {
@@ -61,14 +62,20 @@ public class QuizManager : MonoBehaviour
                 case "Pluto":
                     this.questionPlanet = this.questionFaire.Pluto;
                     break;
+                case "Moon":
+                    this.questionPlanet = this.questionFaire.Moon;
+                    break;
             }
             if (this.questionPlanet.Count != 0)
             {
                 
 
                 GameObject questionGameObject = GameObject.Find("Question");
-
-                Questions questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/question.json"));
+                Questions questions;
+                if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionEn.json"));
+                else
+                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionFr.json"));
 
                 int numQuestion = Random.Range(0, this.questionPlanet.Count - 1);
                 switch (this.planetCliked)
@@ -109,6 +116,10 @@ public class QuizManager : MonoBehaviour
                         this.question = questions.Pluto[this.questionPlanet[numQuestion]];
                         this.questionFaire.Pluto.RemoveAt(numQuestion);
                         break;
+                    case "Moon":
+                        this.question = questions.Moon[this.questionPlanet[numQuestion]];
+                        this.questionFaire.Moon.RemoveAt(numQuestion);
+                        break;
                 }
 
                 questionGameObject.GetComponent<TMP_Text>().text = this.question.question;
@@ -148,13 +159,19 @@ public class QuizManager : MonoBehaviour
         {
             if (this.question.reponse1.isTrueResponse)
             {
-                textReponse = "Bonne réponse";
+                if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                    textReponse = "Good job !";
+                else
+                    textReponse = "Bonne réponse !";
                 this.point += 1;
                 Debug.Log("is True");
             }
             else
             {
-                textReponse = "Mauvaise réponse";
+                if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                    textReponse = "No luck...";
+                else
+                    textReponse = "Mauvaise réponse...";
                 Debug.Log("is False");
             }
         }
@@ -162,13 +179,19 @@ public class QuizManager : MonoBehaviour
         {
             if (this.question.reponse2.isTrueResponse)
             {
-                textReponse = "Bonne réponse";
+                if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                    textReponse = "Good job !";
+                else
+                    textReponse = "Bonne réponse !";
                 this.point += 1;
                 Debug.Log("is True");
             }
             else
             {
-                textReponse = "Mauvaise réponse";
+                if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                    textReponse = "No luck...";
+                else
+                    textReponse = "Mauvaise réponse...";
                 Debug.Log("is False");
             }
         }

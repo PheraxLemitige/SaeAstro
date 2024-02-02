@@ -47,6 +47,7 @@ public class ClickManager : MonoBehaviour {
         ClickedPlanetManager scriptClickedSatellite = clickedSatellite.GetComponent<ClickedPlanetManager>();
 
         scriptClickedSatellite.setSatelliteClicked();
+
         if (isSatelliteClicked)
         {
             SceneManager.LoadScene(3);
@@ -54,9 +55,11 @@ public class ClickManager : MonoBehaviour {
         else
         {
             SceneManager.LoadScene(2);
+            isClicked = false;
             //GameObject gameObjectCible = GameObject.Find("Player Variant");
             //Destroy(gameObjectCible);
         }
+        
     }
 
     public void renderObject(GameObject objet, bool visibility) {

@@ -59,16 +59,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 25065043101360128
-    m_Localized: "Cliquez sur la fus\xE9e pour \xEAtre dans le syst\xE8me solaire
-      !"
+    m_Localized: 'Click on the rocket to be in the solar system!
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 25441394133536768
-    m_Localized: "Cliquez sur le mus\xE9e pour y entrer !"
+    m_Localized: "\rClick on the museum to enter!"
     m_Metadata:
       m_Items: []
   - m_Id: 25441440228937728
-    m_Localized: Veuillez aller au centre pour quitter la partie.
+    m_Localized: Please go to the center to exit the game.
     m_Metadata:
       m_Items: []
   references:

@@ -9,22 +9,25 @@ public class ClickedPlanetManager : MonoBehaviour
     private string namePlanetClicked;
     private string scenaName;
     private bool isSatellite;
-    private bool inSatelliteScene = false;
+    private int reloadCounter = 0;
     // Start is called before the first frame update
     void Start() {
         DontDestroyOnLoad(this);
         scenaName = SceneManager.GetActiveScene().name;
+
+        
     }
+
 
     // Update is called once per frame
     void Update() {
-        if (SceneManager.GetActiveScene().name == "ClickedSolarScene" && !inSatelliteScene && isSatellite)
+        if (SceneManager.GetActiveScene().name == "ClickedSolarScene" && isSatellite && reloadCounter == 2)
         {
-            
-
+            namePlanetClicked = "Moon";
             GameObject satelliteCible = GameObject.Find("Moon");
             SatelliteManager scriptSatellite = satelliteCible.GetComponent<SatelliteManager>();
             scriptSatellite.onClick();
+            scriptSatellite.visibiliteTrue();
             GameObject planeteCible = GameObject.Find("Earth");
             PlanetManager scriptPlanet = planeteCible.GetComponent<PlanetManager>();
             scriptPlanet.onClick();
@@ -32,13 +35,10 @@ public class ClickedPlanetManager : MonoBehaviour
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
 
-            double positionz;
-            positionz = satelliteCible.transform.position.z + 300;
-
-            scriptCible.setPosition(0, 0, positionz);
+            scriptCible.setPosition(0, 0, -1809);
             scenaName = SceneManager.GetActiveScene().name;
+            reloadCounter = 0;
 
-            inSatelliteScene = !inSatelliteScene;
             Debug.Log("Passage dans le manager");
         }
         
@@ -48,6 +48,7 @@ public class ClickedPlanetManager : MonoBehaviour
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
             scriptCible.setPosition(5.0, -0.7, 5.0);
             scenaName = SceneManager.GetActiveScene().name;
+            reloadCounter = 0;
         }
         else if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "ClickedSolarScene" && !isSatellite)
         {
@@ -91,5 +92,10 @@ public class ClickedPlanetManager : MonoBehaviour
 
     public string getNamePlanetClicked() {  
         return namePlanetClicked; 
+    }
+
+    public void addCounterReload()
+    {
+        reloadCounter++;
     }
 }

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; 
+using TMPro;
+using UnityEngine.Localization.Settings;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -23,11 +24,17 @@ public class TutorialManager : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (SceneManager.GetActiveScene().name == "solarScene" && !solarTuto) {
-            Tuto("Tu peux attraper une planète avec la gachette du bas !");
+            if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                Tuto("You can grab a planet with the trigger on the back !");
+            else
+                Tuto("Tu peux attraper une planète avec la gachette du bas !");
             solarTuto = !solarTuto;
         }
         else if (SceneManager.GetActiveScene().name == "ClickedSolarScene" && !clickSolarTuto) {
-            Tuto("Tu peux presser le buzzer pour accèder au quizz !");
+            if (LocalizationSettings.SelectedLocale.name == "English (en)")
+                Tuto("You can press the buzzer to access the quizz !");
+            else
+                Tuto("Tu peux presser le buzzer pour accèder au quizz !");
             clickSolarTuto = !clickSolarTuto;
         }
 

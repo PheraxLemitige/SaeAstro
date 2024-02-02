@@ -51,6 +51,10 @@ MonoBehaviour:
     m_Key: PlutoInfo
     m_Metadata:
       m_Items: []
+  - m_Id: 383974627225600
+    m_Key: MoonInfo
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
