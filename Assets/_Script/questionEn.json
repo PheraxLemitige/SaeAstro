@@ -1,0 +1,573 @@
+{
+    "mercury": [
+        {
+            "question": "What type of planet is Mercury?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the temperature of Mercury?",
+            "reponse1": {
+                "reponse": "-10°C to +620°C",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "-180°C to +430°C",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Is Mercury the fifth planet in the solar system?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Does Mercury have an atmosphere?",
+            "reponse1": {
+                "reponse": "Yes",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+            "reponse": "No",
+            "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the distance between Earth and Mercury?",
+            "reponse1": {
+                "reponse": "57 million miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "75 million miles",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "venus": [
+        {
+            "question": "What type of planet is Venus?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the average temperature of Venus?",
+            "reponse1": {
+                "reponse": "470°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "300°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the distance between Earth and Venus?",
+            "reponse1": {
+                "reponse": "25 million miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "43 million miles",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Does Venus have rings?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Is Venus the hottest planet in the solar system, true or false?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "earth": [
+        {
+            "question": "What type of planet is Earth?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the average temperature of Earth?",
+            "reponse1": {
+                "reponse": "15°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "10°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "How many natural satellites does Earth have?",
+            "reponse1": {
+                "reponse": "1",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "3",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Is Earth the closest planet to the Sun?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "How many humans are there on Earth?",
+            "reponse1": {
+                "reponse": "Approximately 8 billion",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Approximately 10 billion",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "mars": [
+        {
+            "question": "What type of planet is Mars?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Is Mars the fourth planet in the solar system?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the average temperature of Mars?",
+            "reponse1": {
+                "reponse": "-63°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "56°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Is Mars red because it is hot, true or false?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the name of the small robots sent to Mars?",
+            "reponse1": {
+                "reponse": "Rover",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Explorer",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "jupiter": [
+        {
+            "question": "What type of planet is Jupiter?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the diameter of Jupiter?",
+            "reponse1": {
+                "reponse": "86,881 miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "75,250 miles",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the average temperature of Jupiter?",
+            "reponse1": {
+                "reponse": "Between -161 and -108 °C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Between -195 °C and -135 °C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Which of these statements is true?",
+            "reponse1": {
+                "reponse": "Jupiter is the largest planet in the solar system.",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Jupiter has no satellites.",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What does the large 'spot' on Jupiter correspond to?",
+            "reponse1": {
+                "reponse": "A large fissure",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "A large cyclone",
+                "isTrueResponse": true
+            }
+        }
+    ],
+    "saturn": [
+        {
+            "question": "What type of planet is Saturn?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the average temperature of Saturn?",
+            "reponse1": {
+                "reponse": "-179°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "-186°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the distance between Earth and Saturn?",
+            "reponse1": {
+                "reponse": "752 million miles",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "807 million miles",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Is Saturn the seventh planet in the solar system, true or false?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Does Saturn have rings?",
+            "reponse1": {
+                "reponse": "Yes",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "No",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "uranus": [
+        {
+            "question": "What type of planet is Uranus?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the average temperature of Uranus?",
+            "reponse1": {
+                "reponse": "-226°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "-212°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the distance between Earth and Uranus?",
+            "reponse1": {
+                "reponse": "1.4 billion km",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "1.7 billion km",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Which additional information about Uranus is true?",
+            "reponse1": {
+              "reponse": "Uranus has a bad smell of rotten eggs!",
+             "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Uranus has a pleasant smell of flowers",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Which of these statements is true?",
+            "reponse1": {
+                "reponse": "Uranus is the hottest planet in the solar system",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "Uranus is the coldest planet in the solar system",
+                "isTrueResponse": true
+            }
+        }
+    ],
+    "neptune": [
+        {
+            "question": "What type of planet is Neptune?",
+            "reponse1": {
+                "reponse": "Rocky",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "Gaseous",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the diameter of Neptune?",
+            "reponse1": {
+                "reponse": "30,612 miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "35,673 miles",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the average temperature of Neptune?",
+            "reponse1": {
+                "reponse": "-213°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "-226°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "Neptune is the coldest planet in the solar system. True or false?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Neptune is the farthest planet from the Sun. True or false?",
+            "reponse1": {
+                "reponse": "True",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "False",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "pluto": [
+        {
+            "question": "Is Pluto classified as a planet?",
+            "reponse1": {
+                "reponse": "Yes",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "No",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the average temperature of Pluto?",
+            "reponse1": {
+                "reponse": "-223°C",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "-235°C",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the distance between Earth and Pluto?",
+            "reponse1": {
+                "reponse": "about 2.98 billion miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "about 3.4 billion miles",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the diameter of Pluto?",
+            "reponse1": {
+                "reponse": "1,194 miles",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "1,474 miles",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "Is Pluto surrounded by lots of asteroids?",
+            "reponse1": {
+                "reponse": "Yes",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "No",
+                "isTrueResponse": false
+            }
+        }
+    ],
+    "moon": [
+        {
+            "question": "Is the Moon a natural or artificial satellite?",
+            "reponse1": {
+                "reponse": "Natural satellite",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Artificial satellite",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the diameter of the Moon?",
+            "reponse1": {
+                "reponse": "2,160 miles",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "2,450 miles",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "What is the distance between Earth and the Moon?",
+            "reponse1": {
+                "reponse": "267,406 miles",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "238,855 miles",
+                "isTrueResponse": true
+            }
+        },
+        {
+            "question": "What is the name of the first person to set foot on the Moon?",
+            "reponse1": {
+                "reponse": "Neil Armstrong",
+                "isTrueResponse": true
+            },
+            "reponse2": {
+                "reponse": "Niles Armstrong",
+                "isTrueResponse": false
+            }
+        },
+        {
+            "question": "In what year did humans first set foot on the Moon?",
+            "reponse1": {
+                "reponse": "1956",
+                "isTrueResponse": false
+            },
+            "reponse2": {
+                "reponse": "1969",
+                "isTrueResponse": true
+            }
+        }
+    ]
+}
+
