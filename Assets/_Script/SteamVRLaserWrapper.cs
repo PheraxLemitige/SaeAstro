@@ -44,6 +44,8 @@ public class SteamVRLaserWrapper : MonoBehaviour {
         }
         else if(e.target.tag == "Planet")
         {
+            planetClicked = e.target.name;
+
             GameObject gameObjectCible = GameObject.Find(e.target.name);
             PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
             if (!isClicked && !planetManager.getIsGrab()) {
@@ -52,7 +54,6 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 if (clickScript != null)
                     clickScript.clickPlanets(e.target.name);
                 isClicked = true;
-                planetClicked = e.target.name;
             }
             
             else if(planetClicked != "") {
