@@ -80,8 +80,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1837895131136
     m_Localized: "Rover: \nA rover is a vehicule build with the purpose to explore
-      planets that aren't our Earth. It's goal is to explore the environment on this
-      planets. It is able to take samples from it's ground. "
+      planets that aren't our Earth. It's goal is to explore the environment on these
+      planets. It is able to take samples from their ground. "
     m_Metadata:
       m_Items: []
   references:
