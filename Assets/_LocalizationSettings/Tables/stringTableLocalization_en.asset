@@ -73,7 +73,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 28978331354800128
-    m_Localized: Menu Bras
+    m_Localized: Wrist Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29013148125503488
+    m_Localized: Left Hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29013228719054848
+    m_Localized: Right Hand
     m_Metadata:
       m_Items: []
   references:

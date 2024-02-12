@@ -29,6 +29,11 @@ public class WristMenu : MonoBehaviour {
         if (canvas == null)
             canvas = this.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject;
 
+        if (firstRange == null && lastRange == null)
+        {
+            this.firstRange = new Vector3(200, 0, 0);
+            this.lastRange = new Vector3(350, 0, 75);
+        }
     }
 
     // Update is called once per frame
@@ -41,7 +46,7 @@ public class WristMenu : MonoBehaviour {
         else
             visible(false);
 
-        //Debug.Log(hand.transform.rotation.eulerAngles);
+        //Debug.Log(activeHand.transform.rotation.eulerAngles);
     }
 
     void visible(bool visible) {
@@ -64,10 +69,6 @@ public class WristMenu : MonoBehaviour {
             if (activeHand.name == "RightHand" && activeLaser != "LeftLaser")
                 ShowLaser(leftHand, b);
         }
-        /*if (activeHand.name == "LeftHand" !&& activeLaser == "RightLaser")
-            ShowLaser(rightHand, b);
-        else if (activeHand.name == "RightHand" !&& activeLaser == "LeftLaser")
-            ShowLaser(leftHand, b); */
     }
 
     private void ShowLaser(GameObject hand, bool b)
@@ -135,6 +136,26 @@ public class WristMenu : MonoBehaviour {
     public void WristMenuOption()
     {
         DefaultMenu(false);
+        canvas.transform.Find("LeftMenu").gameObject.SetActive(true);
+        canvas.transform.Find("RightMenu").gameObject.SetActive(true);
+    }
+
+    public void LeftMenu()
+    {
+        this.transform.SetParent(leftHand.transform, false);
+        this.activeHand = leftHand;
+        this.transform.GetChild(0).transform.localEulerAngles = new Vector3(0, 90, 40);
+        this.firstRange = new Vector3(200, 0, 0);
+        this.lastRange = new Vector3(350, 0, 75);
+    }
+
+    public void RightMenu()
+    {
+        this.transform.SetParent(rightHand.transform, false);
+        this.activeHand = rightHand;
+        this.transform.GetChild(0).transform.localEulerAngles = new Vector3(0, -90, -40);
+        this.firstRange = new Vector3(200, 0, 275);
+        this.lastRange = new Vector3(350, 0, 350);
     }
 
     public void Lasers()

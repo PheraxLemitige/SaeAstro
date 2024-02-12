@@ -562,7 +562,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:ebd854105e5695c448c60d2232b4a7ec
     m_TableEntryReference:
-      m_KeyId: 5012279361536
+      m_KeyId: 29013228719054848
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -1506,7 +1506,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: LeftMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1614,7 +1614,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: LeftMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2111,7 +2111,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: RightMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2219,7 +2219,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: RightMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2913,7 +2913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &463541964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3128,7 +3128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &473528719
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4473,7 +4473,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:ebd854105e5695c448c60d2232b4a7ec
     m_TableEntryReference:
-      m_KeyId: 17451045715968
+      m_KeyId: 29013148125503488
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -6413,7 +6413,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: WristMenuOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6521,7 +6521,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1758368558}
         m_TargetAssemblyTypeName: WristMenu, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: WristMenuOption
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7343,7 +7343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1580752518
 RectTransform:
   m_ObjectHideFlags: 0

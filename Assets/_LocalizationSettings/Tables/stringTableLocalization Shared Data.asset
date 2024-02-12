@@ -71,6 +71,14 @@ MonoBehaviour:
     m_Key: Wristmenu
     m_Metadata:
       m_Items: []
+  - m_Id: 29013148125503488
+    m_Key: MainGauche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29013228719054848
+    m_Key: MainDroite
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
