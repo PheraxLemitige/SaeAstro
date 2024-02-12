@@ -49,6 +49,7 @@ public class PlanetManager : MonoBehaviour
     private float timer = 0.0f;
     private bool isGrab;
     private bool isClicked = false;
+    private bool isGrabBefore = false;
 
     // Start is called before the first frame update
     void Start() {
@@ -103,6 +104,9 @@ public class PlanetManager : MonoBehaviour
         if (!interactable.attachedToHand || SceneManager.GetActiveScene().name == "ClickedSolarScene") {
             if (isGrab && SceneManager.GetActiveScene().name == "solarScene") {
                 timer += Time.deltaTime;
+                GameObject menu = GameObject.Find("WristMenu");
+                WristMenu scriptMenu = menu.GetComponent<WristMenu>();
+                scriptMenu.setGrab(false);
                 if (timer > waitTime)
                 {
                     isGrab = false;
@@ -143,8 +147,17 @@ public class PlanetManager : MonoBehaviour
         {
             isGrab = true;
             timer = 0.0f;
+            GameObject menu = GameObject.Find("WristMenu");
+            WristMenu scriptMenu = menu.GetComponent<WristMenu>();
+            scriptMenu.setGrab(isGrab);
         }
 
+        if (!isGrab && isGrabBefore) {
+            GameObject menu = GameObject.Find("WristMenu");
+            WristMenu scriptMenu = menu.GetComponent<WristMenu>();
+            scriptMenu.setGrab(isGrab);
+        }
+        isGrabBefore = isGrab;
     }
 
     public bool getIsGrab()

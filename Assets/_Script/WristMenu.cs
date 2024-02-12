@@ -13,6 +13,7 @@ public class WristMenu : MonoBehaviour {
     private GameObject canvas;
     public Vector3 firstRange;
     public Vector3 lastRange;
+    public bool isGrab = false;
 
 
     // Start is called before the first frame update
@@ -39,7 +40,8 @@ public class WristMenu : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (activeHand.transform.rotation.eulerAngles.x >= firstRange.x && activeHand.transform.rotation.eulerAngles.z >= firstRange.z)
-            if (activeHand.transform.rotation.eulerAngles.x <= lastRange.x && activeHand.transform.rotation.eulerAngles.z <= lastRange.z)
+
+            if (activeHand.transform.rotation.eulerAngles.x <= lastRange.x && activeHand.transform.rotation.eulerAngles.z <= lastRange.z && !isGrab)
                 visible(true);
             else
                 visible(false); 
@@ -203,5 +205,12 @@ public class WristMenu : MonoBehaviour {
 
     public void Retour() {
         DefaultMenu(true);
+    }
+
+    public void setGrab(bool grab)
+    {
+        Debug.Log("Je passe dans le grab");
+        Debug.Log(grab);
+        this.isGrab = grab;
     }
 }
