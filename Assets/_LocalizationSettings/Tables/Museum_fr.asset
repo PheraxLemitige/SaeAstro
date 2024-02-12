@@ -39,8 +39,8 @@ MonoBehaviour:
   - m_Id: 1309039534080
     m_Localized: "Cosmonaute: \r\nLa combinaison spatiale est un \xE9quipement port\xE9
       par les astronautes, cosmonautes et spationautes permettant de faire des sorties
-      dans l'espace. Elle assure \xE0 son porteur de l'oxyg\xE8ne, une protection
-      thermique, etc\u2026\r"
+      dans l'espace. Elle assure \xE0 son porteur de l'oxyg\xE8ne et une protection
+      thermique."
     m_Metadata:
       m_Items: []
   - m_Id: 1397593874432
@@ -71,7 +71,7 @@ MonoBehaviour:
   - m_Id: 1701295038464
     m_Localized: "Exoplan\xE8te Kepler 22b:\nUne exoplan\xE8te est une plan\xE8te
       qui se trouve dans un autre syst\xE8me solaire, comme le n\xF4tre ! Elles tournent
-      autour d\u2019une \xE9toile qui n\u2019est pas le Soleil Elles sont tr\xE8s
+      autour d\u2019une \xE9toile qui n\u2019est pas le Soleil. Elles sont tr\xE8s
       similaires \xE0 nos plan\xE8tes. \r"
     m_Metadata:
       m_Items: []
@@ -82,9 +82,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1837895131136
-    m_Localized: "Rover: \r\nUn rover (ou un astromobile) est un v\xE9hicule con\xE7u
-      pour explorer les plan\xE8tes autres que la Terre. Son but est d'\xE9tudier
-      l'environnement des plan\xE8tes. il est capable de r\xE9colter le sol des plan\xE8tes\r\n"
+    m_Localized: "Rover: \r\nUn rover est un v\xE9hicule con\xE7u pour explorer les
+      plan\xE8tes autres que la Terre. Son but est d'\xE9tudier l'environnement des
+      plan\xE8tes, en r\xE9coltant des \xE9chantillons de leur sol. \n"
     m_Metadata:
       m_Items: []
   references:

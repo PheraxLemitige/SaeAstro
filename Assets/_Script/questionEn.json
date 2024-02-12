@@ -14,7 +14,7 @@
         {
             "question": "What is the temperature of Mercury?",
             "reponse1": {
-                "reponse": "-10°C to +620°C",
+                "reponse": "+20°C to +620°C",
                 "isTrueResponse": false
             },
             "reponse2": {
@@ -25,11 +25,11 @@
         {
             "question": "Is Mercury the fifth planet in the solar system?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -51,7 +51,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "75 million miles",
+                "reponse": "34 million miles",
                 "isTrueResponse": false
             }
         }
@@ -75,7 +75,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "300°C",
+                "reponse": "235°C",
                 "isTrueResponse": false
             }
         },
@@ -86,29 +86,29 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "43 million miles",
+                "reponse": "95 million miles",
                 "isTrueResponse": false
             }
         },
         {
             "question": "Does Venus have rings?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
         {
-            "question": "Is Venus the hottest planet in the solar system, true or false?",
+            "question": "Is Venus the hottest planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         }
@@ -132,7 +132,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "10°C",
+                "reponse": "-5°C",
                 "isTrueResponse": false
             }
         },
@@ -143,18 +143,18 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "3",
+                "reponse": "5",
                 "isTrueResponse": false
             }
         },
         {
             "question": "Is Earth the closest planet to the Sun?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -165,7 +165,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "Approximately 10 billion",
+                "reponse": "Approximately 15 billion",
                 "isTrueResponse": false
             }
         }
@@ -185,11 +185,11 @@
         {
             "question": "Is Mars the fourth planet in the solar system?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         },
@@ -205,13 +205,13 @@
             }
         },
         {
-            "question": "Is Mars red because it is hot, true or false?",
+            "question": "Is Mars red because it is hot ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -246,7 +246,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "75,250 miles",
+                "reponse": "45,441 miles",
                 "isTrueResponse": false
             }
         },
@@ -257,7 +257,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "Between -195 °C and -135 °C",
+                "reponse": "Between -305 °C and -126 °C",
                 "isTrueResponse": false
             }
         },
@@ -303,14 +303,14 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "-186°C",
+                "reponse": "-93°C",
                 "isTrueResponse": false
             }
         },
         {
             "question": "What is the distance between Earth and Saturn?",
             "reponse1": {
-                "reponse": "752 million miles",
+                "reponse": "567 million miles",
                 "isTrueResponse": false
             },
             "reponse2": {
@@ -319,13 +319,13 @@
             }
         },
         {
-            "question": "Is Saturn the seventh planet in the solar system, true or false?",
+            "question": "Is Saturn the seventh planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -371,23 +371,23 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "1.7 billion km",
+                "reponse": "2.7 billion km",
                 "isTrueResponse": false
             }
         },
         {
-            "question": "Which additional information about Uranus is true?",
+            "question": "Which of these statements about Uranus is true?",
             "reponse1": {
-              "reponse": "Uranus has a bad smell of rotten eggs!",
+              "reponse": "Uranus smells like rotten eggs",
              "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "Uranus has a pleasant smell of flowers",
+                "reponse": "Uranus smells good",
                 "isTrueResponse": false
             }
         },
         {
-            "question": "Which of these statements is true?",
+            "question": "Which of these statements about Uranus is true?",
             "reponse1": {
                 "reponse": "Uranus is the hottest planet in the solar system",
                 "isTrueResponse": false
@@ -417,7 +417,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "35,673 miles",
+                "reponse": "53,673 miles",
                 "isTrueResponse": false
             }
         },
@@ -428,29 +428,29 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "-226°C",
+                "reponse": "-323°C",
                 "isTrueResponse": false
             }
         },
         {
-            "question": "Neptune is the coldest planet in the solar system. True or false?",
+            "question": "Is Neptune the coldest planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
         {
-            "question": "Neptune is the farthest planet from the Sun. True or false?",
+            "question": "Is Neptune the farthest planet from the Sun ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         }
@@ -474,7 +474,7 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "-235°C",
+                "reponse": "-123°C",
                 "isTrueResponse": false
             }
         },
@@ -485,14 +485,14 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "about 3.4 billion miles",
+                "reponse": "about 3.56 billion miles",
                 "isTrueResponse": false
             }
         },
         {
             "question": "What is the diameter of Pluto?",
             "reponse1": {
-                "reponse": "1,194 miles",
+                "reponse": "765 miles",
                 "isTrueResponse": false
             },
             "reponse2": {
@@ -531,14 +531,14 @@
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "2,450 miles",
+                "reponse": "3,450 miles",
                 "isTrueResponse": false
             }
         },
         {
             "question": "What is the distance between Earth and the Moon?",
             "reponse1": {
-                "reponse": "267,406 miles",
+                "reponse": "307,406 miles",
                 "isTrueResponse": false
             },
             "reponse2": {

@@ -14,7 +14,7 @@
 		{
 			"question" : "Quelle est la température de Mercure?",
 			"reponse1" : {
-				"reponse" : "-10°C et +620°C",
+				"reponse" : "+20°C et +620°C",
 				"isTrueResponse" : false
 			},
 			"reponse2" : {
@@ -51,7 +51,7 @@
 				"isTrueResponse" : true
 			}, 
 			"reponse2" : {
-				"reponse" : "75 millions de km", 
+				"reponse" : "42 millions de km", 
 				"isTrueResponse" : false 
 			}
 		}
@@ -75,7 +75,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "300°C",
+				"reponse": "235°C",
 				"isTrueResponse": false
 			}
 		},
@@ -86,7 +86,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "50 millions de km",
+				"reponse": "103 millions de km",
 				"isTrueResponse": false
 			}
 		},
@@ -132,7 +132,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "10°C",
+				"reponse": "-5°C",
 				"isTrueResponse": false
 			}
 		},
@@ -143,7 +143,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "3",
+				"reponse": "5",
 				"isTrueResponse": false
 			}
 		},
@@ -165,7 +165,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "Environ 10 milliards",
+				"reponse": "Environ 15 milliards",
 				"isTrueResponse": false
 			}
 		}
@@ -246,7 +246,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "126 250 km",
+				"reponse": "74 042 km",
 				"isTrueResponse": false
 			}
 		},
@@ -257,7 +257,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "Entre -195 °C et -135 °C",
+				"reponse": "Entre -305 °C et -126 °C",
 				"isTrueResponse": false
 			}
 		},
@@ -303,14 +303,14 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "-186°C",
+				"reponse": "-93°C",
 				"isTrueResponse": false
 			}
 		},
 		{
 			"question": "Quelle est la distance entre la Terre et Saturne?",
 			"reponse1": {
-				"reponse": "1 milliard de kilomètres",
+				"reponse": "2,1 milliard de kilomètres",
 				"isTrueResponse": false
 			},
 			"reponse2": {
@@ -360,7 +360,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "-212 °C",
+				"reponse": "-156 °C",
 				"isTrueResponse": false
 			}
 		},
@@ -371,7 +371,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "2,6 milliards de kilomètres",
+				"reponse": "1,1 milliards de kilomètres",
 				"isTrueResponse": false
 			}
 		},
@@ -417,7 +417,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "50 673 km",
+				"reponse": "79 044 km",
 				"isTrueResponse": false
 			}
 		},
@@ -428,7 +428,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "-226°C",
+				"reponse": "-323°C",
 				"isTrueResponse": false
 			}
 		},
@@ -474,7 +474,7 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "-235°C",
+				"reponse": "-123°C",
 				"isTrueResponse": false
 			}
 		},
@@ -485,14 +485,14 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "environ 5,1 milliards de kilomètres",
+				"reponse": "environ 5,9 milliards de kilomètres",
 				"isTrueResponse": false
 			}
 		},
 		{
 			"question": "Quel est le diamètre de Pluton",
 			"reponse1": {
-				"reponse": "2 194 km",
+				"reponse": "1 342 km",
 				"isTrueResponse": false
 			},
 			"reponse2": {
@@ -531,14 +531,14 @@
 				"isTrueResponse": true
 			},
 			"reponse2": {
-				"reponse": "3 344 km",
+				"reponse": "2 934 km",
 				"isTrueResponse": false
 			}
 		},
 		{
 			"question": "Quelle est la distance entre la Terre et la Lune?",
 			"reponse1": {
-				"reponse": "394 900 km",
+				"reponse": "445 400 km",
 				"isTrueResponse": false
 			},
 			"reponse2": {

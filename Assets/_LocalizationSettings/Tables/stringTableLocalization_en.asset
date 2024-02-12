@@ -72,6 +72,10 @@ MonoBehaviour:
     m_Localized: Please go to the center to exit the game.
     m_Metadata:
       m_Items: []
+  - m_Id: 28978331354800128
+    m_Localized: Menu Bras
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

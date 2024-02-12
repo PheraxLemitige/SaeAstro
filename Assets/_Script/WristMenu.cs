@@ -3,16 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
+using Valve.VR.Extras;
 
 public class WristMenu : MonoBehaviour {
-    private GameObject hand;
+    private GameObject leftHand;
+    private GameObject rightHand;
+    private GameObject activeHand;
+    private string activeLaser = "LeftLaser";
     private GameObject canvas;
     public Vector3 firstRange;
     public Vector3 lastRange;
+
+
     // Start is called before the first frame update
     void Start() {
-        if (hand == null)
-            hand = this.gameObject.transform.parent.gameObject;
+        if (leftHand == null)
+            leftHand = this.gameObject.transform.parent.gameObject.transform.parent.gameObject.transform.Find("LeftHand").gameObject;
+
+        if (rightHand == null)
+            rightHand = this.gameObject.transform.parent.gameObject.transform.parent.gameObject.transform.Find("RightHand").gameObject;
+
+        if (activeHand == null)
+            activeHand = this.gameObject.transform.parent.gameObject;
 
         if (canvas == null)
             canvas = this.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject;
@@ -21,8 +33,8 @@ public class WristMenu : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (hand.transform.rotation.eulerAngles.x >= firstRange.x && hand.transform.rotation.eulerAngles.z >= firstRange.z)
-            if (hand.transform.rotation.eulerAngles.x <= lastRange.x && hand.transform.rotation.eulerAngles.z <= lastRange.z)
+        if (activeHand.transform.rotation.eulerAngles.x >= firstRange.x && activeHand.transform.rotation.eulerAngles.z >= firstRange.z)
+            if (activeHand.transform.rotation.eulerAngles.x <= lastRange.x && activeHand.transform.rotation.eulerAngles.z <= lastRange.z)
                 visible(true);
             else
                 visible(false); 
@@ -36,8 +48,34 @@ public class WristMenu : MonoBehaviour {
         foreach (Transform child in this.transform)
             child.gameObject.SetActive(visible);
 
+        LaserMenu(visible);
+
         if (!visible)
             DefaultMenu(true);
+
+    }
+
+    private void LaserMenu(bool b)
+    {
+        if (activeLaser != "BothLaser")
+        {
+            if (activeHand.name == "LeftHand" && activeLaser != "RightLaser")
+                ShowLaser(rightHand, b);
+            if (activeHand.name == "RightHand" && activeLaser != "LeftLaser")
+                ShowLaser(leftHand, b);
+        }
+        /*if (activeHand.name == "LeftHand" !&& activeLaser == "RightLaser")
+            ShowLaser(rightHand, b);
+        else if (activeHand.name == "RightHand" !&& activeLaser == "LeftLaser")
+            ShowLaser(leftHand, b); */
+    }
+
+    private void ShowLaser(GameObject hand, bool b)
+    {
+        hand.GetComponent<SteamVR_LaserPointer>().enabled = b;
+        Transform laserMesh = hand.transform.Find("New Game Object");
+        if (laserMesh != null)
+            laserMesh.gameObject.SetActive(b);
     }
 
     public void DefaultMenu(bool b) {
@@ -57,22 +95,24 @@ public class WristMenu : MonoBehaviour {
 
     public void Scenes() {
         DefaultMenu(false);
-        canvas.transform.GetChild(4).gameObject.SetActive(true); // Boutton MainMenu
-        canvas.transform.GetChild(5).gameObject.SetActive(true); // Boutton Museum
-        canvas.transform.GetChild(6).gameObject.SetActive(true); // Boutton SolarSystem
+        canvas.transform.Find("MainMenu").gameObject.SetActive(true);
+        canvas.transform.Find("Museum").gameObject.SetActive(true);
+        canvas.transform.Find("SolarSystem").gameObject.SetActive(true);
     }
 
-    public void Languages() {
+    public void Options()
+    {
         DefaultMenu(false);
-        canvas.transform.GetChild(7).gameObject.SetActive(true); // Boutton French
-        canvas.transform.GetChild(8).gameObject.SetActive(true); // Boutton English
+        canvas.transform.Find("Menu").gameObject.SetActive(true);
+        canvas.transform.Find("Lasers").gameObject.SetActive(true);
+        canvas.transform.Find("Languages").gameObject.SetActive(true);
     }
 
     public void OnMainMenu() {
         SceneManager.LoadScene("MenuPrincipal");
         GameObject playerVariant = GameObject.Find("Player Variant");
         PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
-        playerManager.setPosition(373, -0.5, 552);
+        playerManager.setPosition(373, 0.5, 552);
         DefaultMenu(true);
     }
 
@@ -90,6 +130,47 @@ public class WristMenu : MonoBehaviour {
         PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
         playerManager.setPosition(5.0, -0.7, 5.0);
         DefaultMenu(true);
+    }
+
+    public void WristMenuOption()
+    {
+        DefaultMenu(false);
+    }
+
+    public void Lasers()
+    {
+        DefaultMenu(false);
+        canvas.transform.Find("LeftLaser").gameObject.SetActive(true);
+        canvas.transform.Find("BothLasers").gameObject.SetActive(true);
+        canvas.transform.Find("RightLaser").gameObject.SetActive(true);
+    }
+
+    public void Leftlaser()
+    {
+        ShowLaser(leftHand, true);
+        ShowLaser(rightHand, false);
+        activeLaser = "LeftLaser";
+    }
+
+    public void BothLasers()
+    {
+        ShowLaser(leftHand, true);
+        ShowLaser(rightHand, true);
+        activeLaser = "BothLaser";
+    }
+
+    public void Rightlaser()
+    {
+        ShowLaser(leftHand, false);
+        ShowLaser(rightHand, true);
+        activeLaser = "RightLaser";
+    }
+
+    public void Languages()
+    {
+        DefaultMenu(false);
+        canvas.transform.Find("French").gameObject.SetActive(true);
+        canvas.transform.Find("English").gameObject.SetActive(true);
     }
 
     public void changeFR() {
