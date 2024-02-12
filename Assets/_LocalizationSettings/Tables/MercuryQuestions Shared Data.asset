@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MercuryQuestions Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: EarthQuestions
+  m_TableCollectionNameGuidString: 5167fe5dca8779e4fbdf2866db8cfc2e
+  m_Entries:
+  - m_Id: 21223321600
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1414688550912
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1549644476416
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1682989789184
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1693257445376
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696679997440
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795732680704
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1814120509440
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1836530675712
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848845152256
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1873243418624
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1896635052032
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1912971866112
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1952901640192
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1955724406784
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5461565906748178435
+  references:
+    version: 2
+    RefIds:
+    - rid: 5461565906748178435
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1707749205305

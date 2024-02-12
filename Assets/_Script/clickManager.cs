@@ -15,7 +15,6 @@ public class ClickManager : MonoBehaviour {
     public void clickPlanets(string planet) {
 
         isClicked = !isClicked;
-        Debug.Log("Je suis ici");
 
         GameObject clickedPlanet = GameObject.Find("ClickedPlanetManager");
         ClickedPlanetManager scriptClickedPlanet = clickedPlanet.GetComponent<ClickedPlanetManager>();

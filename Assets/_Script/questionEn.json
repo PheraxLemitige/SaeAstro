@@ -367,11 +367,11 @@
         {
             "question": "What is the distance between Earth and Uranus?",
             "reponse1": {
-                "reponse": "1.4 billion km",
+                "reponse": "1.4 billion miles",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "2.7 billion km",
+                "reponse": "2.7 billion miles",
                 "isTrueResponse": false
             }
         },

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MercuryQuestions_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 5167fe5dca8779e4fbdf2866db8cfc2e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 21223321600
+    m_Localized: "Quel est le type de plan\xE8te de Mercure ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1414688550912
+    m_Localized: Rocheuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1549644476416
+    m_Localized: Gazeuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1682989789184
+    m_Localized: "Quelle est la temp\xE9rature de Mercure ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1693257445376
+    m_Localized: "+20\xB0C et +620\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1696679997440
+    m_Localized: "-180\xB0C et +430\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1795732680704
+    m_Localized: "Mercure est la cinqui\xE8me plan\xE8te du syst\xE9me solaire ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1814120509440
+    m_Localized: Vrai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1836530675712
+    m_Localized: Faux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1848845152256
+    m_Localized: "Mercure poss\xE8de-t-elle une atmosph\xE8re ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1873243418624
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1896635052032
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1912971866112
+    m_Localized: Quelle est la distance entre la Terre et Mercure ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1952901640192
+    m_Localized: 92 millions de km
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1955724406784
+    m_Localized: 42 millions de km
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

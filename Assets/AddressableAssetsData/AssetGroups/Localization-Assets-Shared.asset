@@ -33,6 +33,21 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5167fe5dca8779e4fbdf2866db8cfc2e
+    m_Address: Assets/_LocalizationSettings/Tables/MercuryQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19e8915a4d53dbd429f679f6234b3aea
+    m_Address: Assets/_LocalizationSettings/Tables/VenusQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2090c2984995a864d8e252be95968fe2
+    m_Address: Assets/_LocalizationSettings/Tables/EarthQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c0515ade48d276c4eaec4f53973d9444, type: 2}
   m_SchemaSet:

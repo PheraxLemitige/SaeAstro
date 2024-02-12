@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +5,9 @@ using TMPro;
 using Newtonsoft.Json;
 using System.IO;
 using System.Numerics;
+using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Components;
 
 public class QuizManager : MonoBehaviour
 {
@@ -70,7 +71,7 @@ public class QuizManager : MonoBehaviour
             {
                 
 
-                GameObject questionGameObject = GameObject.Find("Question");
+                
                 Questions questions;
                 if (LocalizationSettings.SelectedLocale.name == "English (en)")
                     questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionEn.json"));
@@ -78,57 +79,66 @@ public class QuizManager : MonoBehaviour
                     questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionFr.json"));
 
                 int numQuestion = Random.Range(0, this.questionPlanet.Count - 1);
+
                 switch (this.planetCliked)
                 {
                     case "Mercury":
                         this.question = questions.Mercury[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Mercury", numQuestion);
                         this.questionFaire.Mercury.RemoveAt(numQuestion);
                         break;
                     case "Venus":
                         this.question = questions.Venus[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Venus", numQuestion);
                         this.questionFaire.Venus.RemoveAt(numQuestion);
                         break;
                     case "Earth":
                         this.question = questions.Earth[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Earth", numQuestion);
                         this.questionFaire.Earth.RemoveAt(numQuestion);
                         break;
                     case "Mars":
                         this.question = questions.Mars[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Mars", numQuestion);
                         this.questionFaire.Mars.RemoveAt(numQuestion);
                         break;
                     case "Jupiter":
                         this.question = questions.Jupiter[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Jupiter", numQuestion);
                         this.questionFaire.Jupiter.RemoveAt(numQuestion);
                         break;
                     case "Saturn":
                         this.question = questions.Saturn[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Saturn", numQuestion);
                         this.questionFaire.Saturn.RemoveAt(numQuestion);
                         break;
                     case "Uranus":
                         this.question = questions.Uranus[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Uranus", numQuestion);
                         this.questionFaire.Uranus.RemoveAt(numQuestion);
                         break;
                     case "Neptune":
                         this.question = questions.Neptune[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Neptune", numQuestion);
                         this.questionFaire.Neptune.RemoveAt(numQuestion);
                         break;
                     case "Pluto":
                         this.question = questions.Pluto[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Pluto", numQuestion);
                         this.questionFaire.Pluto.RemoveAt(numQuestion);
                         break;
                     case "Moon":
                         this.question = questions.Moon[this.questionPlanet[numQuestion]];
+                        localizationQuiz("Moon", numQuestion);
                         this.questionFaire.Moon.RemoveAt(numQuestion);
                         break;
                 }
 
-                questionGameObject.GetComponent<TMP_Text>().text = this.question.question;
+                //questionGameObject.GetComponent<TMP_Text>().text = this.question.question;
             
-                GameObject reponse1 = GameObject.Find("responseText1");
-                reponse1.GetComponent<TMP_Text>().text = this.question.reponse1.reponse;
-
-                GameObject reponse2 = GameObject.Find("responseText2");
-                reponse2.GetComponent<TMP_Text>().text = this.question.reponse2.reponse;
+                
+                //reponse1.GetComponent<TMP_Text>().text = this.question.reponse1.reponse;
+                //reponse2.GetComponent<TMP_Text>().text = this.question.reponse2.reponse;
             }
             else
             {
@@ -147,6 +157,20 @@ public class QuizManager : MonoBehaviour
             this.change = false;
             this.question = null;
         }
+    }
+
+    private void localizationQuiz(string planet, int numQuestion)
+    {
+        GameObject questionGameObject = GameObject.Find("Question");
+        GameObject reponse1 = GameObject.Find("responseText1");
+        GameObject reponse2 = GameObject.Find("responseText2");
+
+        questionGameObject.GetComponent<LocalizeStringEvent>().SetTable(planet + "Questions");
+        questionGameObject.GetComponent<LocalizeStringEvent>().SetEntry("Question" + this.questionPlanet[numQuestion]);
+        reponse1.GetComponent<LocalizeStringEvent>().SetTable(planet + "Questions");
+        reponse1.GetComponent<LocalizeStringEvent>().SetEntry("Answer1Q" + this.questionPlanet[numQuestion]);
+        reponse2.GetComponent<LocalizeStringEvent>().SetTable(planet + "Questions");
+        reponse2.GetComponent<LocalizeStringEvent>().SetEntry("Answer2Q" + this.questionPlanet[numQuestion]);
     }
 
     public void chooseResponse(string response)
