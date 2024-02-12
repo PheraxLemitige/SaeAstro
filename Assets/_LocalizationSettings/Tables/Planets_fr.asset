@@ -20,12 +20,12 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 64056860672
     m_Localized: "Type de plan\xE8te: Rocheuse \r\nDiam\xE8tre: 4879,4 km\nTemp\xE9rature:
-      entre +430\xB0C et -180\xB0C\nDistance Terre: 92 millions km"
+      entre +430\xB0C et -180\xB0C\nDistance avec la Terre: 92 millions km"
     m_Metadata:
       m_Items: []
   - m_Id: 85493948416
     m_Localized: "Type de plan\xE8te: Rocheuse \r\nDiam\xE8tre: 12\u202F104 km\r\nTemp\xE9rature:
-      470\xB0C\r\nDistance Terre:  41 millions km\r"
+      470\xB0C\r\nDistance avec la Terre:  41 millions km\r"
     m_Metadata:
       m_Items: []
   - m_Id: 230549757952
@@ -35,32 +35,32 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 293564981248
     m_Localized: "Type de plan\xE8te: Rocheuse \r\nDiam\xE8tre: 6\u202F779 km\r\nTemp\xE9rature:
-      -63\xB0C\r\nDistance Terre: 62,1 millions km\r\n"
+      -63\xB0C\r\nDistance avec la Terre: 62,1 millions km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 344165064704
     m_Localized: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 139\u202F820 km\r\nTemp\xE9rature:
-      Entre -161 et -108 \xB0C\r\nDistance Terre: 780 millions km\r"
+      Entre -161 et -108 \xB0C\r\nDistance avec la Terre: 780 millions km\r"
     m_Metadata:
       m_Items: []
   - m_Id: 389165752320
     m_Localized: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 116\u202F460 km\r\nTemp\xE9rature:
-      -179\xB0C\r\nDistance Terre: 1,3 milliard km\r\n"
+      -179\xB0C\r\nDistance avec la Terre: 1,3 milliard km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 426209845248
     m_Localized: "Type de plan\xE8te: Gazeuse\r\nDiam\xE8tre: 50\u202F724 km\r\nTemp\xE9rature:
-      -226 \xB0C\r\nDistance Terre: 2,3 milliards km\r\n"
+      -226 \xB0C\r\nDistance avec la Terre: 2,3 milliards km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 467783786496
     m_Localized: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 49\u202F244 km\r\nTemp\xE9rature:
-      -213\xB0C\r\nDistance Terre: 4,3 milliards km\r\n"
+      -213\xB0C\r\nDistance avec la Terre: 4,3 milliards km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 505163423744
     m_Localized: "Classification: Plan\xE8te Naine\r\nDiam\xE8tre: 2 372 km\r\r\nTemp\xE9rature:
-      -223\xB0C \r\nDistance Terre: 4,8 milliards km \r\n"
+      -223\xB0C \r\nDistance avec la Terre: 4,8 milliards km \r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 383974627225600

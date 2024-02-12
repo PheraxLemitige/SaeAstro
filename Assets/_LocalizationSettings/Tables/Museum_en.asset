@@ -23,19 +23,19 @@ MonoBehaviour:
 
       Sputnik is the first artificial satellite of the
       Earth, Exactly like the one that makes the GPS work on your phone ! It was
-      launch in 1957.'
+      launched in 1957.'
     m_Metadata:
       m_Items: []
   - m_Id: 726064832512
     m_Localized: "Martial rocks: \nThese rocks has been collected directly from Mars
-      and are studied on Earth to know if, one day; there were life forms on this
-      planet."
+      and are studied on Earth to know if, one day; there were life forms living
+      on this planet."
     m_Metadata:
       m_Items: []
   - m_Id: 1249144872960
     m_Localized: "Ariane V: \nAriane V is a rocket that helps putting artificial
-      satellites into space. It is different from other rockets whom purpose is to
-      launch men in space. "
+      satellites into space. It is different from some other rockets whom purpose
+      is to launch men in space. "
     m_Metadata:
       m_Items: []
   - m_Id: 1309039534080
