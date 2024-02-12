@@ -1282,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.012, y: 0.989}
+  m_AnchoredPosition: {x: 0.02, y: 0.989}
   m_SizeDelta: {x: 0.8, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &149250572
@@ -1335,8 +1335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.4
-  m_fontSizeBase: 0.4
+  m_fontSize: 0.35
+  m_fontSizeBase: 0.35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.0032904148, y: 0.01287736, z: 0.044142485, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -2517,7 +2517,7 @@ PrefabInstance:
     - target: {fileID: 867631494864695504, guid: 0280e1dfce9af134393f692196962a07,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 867631494864695504, guid: 0280e1dfce9af134393f692196962a07,
         type: 3}
@@ -2527,7 +2527,7 @@ PrefabInstance:
     - target: {fileID: 867631494864695504, guid: 0280e1dfce9af134393f692196962a07,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -1.793
       objectReference: {fileID: 0}
     - target: {fileID: 867631494864695504, guid: 0280e1dfce9af134393f692196962a07,
         type: 3}
@@ -6350,7 +6350,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 811573705}
-  - {fileID: 763887170}
   - {fileID: 222208187}
   m_Father: {fileID: 165106394}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7052,7 +7051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.98900175}
+  m_AnchoredPosition: {x: 0.0165, y: 0.97}
   m_SizeDelta: {x: 0.8, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595870881
@@ -7139,7 +7138,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.059502125, w: 0.052656084}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7521,9 +7520,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Rover: \r\nUn rover (ou un astromobile) est un v\xE9hicule con\xE7u pour
-    explorer les plan\xE8tes autres que la Terre. Son but est d'\xE9tudier l'environnement
-    des plan\xE8tes. il est capable de r\xE9colter le sol des plan\xE8tes\r\n"
+  m_text: "Rover: \r\nUn rover est un v\xE9hicule con\xE7u pour explorer les plan\xE8tes
+    autres que la Terre. Son but est d'\xE9tudier l'environnement des plan\xE8tes,
+    en r\xE9coltant des \xE9chantillons de leur sol. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -7586,7 +7585,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.030743599, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.030743599, w: 0.08827202}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -9259,9 +9258,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Photo de la premi\xE8re fois sur la Lune (1969)\n\u201CC\u2019est un petit
-    pas pour l\u2019homme, un bond de g\xE9ant pour l\u2019humanit\xE9 !\u201D \r\nCes
-    mots, c\u2019est Neil Armstrong, Astronaute, qui les prononce lorsqu\u2019il
-    pose les pieds sur la Lune le 20 Juillet 1969. \r\n"
+    pas pour l\u2019homme, mais un bond de g\xE9ant pour l\u2019humanit\xE9 !\u201D
+    \r\nCes mots, c\u2019est Neil Armstrong, Astronaute, qui les prononce lorsqu\u2019il
+    pose les pieds sur la Lune le 20 Juillet 1969. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9324,7 +9323,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 6.0579, y: 1.8704348, z: 7.412118, w: 2.7374563}
+  m_margin: {x: 6.0579, y: 1.8704348, z: 7.412118, w: 2.6240854}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -9382,16 +9381,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763887167}
-  m_LocalRotation: {x: 0.022118106, y: 0.9050658, z: -0.047432434, w: 0.42203906}
-  m_LocalPosition: {x: 0, y: 0, z: -3.124}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalRotation: {x: -0.70613784, y: 0.03700707, z: 0.70613766, w: 0.037007075}
+  m_LocalPosition: {x: 0, y: 0, z: -0.2987769}
+  m_LocalScale: {x: 0.41666657, y: 0.74164045, z: 0.8321966}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 527660975}
+  m_Father: {fileID: 811573705}
   m_LocalEulerAnglesHint: {x: 6, y: 130, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.66, y: -0.65}
+  m_AnchoredPosition: {x: 0.3906203, y: -1.1851846}
   m_SizeDelta: {x: 15, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763887171
@@ -10242,7 +10241,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2712cc79c5bc84c41bf02efce18cd617,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.25
+      value: 1.731
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2712cc79c5bc84c41bf02efce18cd617,
         type: 3}
@@ -10252,7 +10251,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2712cc79c5bc84c41bf02efce18cd617,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3
+      value: -2.676
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2712cc79c5bc84c41bf02efce18cd617,
         type: 3}
@@ -10296,7 +10295,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2712cc79c5bc84c41bf02efce18cd617,
+        type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 763887170}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2712cc79c5bc84c41bf02efce18cd617,
         type: 3}
@@ -15201,7 +15204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.989}
+  m_AnchoredPosition: {x: 0.0094, y: 0.942}
   m_SizeDelta: {x: 0.8, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183155926
@@ -27888,7 +27891,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Exoplan\xE8te Kepler 22b:\nUne exoplan\xE8te est une plan\xE8te qui se
     trouve dans un autre syst\xE8me solaire, comme le n\xF4tre ! Elles tournent autour
-    d\u2019une \xE9toile qui n\u2019est pas le Soleil Elles sont tr\xE8s similaires
+    d\u2019une \xE9toile qui n\u2019est pas le Soleil. Elles sont tr\xE8s similaires
     \xE0 nos plan\xE8tes. \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -27952,7 +27955,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0.05386138, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.031425476, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

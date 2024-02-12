@@ -25,11 +25,11 @@
         {
             "question": "Is Mercury the fifth planet in the solar system?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -93,22 +93,22 @@
         {
             "question": "Does Venus have rings?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
         {
-            "question": "Is Venus the hottest planet in the solar system, true or false?",
+            "question": "Is Venus the hottest planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         }
@@ -150,11 +150,11 @@
         {
             "question": "Is Earth the closest planet to the Sun?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -185,11 +185,11 @@
         {
             "question": "Is Mars the fourth planet in the solar system?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         },
@@ -205,13 +205,13 @@
             }
         },
         {
-            "question": "Is Mars red because it is hot, true or false?",
+            "question": "Is Mars red because it is hot ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -321,11 +321,11 @@
         {
             "question": "Is Saturn the seventh planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
@@ -376,18 +376,18 @@
             }
         },
         {
-            "question": "Which additional information about Uranus is true?",
+            "question": "Which of these statements about Uranus is true?",
             "reponse1": {
-              "reponse": "Uranus has a bad smell of rotten eggs!",
+              "reponse": "Uranus smells like rotten eggs",
              "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "Uranus has a pleasant smell of flowers",
+                "reponse": "Uranus smells good",
                 "isTrueResponse": false
             }
         },
         {
-            "question": "Which of these statements is true?",
+            "question": "Which of these statements about Uranus is true?",
             "reponse1": {
                 "reponse": "Uranus is the hottest planet in the solar system",
                 "isTrueResponse": false
@@ -433,24 +433,24 @@
             }
         },
         {
-            "question": "Neptune is the coldest planet in the solar system. True or false?",
+            "question": "Is Neptune the coldest planet in the solar system ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": false
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": true
             }
         },
         {
-            "question": "Neptune is the farthest planet from the Sun. True or false?",
+            "question": "Is Neptune the farthest planet from the Sun ?",
             "reponse1": {
-                "reponse": "True",
+                "reponse": "Yes",
                 "isTrueResponse": true
             },
             "reponse2": {
-                "reponse": "False",
+                "reponse": "No",
                 "isTrueResponse": false
             }
         }
