@@ -28,8 +28,6 @@ public class ClickManager : MonoBehaviour {
         else
         {
             SceneManager.LoadScene(2);
-            //GameObject gameObjectCible = GameObject.Find("Player Variant");
-            //Destroy(gameObjectCible);
         }
         if (isSatelliteClicked)
         {
