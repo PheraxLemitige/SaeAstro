@@ -16665,11 +16665,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1200689764}
+      addedObject: {fileID: 1200689765}
     - targetCorrespondingSourceObject: {fileID: 1526814149960808, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1200689765}
+      addedObject: {fileID: 1200689766}
   m_SourcePrefab: {fileID: 100100000, guid: 7e4bfb3c6ba1d4bc4ba31d585abdae0f, type: 3}
 --- !u!4 &1200689762 stripped
 Transform:
@@ -16683,18 +16683,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1200689761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1200689764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200689763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1200689765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16747,6 +16735,18 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &1200689766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200689763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0c33047c2e2d343872518016e972eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200911631
 GameObject:
   m_ObjectHideFlags: 0
