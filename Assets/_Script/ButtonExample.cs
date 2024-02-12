@@ -21,11 +21,10 @@ namespace Valve.VR.InteractionSystem.Sample
         {
             if(this.name == "planetTeleportQuiz")
             {
-                Debug.Log("It's time to Quiz");
                 SceneManager.LoadScene(4);
                 GameObject gameObjectCible = GameObject.Find("Player Variant");
                 PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-                scriptCible.setPosition(564.76, 12.31, -134.65);
+                scriptCible.setPosition(564.344, 12.33, -130);
                 GameObject gameObjectClickCible = GameObject.Find("clickManager");
                 ClickManager scriptClickCible = gameObjectClickCible.GetComponent<ClickManager>();
                 scriptClickCible.clickQuiz();
