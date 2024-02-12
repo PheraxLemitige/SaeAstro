@@ -50,18 +50,17 @@ public class SteamVRLaserWrapper : MonoBehaviour {
             planetClicked = e.target.name;
 
             GameObject gameObjectCible = GameObject.Find(e.target.name);
-            if (SceneManager.GetActiveScene().name != "MuseumScene")
-            {
-                PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
 
-                if (!isClicked && !planetManager.getIsGrab()) {
+            PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
+
+            if (!isClicked && !planetManager.getIsGrab()) {
                 GameObject gameObjectClick = GameObject.Find("clickManager");
                 ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
                 if (clickScript != null)
                     clickScript.clickPlanets(e.target.name);
                 isClicked = true;
 
-                else if(planetClicked != "") {
+            else if(planetClicked != "") {
                 GameObject gameObjectClick = GameObject.Find("clickManager");
                 ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
                 if (clickScript != null)
@@ -70,27 +69,10 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 planetClicked = "";
                 
             }
+            
+            
             }
-            else 
-            {
-                if (!isClicked) {
-                GameObject gameObjectClick = GameObject.Find("clickManager");
-                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
-                if (clickScript != null)
-                    clickScript.clickPlanets(e.target.name);
-                isClicked = true;
-
-                else if(planetClicked != "") {
-                GameObject gameObjectClick = GameObject.Find("clickManager");
-                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
-                if (clickScript != null)
-                    clickScript.clickPlanets(planetClicked);
-                isClicked = false;
-                planetClicked = "";
-                
-            }
-            }
-            }
+        }
             
             
             
