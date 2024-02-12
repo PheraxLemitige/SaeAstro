@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -8,6 +6,7 @@ using UnityEngine.Localization.Settings;
 public class TutorialManager : MonoBehaviour
 {
     private GameObject texteVR;
+    private GameObject menu;
 
     public float tempsAffichage = 10f;
     private float tempsEcoule = 0f; 
@@ -19,6 +18,8 @@ public class TutorialManager : MonoBehaviour
     void Start() {
         if (texteVR == null)
             texteVR = this.gameObject.transform.GetChild(0).gameObject;
+        if (menu == null)
+            menu = this.gameObject.transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
@@ -43,6 +44,7 @@ public class TutorialManager : MonoBehaviour
 
             if (tempsEcoule > tempsAffichage) {
                 texteVR.SetActive(false);
+                menu.SetActive(false);
 
                 tempsEcoule = 0;
             }
@@ -52,5 +54,6 @@ public class TutorialManager : MonoBehaviour
     void Tuto(string text) {
         texteVR.GetComponent<TMP_Text>().text = text;
         texteVR.SetActive(true);
+        menu.SetActive(true);
     }
 }

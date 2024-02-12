@@ -35,7 +35,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
             playerManager.setPosition(5.0, -0.7, 5.0);
             SceneManager.LoadScene(2);
         }
-        else if (e.target.name == "Musee")
+        else if (e.target.name == "Mansion_Low")
         {
 
             // Ajoute le code de téléportation ici
