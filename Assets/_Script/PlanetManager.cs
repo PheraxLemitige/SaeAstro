@@ -49,7 +49,7 @@ public class PlanetManager : MonoBehaviour
     private float timer = 0.0f;
     private bool isGrab;
     private bool isClicked = false;
-    private bool isGrabBefore = false;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -89,6 +89,7 @@ public class PlanetManager : MonoBehaviour
         
         // Permet de redéfinir une nouvelle taille
         transform.localScale = new Vector3(taillePlanete, taillePlanete, taillePlanete);
+        this.transform.GetChild(3).gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -114,6 +115,7 @@ public class PlanetManager : MonoBehaviour
                     rigidBody.velocity = Vector3.zero;
                     rigidBody.angularVelocity = Vector3.zero;
                     transform.rotation = Quaternion.Euler(rotationx * Time.deltaTime, rotationy * Time.deltaTime, rotationz * Time.deltaTime);
+                    this.transform.GetChild(3).gameObject.SetActive(false);
                 }
                     
             }
@@ -150,14 +152,8 @@ public class PlanetManager : MonoBehaviour
             GameObject menu = GameObject.Find("WristMenu");
             WristMenu scriptMenu = menu.GetComponent<WristMenu>();
             scriptMenu.setGrab(isGrab);
+            this.transform.GetChild(3).gameObject.SetActive(true);
         }
-
-        if (!isGrab && isGrabBefore) {
-            GameObject menu = GameObject.Find("WristMenu");
-            WristMenu scriptMenu = menu.GetComponent<WristMenu>();
-            scriptMenu.setGrab(isGrab);
-        }
-        isGrabBefore = isGrab;
     }
 
     public bool getIsGrab()

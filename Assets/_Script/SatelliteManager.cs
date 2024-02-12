@@ -72,6 +72,8 @@ public class SatelliteManager : MonoBehaviour
 
         // Permet de redéfinir une nouvelle taille
         transform.localScale = new Vector3(tailleSatellite * scale, tailleSatellite * scale, tailleSatellite * scale);
+
+        this.transform.GetChild(3).gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -96,6 +98,9 @@ public class SatelliteManager : MonoBehaviour
             if (isGrab) 
             {
                 timer += Time.deltaTime;
+                GameObject menu = GameObject.Find("WristMenu");
+                WristMenu scriptMenu = menu.GetComponent<WristMenu>();
+                scriptMenu.setGrab(isGrab);
                 if (timer > waitTime)
                 {
                     isGrab = false;
@@ -103,6 +108,8 @@ public class SatelliteManager : MonoBehaviour
                     rigidBody.velocity = Vector3.zero;
                     rigidBody.angularVelocity = Vector3.zero;
                     transform.rotation = Quaternion.Euler(rotationx * Time.deltaTime, rotationy * Time.deltaTime, rotationz * Time.deltaTime);
+
+                    this.transform.GetChild(3).gameObject.SetActive(false);
                 }
                     
             }
@@ -123,6 +130,10 @@ public class SatelliteManager : MonoBehaviour
         {
             isGrab = true;
             timer = 0.0f;
+            GameObject menu = GameObject.Find("WristMenu");
+            WristMenu scriptMenu = menu.GetComponent<WristMenu>();
+            scriptMenu.setGrab(isGrab);
+            this.transform.GetChild(3).gameObject.SetActive(true);
         }
     }
 
