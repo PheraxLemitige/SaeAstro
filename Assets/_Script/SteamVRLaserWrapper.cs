@@ -30,6 +30,9 @@ public class SteamVRLaserWrapper : MonoBehaviour {
         else if (e.target.name == "Fusee") {
 
             // Ajoute le code de téléportation ici
+            GameObject playerVariant = GameObject.Find("Player Variant");
+            PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
+            playerManager.setPosition(5.0, -0.7, 5.0);
             SceneManager.LoadScene(2);
         }
         else if (e.target.name == "Musee")

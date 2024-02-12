@@ -71,6 +71,10 @@ MonoBehaviour:
     m_Localized: "Cliquez sur le mus\xE9e pour y entrer !"
     m_Metadata:
       m_Items: []
+  - m_Id: 28978331354800128
+    m_Localized: Wrist Menu
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

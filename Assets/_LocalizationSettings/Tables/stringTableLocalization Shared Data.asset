@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: PanneauInfoQuit
     m_Metadata:
       m_Items: []
+  - m_Id: 28978331354800128
+    m_Key: Wristmenu
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
