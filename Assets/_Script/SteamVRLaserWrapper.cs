@@ -60,6 +60,16 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 if (clickScript != null)
                     clickScript.clickPlanets(e.target.name);
                 isClicked = true;
+
+                else if(planetClicked != "") {
+                GameObject gameObjectClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
+                if (clickScript != null)
+                    clickScript.clickPlanets(planetClicked);
+                isClicked = false;
+                planetClicked = "";
+                
+            }
             }
             else 
             {
@@ -69,11 +79,8 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 if (clickScript != null)
                     clickScript.clickPlanets(e.target.name);
                 isClicked = true;
-            }
-            }
-            
-            
-            else if(planetClicked != "") {
+
+                else if(planetClicked != "") {
                 GameObject gameObjectClick = GameObject.Find("clickManager");
                 ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
                 if (clickScript != null)
@@ -82,6 +89,11 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 planetClicked = "";
                 
             }
+            }
+            }
+            
+            
+            
         }
         else if (e.target.tag == "Satellite")
         {
