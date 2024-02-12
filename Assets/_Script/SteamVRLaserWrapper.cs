@@ -50,14 +50,28 @@ public class SteamVRLaserWrapper : MonoBehaviour {
             planetClicked = e.target.name;
 
             GameObject gameObjectCible = GameObject.Find(e.target.name);
-            PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
-            if (!isClicked && !planetManager.getIsGrab()) {
+            if (SceneManager.GetActiveScene().name != "MuseumScene")
+            {
+                PlanetManager planetManager = gameObjectCible.GetComponent<PlanetManager>();
+
+                if (!isClicked && !planetManager.getIsGrab()) {
                 GameObject gameObjectClick = GameObject.Find("clickManager");
                 ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
                 if (clickScript != null)
                     clickScript.clickPlanets(e.target.name);
                 isClicked = true;
             }
+            else 
+            {
+                if (!isClicked) {
+                GameObject gameObjectClick = GameObject.Find("clickManager");
+                ClickManager clickScript = gameObjectClick.GetComponent<ClickManager>();
+                if (clickScript != null)
+                    clickScript.clickPlanets(e.target.name);
+                isClicked = true;
+            }
+            }
+            
             
             else if(planetClicked != "") {
                 GameObject gameObjectClick = GameObject.Find("clickManager");
