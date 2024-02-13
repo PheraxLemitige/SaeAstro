@@ -269,6 +269,7 @@ public class PlanetManager : MonoBehaviour
             textePlanete = this.transform.GetChild(3).gameObject;
             buzzer = this.transform.GetChild(4).gameObject;
         }
+
         textePlanete.SetActive(true);
         buzzer.SetActive(true);
     }
