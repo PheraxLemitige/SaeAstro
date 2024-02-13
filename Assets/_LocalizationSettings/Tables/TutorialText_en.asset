@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TutorialText_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: b8b7c83d296ba4140bff11bf015f4cdf, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 40673615872
+    m_Localized: You can click on a planet to have access to its informations !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126400995328
+    m_Localized: You can grab a planet with the trigger on the back !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 149050236928
+    m_Localized: Press the buzzer on your left or your right depending on what you
+      think is the good answer !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350540406784
+    m_Localized: You can press the buzzer to access the quizz !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282026450944
+    m_Localized: You can click on the zoomed in planet to go back to the solar system
+      !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1756139757568
+    m_Localized: You can go towards the objects to have more informations about them
+      !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1752180334592
+    m_Localized: 'You can grab some objects inside of the museum. '
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using UnityEngine.Localization.Components;
+using System.Linq;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -11,10 +13,20 @@ public class TutorialManager : MonoBehaviour
     public float tempsAffichage = 10f;
     private float tempsEcoule = 0f; 
 
-    private bool solarTuto = false;
-    private bool clickSolarTuto = false;
-    private bool museumTuto = false;
-    private bool quizTuto = false;
+    private bool activeTuto = true;
+    private bool activeLocalTutorial = true; 
+
+    private float nbTutoSolar = 2;
+    private float nbTutoClickSolar = 2;
+    private float nbTutoQuiz = 1;
+    private float nbTutoMuseum = 2;
+
+    private string[] sceneWithTuto = new string[4] { "solarScene", "ClickedSolarScene", "Quiz", "MuseumScene" };
+
+
+    private float currentTuto = 1;
+
+    private string currentScene; 
 
     // Start is called before the first frame update
     void Start() {
@@ -22,61 +34,123 @@ public class TutorialManager : MonoBehaviour
             texteVR = this.gameObject.transform.GetChild(0).gameObject;
         if (menu == null)
             menu = this.gameObject.transform.GetChild(1).gameObject;
+
+        currentScene = SceneManager.GetActiveScene().name; 
     }
 
     // Update is called once per frame
     void Update() 
     {
-        if (SceneManager.GetActiveScene().name == "solarScene" && !solarTuto) 
+        if (currentScene != SceneManager.GetActiveScene().name)
         {
-            if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                Tuto("You can grab a planet with the trigger on the back !");
-            else
-                Tuto("Tu peux attraper une planète avec la gachette du bas !");
-            solarTuto = !solarTuto;
+            currentScene = SceneManager.GetActiveScene().name;
+            currentTuto = 1;
+            activeLocalTutorial = true; 
         }
-        else if (SceneManager.GetActiveScene().name == "ClickedSolarScene" && !clickSolarTuto) 
+        if (activeTuto && activeLocalTutorial && sceneWithTuto.Contains(SceneManager.GetActiveScene().name))
         {
-            if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                Tuto("You can press the buzzer to access the quizz !");
-            else
-                Tuto("Tu peux presser le buzzer pour accèder au quizz !");
-            clickSolarTuto = !clickSolarTuto;
-        }
-        else if (SceneManager.GetActiveScene().name == "MuseumScene" && !museumTuto)
-        {
-            if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                Tuto("You can go towards the objects to have more informations about them !");
-            else
-                Tuto("Tu peux te diriger vers les objects pour avoir plus d'informations sur eux !");
-            museumTuto = !museumTuto;
-        }
-        else if (SceneManager.GetActiveScene().name == "Quiz" && !quizTuto)
-        {
-            if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                Tuto("Press the buzzer on your left or your right depending on what you think is the good answer !");
-            else
-                Tuto("Presse le bouton de gauche ou de droite selon ce que tu penses être la bonne réponse !");
-            quizTuto = !quizTuto;
-        }
+            texteVR.SetActive(true);
+            menu.SetActive(true);
 
-        if (texteVR.activeSelf) 
-        {
-            tempsEcoule += Time.deltaTime;
+            texteVR.GetComponent<LocalizeStringEvent>().SetTable("TutorialText");
+            texteVR.GetComponent<LocalizeStringEvent>().SetEntry(SceneManager.GetActiveScene().name + currentTuto);
 
-            if (tempsEcoule > tempsAffichage) 
+            if (texteVR.activeSelf)
             {
-                texteVR.SetActive(false);
-                menu.SetActive(false);
+                tempsEcoule += Time.deltaTime;
 
-                tempsEcoule = 0;
+                if (tempsEcoule > tempsAffichage)
+                {
+                    switch (currentScene)
+                    {
+                        case "solarScene":
+                            if(currentTuto >= nbTutoSolar)
+                            {
+                                texteVR.SetActive(false);
+                                menu.SetActive(false);
+
+                                tempsEcoule = 0;
+
+                                activeLocalTutorial = false; 
+                            }
+                            else
+                            {
+                                tempsEcoule = 0;
+
+                                currentTuto += 1;
+                            }
+                            break;
+                        case "ClickedSolarScene":
+                            if (currentTuto >= nbTutoClickSolar)
+                            {
+                                texteVR.SetActive(false);
+                                menu.SetActive(false);
+
+                                tempsEcoule = 0;
+
+                                activeLocalTutorial = false;
+                            }
+                            else
+                            {
+                                tempsEcoule = 0;
+
+                                currentTuto += 1;
+                            }
+                            break;
+                        case "MuseumScene":
+                            if (currentTuto >= nbTutoMuseum)
+                            {
+                                texteVR.SetActive(false);
+                                menu.SetActive(false);
+
+                                tempsEcoule = 0;
+
+                                activeLocalTutorial = false;
+                            }
+                            else
+                            {
+                                tempsEcoule = 0;
+
+                                currentTuto += 1;
+                            }
+                            break;
+                        case "Quiz":
+                            if (currentTuto >= nbTutoQuiz)
+                            {
+                                texteVR.SetActive(false);
+                                menu.SetActive(false);
+
+                                tempsEcoule = 0;
+
+                                activeLocalTutorial = false;
+                            }
+                            else
+                            {
+                                tempsEcoule = 0;
+
+                                currentTuto += 1;
+                            }
+                            break;
+                    }
+                    texteVR.SetActive(false);
+                    menu.SetActive(false);
+                    
+                    tempsEcoule = 0;
+                }
             }
         }
     }
+
+
 
     void Tuto(string text) {
         texteVR.GetComponent<TMP_Text>().text = text;
         texteVR.SetActive(true);
         menu.SetActive(true);
+    }
+
+    void setTuto(bool set)
+    {
+        activeTuto = set;
     }
 }

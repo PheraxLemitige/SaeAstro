@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: TutorialText_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: b8b7c83d296ba4140bff11bf015f4cdf, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 40673615872
+    m_Localized: "Tu peux cliquer sur une plan\xE8te pour acc\xE9der \xE0 ses informations
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126400995328
+    m_Localized: "Tu peux attraper une plan\xE8te avec la gachette du bas !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350540406784
+    m_Localized: "Tu peux presser le buzzer pour acc\xE8der au quizz !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282026450944
+    m_Localized: "Tu peux cliquer sur la plan\xE8te aggrandie pour retourner au syst\xE8me
+      solaire !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 149050236928
+    m_Localized: "Presse le bouton de gauche ou de droite selon ce que tu penses
+      \xEAtre la bonne r\xE9ponse !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1756139757568
+    m_Localized: Tu peux te diriger vers les objets pour avoir plus d'informations
+      sur eux !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1752180334592
+    m_Localized: "Tu peux attraper certains objets dans le mus\xE9e."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
