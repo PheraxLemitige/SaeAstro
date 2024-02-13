@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
   m_Name: MercuryQuestions Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: EarthQuestions
+  m_TableCollectionName: MercuryQuestions
   m_TableCollectionNameGuidString: 5167fe5dca8779e4fbdf2866db8cfc2e
   m_Entries:
   - m_Id: 21223321600

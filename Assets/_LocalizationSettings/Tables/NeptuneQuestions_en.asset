@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3095dab5ceafde248b1fcbf46d4ba8fe, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 4328665088
+    m_Localized: What type of planet is Neptune?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8158064640
+    m_Localized: Rocky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10066472960
+    m_Localized: Gaseous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71643049984
+    m_Localized: What is the diameter of Neptune?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74256101376
+    m_Localized: 30,612 miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76038680576
+    m_Localized: 53,673 miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129855795200
+    m_Localized: What is the average temperature of Neptune?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130359111680
+    m_Localized: "-213\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130895982592
+    m_Localized: "-323\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168942514176
+    m_Localized: Is Neptune the coldest planet in the solar system?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169450024960
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169986895872
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230686863360
+    m_Localized: Is Neptune the farthest planet from the Sun?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231190179840
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231697690624
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

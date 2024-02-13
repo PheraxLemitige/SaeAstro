@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2090c2984995a864d8e252be95968fe2, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 4106366976
+    m_Localized: What type of planet is Earth?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6354513920
+    m_Localized: Rocky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8938205184
+    m_Localized: Gaseous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80174264320
+    m_Localized: What is the average temperature of Earth?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83601010688
+    m_Localized: "15\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87728205824
+    m_Localized: "-5\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139834044416
+    m_Localized: How many natural satellites does Earth have?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142522593280
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 143994793984
+    m_Localized: 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189393940480
+    m_Localized: Is Earth the closest planet to the Sun?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190941638656
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192749383680
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231643164672
+    m_Localized: How many humans are there on Earth?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233387995136
+    m_Localized: Approximately 8 billion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234629509120
+    m_Localized: Approximately 15 billion
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3683059899a69f14bb51eafeea3d2e27, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 12696301568
+    m_Localized: "Pluton est-elle classifi\xE9e comme une plan\xE8te ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14642458624
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17461030912
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185031864320
+    m_Localized: "Quelle est la temp\xE9rature moyenne de Pluton ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187582001152
+    m_Localized: "-223\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189356191744
+    m_Localized: "-123\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227138482176
+    m_Localized: Quelle est la distance entre la Terre et Pluton ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227679547392
+    m_Localized: "environ 4,8 milliards de kilom\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228115755008
+    m_Localized: "environ 5,9 milliards de kilom\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269857468416
+    m_Localized: "Quel est le diam\xE8tre de Pluton ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270767632384
+    m_Localized: 1 342 km
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277637902336
+    m_Localized: 2 372 km
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329013932032
+    m_Localized: "Pluton est-elle entour\xE9e de plein d'ast\xE9ro\xEFdes ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329554997248
+    m_Localized: Oui
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330058313728
+    m_Localized: Non
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

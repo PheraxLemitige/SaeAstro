@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: e2a1a4f05b0659a4c981af2c5d4310ba, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 3833737216
+    m_Localized: What type of planet is Saturn?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5712785408
+    m_Localized: Rocky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8397139968
+    m_Localized: Gaseous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107219136512
+    m_Localized: What is the average temperature of Saturn?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110637494272
+    m_Localized: "-179\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113426706432
+    m_Localized: "-93\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178723631104
+    m_Localized: What is the distance between Earth and Saturn?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179524743168
+    m_Localized: 567 million miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180028059648
+    m_Localized: 807 million miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218116534272
+    m_Localized: Is Saturn the seventh planet in the solar system?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218682765312
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219190276096
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263515680768
+    m_Localized: Does Saturn have rings?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018997248
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264555868160
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

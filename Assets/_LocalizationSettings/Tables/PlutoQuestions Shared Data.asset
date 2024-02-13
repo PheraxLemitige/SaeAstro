@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: PlutoQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: PlutoQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 3683059899a69f14bb51eafeea3d2e27
+  m_Entries:
+  - m_Id: 12696301568
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14642458624
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17461030912
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185031864320
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187582001152
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189356191744
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227138482176
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227679547392
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228115755008
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269857468416
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270767632384
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277637902336
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329013932032
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329554997248
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330058313728
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: NeptuneQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: NeptuneQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 3095dab5ceafde248b1fcbf46d4ba8fe
+  m_Entries:
+  - m_Id: 4328665088
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8158064640
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10066472960
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71643049984
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 74256101376
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 76038680576
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129855795200
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130359111680
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130895982592
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 168942514176
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169450024960
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 169986895872
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 230686863360
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231190179840
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231697690624
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

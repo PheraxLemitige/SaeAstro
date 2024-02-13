@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3683059899a69f14bb51eafeea3d2e27, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 12696301568
+    m_Localized: Is Pluto classified as a planet?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14642458624
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17461030912
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 185031864320
+    m_Localized: What is the average temperature of Pluto?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 187582001152
+    m_Localized: "-223\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189356191744
+    m_Localized: "-123\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227138482176
+    m_Localized: What is the distance between Earth and Pluto?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 227679547392
+    m_Localized: about 2.98 billion miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 228115755008
+    m_Localized: about 3.56 billion miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 269857468416
+    m_Localized: What is the diameter of Pluto?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 270767632384
+    m_Localized: 765 miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 277637902336
+    m_Localized: 1,474 miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329013932032
+    m_Localized: Is Pluto surrounded by lots of asteroids?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 329554997248
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 330058313728
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

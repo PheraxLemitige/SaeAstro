@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 56095f97bea2cc24f82051c4b7fb5301, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 4303499264
+    m_Localized: What type of planet is Uranus?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417428480
+    m_Localized: Rocky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8632020992
+    m_Localized: Gaseous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72356081664
+    m_Localized: What is the average temperature of Uranus?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78429433856
+    m_Localized: "-226\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82887979008
+    m_Localized: "-212\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130132619264
+    m_Localized: What is the distance between Earth and Uranus?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130673684480
+    m_Localized: 1.4 billion miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131105697792
+    m_Localized: 2.7 billion miles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181441540096
+    m_Localized: Which of these statements about Uranus is true?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181940662272
+    m_Localized: Uranus smells like rotten eggs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182410424320
+    m_Localized: Uranus smells good
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223149699072
+    m_Localized: Which of these statements about Uranus is true?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223653015552
+    m_Localized: Uranus is the hottest planet in the solar system
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224118583296
+    m_Localized: Uranus is the coldest planet in the solar system
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

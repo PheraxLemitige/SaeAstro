@@ -146,7 +146,8 @@ public class QuizManager : MonoBehaviour
                 PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
                 scriptCible.setPosition(61.31, 12.33, -134.796);
                 GameObject textObjectCible = GameObject.Find("ReponseExplixation");
-                textObjectCible.GetComponent<TMP_Text>().text = "Vous avez fait toute les questions! Bravo!";
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("Finish");
             }
 
             
@@ -178,24 +179,20 @@ public class QuizManager : MonoBehaviour
         GameObject gameObjectCible = GameObject.Find("Player Variant");
         PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
         scriptCible.setPosition(61.31, 12.33, -134.796);
-        string textReponse; 
+        GameObject textObjectCible = GameObject.Find("ReponseExplixation");
         if (response == "reponse1")
         {
             if (this.question.reponse1.isTrueResponse)
             {
-                if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                    textReponse = "Good job !";
-                else
-                    textReponse = "Bonne réponse !";
-                this.point += 1;
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
+                this.point++;
                 Debug.Log("is True");
             }
             else
             {
-                if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                    textReponse = "No luck...";
-                else
-                    textReponse = "Mauvaise réponse...";
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("BadAnswer");
                 Debug.Log("is False");
             }
         }
@@ -203,25 +200,18 @@ public class QuizManager : MonoBehaviour
         {
             if (this.question.reponse2.isTrueResponse)
             {
-                if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                    textReponse = "Good job !";
-                else
-                    textReponse = "Bonne réponse !";
-                this.point += 1;
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
+                this.point++;
                 Debug.Log("is True");
             }
             else
             {
-                if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                    textReponse = "No luck...";
-                else
-                    textReponse = "Mauvaise réponse...";
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
+                textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("BadAnswer");
                 Debug.Log("is False");
             }
         }
-        GameObject textObjectCible = GameObject.Find("ReponseExplixation");
-        textObjectCible.GetComponent<TMP_Text>().text = textReponse;
-
     }
 
     public void SetPlanetClicked(string namePlanet)

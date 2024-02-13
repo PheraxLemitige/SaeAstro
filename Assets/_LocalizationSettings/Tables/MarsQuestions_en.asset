@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: e5ed2868df198dc489e4472b4df5deeb, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 5855391744
+    m_Localized: What type of planet is Mars?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7566667776
+    m_Localized: Rocky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10414600192
+    m_Localized: Gaseous
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82229473280
+    m_Localized: Is Mars the fourth planet in the solar system?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84842524672
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87325552640
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223418134528
+    m_Localized: What is the average temperature of Mars?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224898723840
+    m_Localized: "-63\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225938911232
+    m_Localized: "56\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271371612160
+    m_Localized: Is Mars red because it is hot ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 272139169792
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 272642486272
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331232718848
+    m_Localized: What is the name of the small robots sent to Mars?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331832504320
+    m_Localized: Rover
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332369375232
+    m_Localized: Explorer
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

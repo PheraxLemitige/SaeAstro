@@ -48,6 +48,46 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5ed2868df198dc489e4472b4df5deeb
+    m_Address: Assets/_LocalizationSettings/Tables/MarsQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc61ba4bb9a81df47871e4574ba41e42
+    m_Address: Assets/_LocalizationSettings/Tables/JupiterQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2a1a4f05b0659a4c981af2c5d4310ba
+    m_Address: Assets/_LocalizationSettings/Tables/SaturnQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56095f97bea2cc24f82051c4b7fb5301
+    m_Address: Assets/_LocalizationSettings/Tables/UranusQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3095dab5ceafde248b1fcbf46d4ba8fe
+    m_Address: Assets/_LocalizationSettings/Tables/NeptuneQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3683059899a69f14bb51eafeea3d2e27
+    m_Address: Assets/_LocalizationSettings/Tables/PlutoQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 920c1a0fe69cb514980df8d414267e08
+    m_Address: Assets/_LocalizationSettings/Tables/MoonQuestions Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef7b7e37656ee1f4a8297dd836618f6a
+    m_Address: Assets/_LocalizationSettings/Tables/Quiz Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c0515ade48d276c4eaec4f53973d9444, type: 2}
   m_SchemaSet:

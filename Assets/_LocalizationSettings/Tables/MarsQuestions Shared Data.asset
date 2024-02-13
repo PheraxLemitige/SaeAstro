@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: MarsQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: MarsQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: e5ed2868df198dc489e4472b4df5deeb
+  m_Entries:
+  - m_Id: 5855391744
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7566667776
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10414600192
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82229473280
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 84842524672
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87325552640
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223418134528
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224898723840
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 225938911232
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271371612160
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 272139169792
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 272642486272
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331232718848
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331832504320
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 332369375232
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

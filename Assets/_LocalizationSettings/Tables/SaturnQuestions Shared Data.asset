@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: SaturnQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: SaturnQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: e2a1a4f05b0659a4c981af2c5d4310ba
+  m_Entries:
+  - m_Id: 3833737216
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5712785408
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8397139968
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 107219136512
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110637494272
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113426706432
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 178723631104
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 179524743168
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 180028059648
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218116534272
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 218682765312
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 219190276096
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263515680768
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264018997248
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 264555868160
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

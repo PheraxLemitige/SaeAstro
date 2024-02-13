@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 56095f97bea2cc24f82051c4b7fb5301, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 4303499264
+    m_Localized: "Quel est le type de plan\xE8te d'Uranus ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417428480
+    m_Localized: Rocheuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8632020992
+    m_Localized: Gazeuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72356081664
+    m_Localized: "Quelle est la temp\xE9rature moyenne d'Uranus ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78429433856
+    m_Localized: "-226 \xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82887979008
+    m_Localized: "-156 \xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130132619264
+    m_Localized: Quelle est la distance entre la Terre et Uranus ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130673684480
+    m_Localized: "2,3 milliards de kilom\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131105697792
+    m_Localized: "1,1 milliards de kilom\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181441540096
+    m_Localized: "Quelle information suppl\xE9mentaire sur Uranus est vraie ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181940662272
+    m_Localized: "Uranus a une mauvaise odeur d'\u0153uf pourri !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182410424320
+    m_Localized: "Uranus a une odeur agr\xE9able de fleurs"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223149699072
+    m_Localized: Laquelle de ces affirmations est vraie ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223653015552
+    m_Localized: "Uranus est la plan\xE8te du syst\xE8me solaire la plus chaude"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224118583296
+    m_Localized: "Uranus est la plan\xE8te du syst\xE8me solaire la plus froide"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

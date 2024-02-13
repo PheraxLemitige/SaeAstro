@@ -17,7 +17,67 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 2090c2984995a864d8e252be95968fe2, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 4106366976
+    m_Localized: "Quel est le type de plan\xE8te de la Terre ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6354513920
+    m_Localized: Rocheuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8938205184
+    m_Localized: Gazeuse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80174264320
+    m_Localized: "Quelle est la temp\xE9rature moyenne de la Terre ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83601010688
+    m_Localized: "15\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87728205824
+    m_Localized: "-5\xB0C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139834044416
+    m_Localized: "La Terre poss\xE8de combien de satellites naturels ?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142522593280
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 143994793984
+    m_Localized: 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189393940480
+    m_Localized: "La Terre est la plan\xE8te la plus proche du Soleil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190941638656
+    m_Localized: Vrai
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192749383680
+    m_Localized: Faux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231643164672
+    m_Localized: Combien d'humains y a-t-il sur Terre ?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233387995136
+    m_Localized: Environ 8 milliards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234629509120
+    m_Localized: Environ 15 milliards
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

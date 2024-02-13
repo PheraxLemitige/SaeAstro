@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: EarthQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: EarthQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 2090c2984995a864d8e252be95968fe2
+  m_Entries:
+  - m_Id: 4106366976
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6354513920
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8938205184
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 80174264320
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 83601010688
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 87728205824
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 139834044416
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 142522593280
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 143994793984
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 189393940480
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 190941638656
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 192749383680
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 231643164672
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 233387995136
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 234629509120
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

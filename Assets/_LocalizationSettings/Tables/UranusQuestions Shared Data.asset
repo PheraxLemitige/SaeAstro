@@ -13,8 +13,68 @@ MonoBehaviour:
   m_Name: UranusQuestions Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: UranusQuestions
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 56095f97bea2cc24f82051c4b7fb5301
+  m_Entries:
+  - m_Id: 4303499264
+    m_Key: Question0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6417428480
+    m_Key: Answer1Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8632020992
+    m_Key: Answer2Q0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 72356081664
+    m_Key: Question1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 78429433856
+    m_Key: Answer1Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 82887979008
+    m_Key: Answer2Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130132619264
+    m_Key: Question2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 130673684480
+    m_Key: Answer1Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 131105697792
+    m_Key: Answer2Q2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181441540096
+    m_Key: Question3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 181940662272
+    m_Key: Answer1Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 182410424320
+    m_Key: Answer2Q3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223149699072
+    m_Key: Question4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 223653015552
+    m_Key: Answer1Q4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 224118583296
+    m_Key: Answer2Q4
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
