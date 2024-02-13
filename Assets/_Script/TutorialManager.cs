@@ -148,9 +148,4 @@ public class TutorialManager : MonoBehaviour
         texteVR.SetActive(true);
         menu.SetActive(true);
     }
-
-    void setTuto(bool set)
-    {
-        activeTuto = set;
-    }
 }

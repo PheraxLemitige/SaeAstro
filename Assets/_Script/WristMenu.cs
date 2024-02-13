@@ -14,6 +14,7 @@ public class WristMenu : MonoBehaviour {
     public Vector3 firstRange;
     public Vector3 lastRange;
     public bool isGrab = false;
+    public bool tutorialActive = false; 
 
 
     // Start is called before the first frame update
@@ -109,6 +110,7 @@ public class WristMenu : MonoBehaviour {
         canvas.transform.Find("Menu").gameObject.SetActive(true);
         canvas.transform.Find("Lasers").gameObject.SetActive(true);
         canvas.transform.Find("Languages").gameObject.SetActive(true);
+        canvas.transform.Find("Tutorial").gameObject.SetActive(true);
     }
 
     public void OnMainMenu() {
@@ -203,9 +205,15 @@ public class WristMenu : MonoBehaviour {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
     }
 
+    public void activateTutorial()
+    {
+        tutorialActive = !tutorialActive; 
+    }
+
     public void Retour() {
         DefaultMenu(true);
     }
+
 
     public void setGrab(bool grab)
     {

@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Localized: Main Droite
     m_Metadata:
       m_Items: []
+  - m_Id: 29463649698848768
+    m_Localized: Tutoriel
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

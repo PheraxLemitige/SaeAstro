@@ -219,4 +219,8 @@ public class QuizManager : MonoBehaviour
         this.planetCliked = namePlanet;
     }
 
+    public int getPoint()
+    {
+        return point; 
+    }
 }
