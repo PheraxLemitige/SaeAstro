@@ -37,8 +37,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 149050236928
-    m_Localized: "Presse le bouton de gauche ou de droite selon ce que tu penses
-      \xEAtre la bonne r\xE9ponse !"
+    m_Localized: "Presse le bouton de gauche ou de droite pour r\xE9pondre !"
     m_Metadata:
       m_Items: []
   - m_Id: 1756139757568

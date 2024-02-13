@@ -27,8 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 149050236928
-    m_Localized: Press the buzzer on your left or your right depending on what you
-      think is the good answer !
+    m_Localized: Press the buzzer on your left or your right to answer !
     m_Metadata:
       m_Items: []
   - m_Id: 350540406784

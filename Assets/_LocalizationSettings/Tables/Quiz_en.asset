@@ -19,15 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 4274139136
-    m_Localized: Good job !
+    m_Localized: Good answer !
     m_Metadata:
       m_Items: []
   - m_Id: 7457615872
-    m_Localized: No luck...
+    m_Localized: 'Bad response... '
     m_Metadata:
       m_Items: []
   - m_Id: 10242633728
-    m_Localized: You have done all the questions! Amazing!
+    m_Localized: You have answered all of the questions! Amazing!
     m_Metadata:
       m_Items: []
   references:
