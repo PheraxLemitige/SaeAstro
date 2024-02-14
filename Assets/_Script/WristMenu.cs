@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
@@ -15,7 +14,7 @@ public class WristMenu : MonoBehaviour {
     public Vector3 lastRange;
     public bool isGrab = false;
     public GameObject tutorial;
-
+    private int score = 0; 
 
     // Start is called before the first frame update
     void Start() {
@@ -39,7 +38,7 @@ public class WristMenu : MonoBehaviour {
 
         if (tutorial == null)
            tutorial = transform.parent.gameObject.transform.parent.gameObject.transform.Find("VRCamera").GetChild(0).gameObject;
-    }
+        }
 
     // Update is called once per frame
     void Update() {
@@ -91,7 +90,7 @@ public class WristMenu : MonoBehaviour {
                 canvas.transform.GetChild(i).gameObject.SetActive(b);
             else if (i == 3)
                 canvas.transform.GetChild(i).gameObject.SetActive(!b);
-            else
+            else if (i != canvas.transform.childCount - 1)
                 canvas.transform.GetChild(i).gameObject.SetActive(false);
         }
     }
@@ -223,6 +222,13 @@ public class WristMenu : MonoBehaviour {
     public void DeactivateTuto()
     {
         tutorial.GetComponent<TutorialManager>().activateTuto(false);
+    }
+
+    public void Score(int score)
+    {
+        this.score += score;
+        if (this.score > 0)
+            canvas.transform.Find("Score").GetComponent<TextMeshPro>().text = "Score: " + this.score;
     }
 
     public void Retour() {

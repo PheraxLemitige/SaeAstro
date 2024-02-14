@@ -1,11 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 using Newtonsoft.Json;
 using System.IO;
-using System.Numerics;
-using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Components;
 
@@ -17,6 +14,7 @@ public class QuizManager : MonoBehaviour
     private QuestionFaire questionFaire;
     private List<int> questionPlanet;
     private string planetCliked;
+    public GameObject wristMenu;
 
     private bool change = false;
     // Start is called before the first frame update
@@ -186,7 +184,8 @@ public class QuizManager : MonoBehaviour
             {
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
-                this.point++;
+                this.point += 1;
+                this.wristMenu.GetComponent<WristMenu>().Score(this.point);
                 Debug.Log("is True");
             }
             else
@@ -202,7 +201,8 @@ public class QuizManager : MonoBehaviour
             {
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
-                this.point++;
+                this.point += 1;
+                this.wristMenu.GetComponent<WristMenu>().Score(this.point);
                 Debug.Log("is True");
             }
             else

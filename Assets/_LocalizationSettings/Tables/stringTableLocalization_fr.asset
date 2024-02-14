@@ -87,6 +87,26 @@ MonoBehaviour:
     m_Localized: Tutoriel
     m_Metadata:
       m_Items: []
+  - m_Id: 29723307483209728
+    m_Localized: 'Activer '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29723347152936960
+    m_Localized: 'Desactiver '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29739800342175744
+    m_Localized: Laser gauche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29739800975515648
+    m_Localized: Deux lasers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29739801483026432
+    m_Localized: Laser droite
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
