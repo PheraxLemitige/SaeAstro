@@ -16,15 +16,15 @@ public class TutorialManager : MonoBehaviour
     private bool activeTuto = true;
     private bool activeLocalTutorial = true; 
 
-    private float nbTutoSolar = 2;
-    private float nbTutoClickSolar = 2;
-    private float nbTutoQuiz = 1;
-    private float nbTutoMuseum = 2;
+    private int nbTutoSolar = 2;
+    private int nbTutoClickSolar = 2;
+    private int nbTutoQuiz = 1;
+    private int nbTutoMuseum = 2;
 
     private string[] sceneWithTuto = new string[4] { "solarScene", "ClickedSolarScene", "Quiz", "MuseumScene" };
 
 
-    private float currentTuto = 1;
+    private int currentTuto = 1;
 
     private string currentScene; 
 
@@ -49,11 +49,7 @@ public class TutorialManager : MonoBehaviour
         }
         if (activeTuto && activeLocalTutorial && sceneWithTuto.Contains(SceneManager.GetActiveScene().name))
         {
-            texteVR.SetActive(true);
-            menu.SetActive(true);
-
-            texteVR.GetComponent<LocalizeStringEvent>().SetTable("TutorialText");
-            texteVR.GetComponent<LocalizeStringEvent>().SetEntry(SceneManager.GetActiveScene().name + currentTuto);
+            ShowTuto(currentTuto);
 
             if (texteVR.activeSelf)
             {
@@ -66,8 +62,7 @@ public class TutorialManager : MonoBehaviour
                         case "solarScene":
                             if(currentTuto >= nbTutoSolar)
                             {
-                                texteVR.SetActive(false);
-                                menu.SetActive(false);
+                                UnShowTuto();
 
                                 tempsEcoule = 0;
 
@@ -83,8 +78,7 @@ public class TutorialManager : MonoBehaviour
                         case "ClickedSolarScene":
                             if (currentTuto >= nbTutoClickSolar)
                             {
-                                texteVR.SetActive(false);
-                                menu.SetActive(false);
+                                UnShowTuto();
 
                                 tempsEcoule = 0;
 
@@ -100,8 +94,7 @@ public class TutorialManager : MonoBehaviour
                         case "MuseumScene":
                             if (currentTuto >= nbTutoMuseum)
                             {
-                                texteVR.SetActive(false);
-                                menu.SetActive(false);
+                                UnShowTuto();
 
                                 tempsEcoule = 0;
 
@@ -117,8 +110,7 @@ public class TutorialManager : MonoBehaviour
                         case "Quiz":
                             if (currentTuto >= nbTutoQuiz)
                             {
-                                texteVR.SetActive(false);
-                                menu.SetActive(false);
+                                UnShowTuto();
 
                                 tempsEcoule = 0;
 
@@ -132,8 +124,7 @@ public class TutorialManager : MonoBehaviour
                             }
                             break;
                     }
-                    texteVR.SetActive(false);
-                    menu.SetActive(false);
+                    UnShowTuto();
                     
                     tempsEcoule = 0;
                 }
@@ -142,10 +133,24 @@ public class TutorialManager : MonoBehaviour
     }
 
 
+    public void activateTuto(bool activate)
+    {
+        activeTuto = activate;
+        UnShowTuto();
+    }
 
-    void Tuto(string text) {
-        texteVR.GetComponent<TMP_Text>().text = text;
+
+    private void ShowTuto(int index) {
+        texteVR.GetComponent<LocalizeStringEvent>().SetTable("TutorialText");
+        texteVR.GetComponent<LocalizeStringEvent>().SetEntry(SceneManager.GetActiveScene().name + index);
+
         texteVR.SetActive(true);
         menu.SetActive(true);
+    }
+
+    private void UnShowTuto()
+    {
+        texteVR.SetActive(false);
+        menu.SetActive(false);
     }
 }

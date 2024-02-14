@@ -9,12 +9,12 @@ public class WristMenu : MonoBehaviour {
     private GameObject leftHand;
     private GameObject rightHand;
     private GameObject activeHand;
-    private string activeLaser = "LeftLaser";
+    private string activeLaser = "RightLaser";
     private GameObject canvas;
     public Vector3 firstRange;
     public Vector3 lastRange;
     public bool isGrab = false;
-    public bool tutorialActive = false; 
+    public GameObject tutorial;
 
 
     // Start is called before the first frame update
@@ -36,6 +36,9 @@ public class WristMenu : MonoBehaviour {
             this.firstRange = new Vector3(200, 0, 0);
             this.lastRange = new Vector3(350, 0, 75);
         }
+
+        if (tutorial == null)
+           tutorial = transform.parent.gameObject.transform.parent.gameObject.transform.Find("VRCamera").GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -205,9 +208,21 @@ public class WristMenu : MonoBehaviour {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
     }
 
-    public void activateTutorial()
+    public void Tutorial()
     {
-        tutorialActive = !tutorialActive; 
+        DefaultMenu(false);
+        canvas.transform.Find("ActivateTuto").gameObject.SetActive(true);
+        canvas.transform.Find("DeactivateTuto").gameObject.SetActive(true);
+    }
+
+    public void ActivateTuto()
+    {
+        tutorial.GetComponent<TutorialManager>().activateTuto(true);
+    }
+
+    public void DeactivateTuto()
+    {
+        tutorial.GetComponent<TutorialManager>().activateTuto(false);
     }
 
     public void Retour() {
