@@ -258,19 +258,23 @@ public class PlanetManager : MonoBehaviour
     public void visibiliteTrue()
     {
         GameObject textePlanete;
+        GameObject namePlanete;
         GameObject buzzer;
         if (this.name == "Saturn")
         {
             textePlanete = this.transform.GetChild(4).gameObject;
-            buzzer = this.transform.GetChild(5).gameObject;
+            namePlanete = this.transform.GetChild(5).gameObject;
+            buzzer = this.transform.GetChild(6).gameObject;
         }
         else
         {
             textePlanete = this.transform.GetChild(3).gameObject;
-            buzzer = this.transform.GetChild(4).gameObject;
+            namePlanete = this.transform.GetChild(4).gameObject;
+            buzzer = this.transform.GetChild(5).gameObject;
         }
 
         textePlanete.SetActive(true);
+        namePlanete.SetActive(true);
         buzzer.SetActive(true);
     }
 }

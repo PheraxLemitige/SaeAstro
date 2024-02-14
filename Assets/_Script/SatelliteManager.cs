@@ -197,11 +197,15 @@ public class SatelliteManager : MonoBehaviour
     public void visibiliteTrue()
     {
         GameObject textePlanete;
+        GameObject namePlanete;
         GameObject buzzer;
      
         textePlanete = this.transform.GetChild(3).gameObject;
-        buzzer = this.transform.GetChild(4).gameObject;
+        namePlanete = this.transform.GetChild(4).gameObject;
+        buzzer = this.transform.GetChild(5).gameObject;
+
         textePlanete.SetActive(true);
+        namePlanete.SetActive(true);
         buzzer.SetActive(true);
     }
 }
