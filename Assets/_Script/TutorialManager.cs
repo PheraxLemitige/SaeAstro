@@ -43,6 +43,7 @@ public class TutorialManager : MonoBehaviour
     {
         if (currentScene != SceneManager.GetActiveScene().name)
         {
+            UnShowTuto();
             currentScene = SceneManager.GetActiveScene().name;
             currentTuto = 1;
             activeLocalTutorial = true; 

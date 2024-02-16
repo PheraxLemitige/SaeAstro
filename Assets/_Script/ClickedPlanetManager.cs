@@ -55,7 +55,7 @@ public class ClickedPlanetManager : MonoBehaviour
             GameObject planetCible = GameObject.Find(namePlanetClicked);
             PlanetManager scriptPlanete = planetCible.GetComponent<PlanetManager>();
             scriptPlanete.onClick();
-            scriptPlanete.visibiliteTrue();
+            scriptPlanete.VisibiliteTrue();
 
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
@@ -97,5 +97,10 @@ public class ClickedPlanetManager : MonoBehaviour
     public void addCounterReload()
     {
         reloadCounter++;
+    }
+
+    public int getReloadCounter()
+    {
+        return reloadCounter;
     }
 }

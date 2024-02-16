@@ -81,6 +81,9 @@ public class SteamVRLaserWrapper : MonoBehaviour {
                 if (clickScript != null)
                     clickScript.clickSatellite();
 
+                if(!isClicked)
+                    isClicked = true;
+
                 satelliteClicked = !satelliteClicked;
             }
 

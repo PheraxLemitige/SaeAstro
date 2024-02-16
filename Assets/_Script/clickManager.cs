@@ -45,17 +45,21 @@ public class ClickManager : MonoBehaviour {
 
         scriptClickedSatellite.setSatelliteClicked();
 
-        if (isSatelliteClicked)
+        if (scriptClickedSatellite.getReloadCounter() != 2)
         {
-            SceneManager.LoadScene(3);
+            if (isSatelliteClicked)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else
+            {
+                SceneManager.LoadScene(2);
+                isClicked = false;
+                //GameObject gameObjectCible = GameObject.Find("Player Variant");
+                //Destroy(gameObjectCible);
+            }
         }
-        else
-        {
-            SceneManager.LoadScene(2);
-            isClicked = false;
-            //GameObject gameObjectCible = GameObject.Find("Player Variant");
-            //Destroy(gameObjectCible);
-        }
+        
         
     }
 

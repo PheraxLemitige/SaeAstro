@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Newtonsoft.Json;
 using System.IO;
-using Valve.VR;
-using Valve.VR.InteractionSystem;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
-using System.Net.NetworkInformation;
+using Valve.VR.InteractionSystem;
 
 public class PlanetManager : MonoBehaviour
 {
@@ -50,6 +45,8 @@ public class PlanetManager : MonoBehaviour
     private bool isGrab;
     private bool isClicked = false;
 
+    public bool moving = true;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -57,30 +54,37 @@ public class PlanetManager : MonoBehaviour
             scalePlanet = 0.0025f;
             scaleEllipse = 0.0065f;
         }
-        else {
+        else if (SceneManager.GetActiveScene().name == "ClickedSolarScene")
+        {
             scalePlanet = 1.50f;
             scaleEllipse = 1.50f;
         }
 
-        loadVariables();
+        if (moving)
+        {
+            LoadVariables();
 
-        // Permet de récupérer les objets représentant le soleil
-        centreSun = GameObject.Find("Sun");
+            // Permet de récupérer les objets représentant le soleil
+            centreSun = GameObject.Find("Sun");
 
-        positionSunx = centreSun.transform.position.x;
-        positionSuny = centreSun.transform.position.y;
-        positionSunz = centreSun.transform.position.z;
-        // Permet de récupérer l'ensemble des positions x, y et z du soleil
+            positionSunx = centreSun.transform.position.x;
+            positionSuny = centreSun.transform.position.y;
+            positionSunz = centreSun.transform.position.z;
+            // Permet de récupérer l'ensemble des positions x, y et z du soleil
 
-        float x = (positionSunx) + largeurEllipse * Mathf.Sin(epsi);
-        float y = (positionSuny) + hauteurEllipse * Mathf.Sin(epsi);
-        float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
+            float x = (positionSunx) + largeurEllipse * Mathf.Sin(epsi);
+            float y = (positionSuny) + hauteurEllipse * Mathf.Sin(epsi);
+            float z = (positionSunz) - longueurEllipse * Mathf.Cos(epsi);
 
-        transform.position = new Vector3(x, y, z);
+            transform.position = new Vector3(x, y, z);
 
-        positionActux = transform.position.x;
-        positionActuy = transform.position.y;
-        positionActuz = transform.position.z;
+            positionActux = transform.position.x;
+            positionActuy = transform.position.y;
+            positionActuz = transform.position.z;
+
+            transform.localScale = new Vector3(taillePlanete, taillePlanete, taillePlanete);
+            this.transform.GetChild(3).gameObject.SetActive(false);
+        }
 
         if (interactable == null)
             interactable = GetComponent<Interactable>();
@@ -88,8 +92,8 @@ public class PlanetManager : MonoBehaviour
             rigidBody = GetComponent<Rigidbody>();
         
         // Permet de redéfinir une nouvelle taille
-        transform.localScale = new Vector3(taillePlanete, taillePlanete, taillePlanete);
-        this.transform.GetChild(3).gameObject.SetActive(false);
+        
+        
     }
 
     // Update is called once per frame
@@ -136,7 +140,7 @@ public class PlanetManager : MonoBehaviour
                 }
                 planet.transform.Rotate(new Vector3(rotationx, rotationy, rotationz) * Time.deltaTime);
             }
-            else 
+            else if (moving)
             {
                 positionActux = x;
                 positionActuy = y;
@@ -175,7 +179,7 @@ public class PlanetManager : MonoBehaviour
         return jsonContent;
     }
 
-    private void loadVariables() {
+    private void LoadVariables() {
         
         string jsonContent = haveJsonInFile(SceneManager.GetActiveScene().name);
         Planets planets = JsonConvert.DeserializeObject<Planets>(jsonContent);
@@ -255,7 +259,7 @@ public class PlanetManager : MonoBehaviour
         }
     }
 
-    public void visibiliteTrue()
+    public void VisibiliteTrue()
     {
         GameObject textePlanete;
         GameObject namePlanete;

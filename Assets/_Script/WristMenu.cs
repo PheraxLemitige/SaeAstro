@@ -226,7 +226,7 @@ public class WristMenu : MonoBehaviour {
 
     public void Score(int score)
     {
-        this.score += score;
+        this.score = score;
         if (this.score > 0)
             canvas.transform.Find("Score").GetComponent<TextMeshPro>().text = "Score: " + this.score;
     }
