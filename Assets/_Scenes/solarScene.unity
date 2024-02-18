@@ -2975,6 +2975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!1 &273387149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6843,6 +6844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!1 &482841017
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,6 +7481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &517445605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10184,6 +10187,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23867915394586346, guid: 300f80108a63f48618cb4a1c8b8c1e86,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23867915394586346, guid: 300f80108a63f48618cb4a1c8b8c1e86,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 670b7104971d44954831a97e59d835d9, type: 2}
     - target: {fileID: 205568318585521926, guid: 300f80108a63f48618cb4a1c8b8c1e86,
         type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
@@ -18772,6 +18785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1203974454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19413,6 +19427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1221528948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21996,6 +22011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1374725678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24210,6 +24226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1504714904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29619,6 +29636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1859330702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33050,6 +33068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &2077394759
 MonoBehaviour:
   m_ObjectHideFlags: 0
