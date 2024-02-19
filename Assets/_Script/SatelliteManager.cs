@@ -100,7 +100,7 @@ public class SatelliteManager : MonoBehaviour
                 timer += Time.deltaTime;
                 GameObject menu = GameObject.Find("WristMenu");
                 WristMenu scriptMenu = menu.GetComponent<WristMenu>();
-                scriptMenu.setGrab(isGrab);
+                scriptMenu.setGrab(interactable.attachedToHand);
                 if (timer > waitTime)
                 {
                     isGrab = false;
@@ -132,7 +132,7 @@ public class SatelliteManager : MonoBehaviour
             timer = 0.0f;
             GameObject menu = GameObject.Find("WristMenu");
             WristMenu scriptMenu = menu.GetComponent<WristMenu>();
-            scriptMenu.setGrab(isGrab);
+            scriptMenu.setGrab(interactable.attachedToHand);
             this.transform.GetChild(3).gameObject.SetActive(true);
         }
     }

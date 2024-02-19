@@ -38,19 +38,19 @@ public class ClickManager : MonoBehaviour {
     public void clickSatellite()
     {
         Debug.Log("Satellite cliqué !");
-
         isSatelliteClicked = !isSatelliteClicked;
+
+
         GameObject clickedSatellite = GameObject.Find("ClickedPlanetManager");
         ClickedPlanetManager scriptClickedSatellite = clickedSatellite.GetComponent<ClickedPlanetManager>();
 
         scriptClickedSatellite.setSatelliteClicked();
+        Debug.Log("isSatelliteClicked = " + isSatelliteClicked + " | getReloadCounter = " + scriptClickedSatellite.getReloadCounter());
 
-        if (scriptClickedSatellite.getReloadCounter() != 2)
+        if (scriptClickedSatellite.getReloadCounter() != 0)
         {
             if (isSatelliteClicked)
-            {
                 SceneManager.LoadScene(3);
-            }
             else
             {
                 SceneManager.LoadScene(2);
@@ -59,8 +59,12 @@ public class ClickManager : MonoBehaviour {
                 //Destroy(gameObjectCible);
             }
         }
-        
-        
+        else if (SceneManager.GetActiveScene().name == "ClickedSolarScene")
+        {
+            SceneManager.LoadScene(2);
+            isClicked = false;
+        }
+
     }
 
     public void renderObject(GameObject objet, bool visibility) {

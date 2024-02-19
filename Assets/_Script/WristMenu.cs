@@ -12,7 +12,7 @@ public class WristMenu : MonoBehaviour {
     private GameObject canvas;
     public Vector3 firstRange;
     public Vector3 lastRange;
-    public bool isGrab = false;
+    private bool isGrab = false;
     public GameObject tutorial;
     private int score = 0; 
 
@@ -93,6 +93,9 @@ public class WristMenu : MonoBehaviour {
             else if (i != canvas.transform.childCount - 1)
                 canvas.transform.GetChild(i).gameObject.SetActive(false);
         }
+
+        if (SceneManager.GetActiveScene().name == "Quiz")
+            canvas.transform.Find("Scenes").gameObject.SetActive(false);
     }
 
     public void Quit() {
@@ -100,10 +103,10 @@ public class WristMenu : MonoBehaviour {
     }
 
     public void Scenes() {
-        DefaultMenu(false);
-        canvas.transform.Find("MainMenu").gameObject.SetActive(true);
-        canvas.transform.Find("Museum").gameObject.SetActive(true);
-        canvas.transform.Find("SolarSystem").gameObject.SetActive(true);
+            DefaultMenu(false);
+            canvas.transform.Find("MainMenu").gameObject.SetActive(true);
+            canvas.transform.Find("Museum").gameObject.SetActive(true);
+            canvas.transform.Find("SolarSystem").gameObject.SetActive(true);
     }
 
     public void Options()
@@ -116,26 +119,36 @@ public class WristMenu : MonoBehaviour {
     }
 
     public void OnMainMenu() {
-        SceneManager.LoadScene("MenuPrincipal");
-        GameObject playerVariant = GameObject.Find("Player Variant");
-        PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
-        playerManager.setPosition(373, 0.5, 552);
+        if (SceneManager.GetActiveScene().name != "Quiz")
+        {
+            SceneManager.LoadScene("MenuPrincipal");
+            GameObject playerVariant = GameObject.Find("Player Variant");
+            PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
+            playerManager.setPosition(373, 0.5, 552);
+        }
+            
         DefaultMenu(true);
     }
 
     public void OnMuseum() {
-        SceneManager.LoadScene("MuseumScene");
-        GameObject playerVariant = GameObject.Find("Player Variant");
-        PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
-        playerManager.setPosition(0, 0, 0);
+        if (SceneManager.GetActiveScene().name != "Quiz")
+        {
+            SceneManager.LoadScene("MuseumScene");
+            GameObject playerVariant = GameObject.Find("Player Variant");
+            PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
+            playerManager.setPosition(0, 0, 0);
+        }
         DefaultMenu(true);
     }
 
     public void OnSolarSystem(){
-        SceneManager.LoadScene("solarScene");
-        GameObject playerVariant = GameObject.Find("Player Variant");
-        PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
-        playerManager.setPosition(5.0, -0.7, 5.0);
+        if (SceneManager.GetActiveScene().name != "Quiz")
+        {
+            SceneManager.LoadScene("solarScene");
+            GameObject playerVariant = GameObject.Find("Player Variant");
+            PlayerManager playerManager = playerVariant.GetComponent<PlayerManager>();
+            playerManager.setPosition(5.0, -0.7, 5.0);
+        }
         DefaultMenu(true);
     }
 
