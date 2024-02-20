@@ -75,8 +75,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1392244830208
-    m_Localized: "V\xE9nus est la plan\xE8te la plus chaude du syst\xE8me solaire,
-      vrai ou faux ?"
+    m_Localized: "V\xE9nus est la plan\xE8te la plus chaude du syst\xE8me solaire. "
     m_Metadata:
       m_Items: []
   references:

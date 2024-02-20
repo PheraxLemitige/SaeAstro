@@ -10,6 +10,7 @@ public class ClickedPlanetManager : MonoBehaviour
     private string scenaName;
     private bool isSatellite;
     private int reloadCounter = 0;
+    private string sceneAvant;
     // Start is called before the first frame update
     void Start() {
         DontDestroyOnLoad(this);
@@ -102,5 +103,15 @@ public class ClickedPlanetManager : MonoBehaviour
     public int getReloadCounter()
     {
         return reloadCounter;
+    }
+    public void setSceneAvant(string sceneName)
+    {
+        Debug.Log("Nom Scene");
+        Debug.Log(scenaName);
+        this.sceneAvant = sceneName;
+    }
+    public string getSceneAvant()
+    {
+        return this.sceneAvant;
     }
 }

@@ -45,14 +45,15 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1397593874432
     m_Localized: "Roches Lunaires: \nCes rochers ont \xE9t\xE9 r\xE9colt\xE9s sur
-      la Lune, satellite naturel de la Terre. "
+      la Lune, satellite naturel de la Terre. Les premi\xE8res ont \xE9t\xE9 r\xE9cup\xE9r\xE9es
+      entre 1969 et 1972."
     m_Metadata:
       m_Items: []
   - m_Id: 1451012530176
-    m_Localized: "Photo de la premi\xE8re fois sur la Lune (1969)\n\u201CC\u2019est
-      un petit pas pour l\u2019homme, mais un bond de g\xE9ant pour l\u2019humanit\xE9
-      !\u201D \r\nCes mots, c\u2019est Neil Armstrong, Astronaute, qui les prononce
-      lorsqu\u2019il pose les pieds sur la Lune le 20 Juillet 1969. \r"
+    m_Localized: "Photo sur la Lune (1969):\n\u201CC\u2019est un petit pas pour l\u2019homme,
+      mais un bond de g\xE9ant pour l\u2019humanit\xE9 !\u201D \r\nCes mots, c\u2019est
+      Neil Armstrong, Astronaute, qui les prononce lorsqu\u2019il pose les pieds
+      sur la Lune le 20 Juillet 1969. \r"
     m_Metadata:
       m_Items: []
   - m_Id: 1555060629504
@@ -64,8 +65,8 @@ MonoBehaviour:
   - m_Id: 1638044934144
     m_Localized: "Falcon Millenium:\r\nLe Falcon Millenium est un vaisseau spatial
       apparaissant dans la s\xE9rie de films \u201CStar Wars\u201D. L\u2019espace
-      a toujours \xE9t\xE9 une fascination et source d\u2019inspiration et de fantasmes
-      pour nous humains."
+      a toujours \xE9t\xE9 une fascination et source d\u2019inspiration pour nous
+      humains."
     m_Metadata:
       m_Items: []
   - m_Id: 1701295038464

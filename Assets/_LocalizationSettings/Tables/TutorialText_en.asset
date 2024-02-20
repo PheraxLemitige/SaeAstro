@@ -40,8 +40,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1756139757568
-    m_Localized: You can go towards the objects to have more informations about them
-      !
+    m_Localized: You can go to the objects to get more informations about them !
     m_Metadata:
       m_Items: []
   - m_Id: 1752180334592

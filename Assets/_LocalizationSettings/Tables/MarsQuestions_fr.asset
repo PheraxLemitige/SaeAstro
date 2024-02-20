@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 271371612160
-    m_Localized: Mars est de couleur rouge car elle est chaude, vrai ou faux ?
+    m_Localized: Mars est de couleur rouge car elle est chaude.
     m_Metadata:
       m_Items: []
   - m_Id: 272139169792

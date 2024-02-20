@@ -55,8 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 218116534272
-    m_Localized: "Saturne est la septi\xE8me plan\xE8te du syst\xE8me solaire, vrai
-      ou faux ?"
+    m_Localized: "Saturne est la septi\xE8me plan\xE8te du syst\xE8me solaire. "
     m_Metadata:
       m_Items: []
   - m_Id: 218682765312

@@ -47,11 +47,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1814120509440
-    m_Localized: True
+    m_Localized: Yes
     m_Metadata:
       m_Items: []
   - m_Id: 1836530675712
-    m_Localized: False
+    m_Localized: No
     m_Metadata:
       m_Items: []
   - m_Id: 1848845152256

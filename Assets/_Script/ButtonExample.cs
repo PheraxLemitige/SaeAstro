@@ -19,7 +19,10 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void OnButtonDown(Hand hand)
         {
-            if(this.name == "planetTeleportQuiz")
+
+            GameObject gameObjectClickPlaneteCible = GameObject.Find("ClickedPlanetManager");
+            ClickedPlanetManager scriptClickPlaneteCible = gameObjectClickPlaneteCible.GetComponent<ClickedPlanetManager>();
+            if (this.name == "planetTeleportQuiz")
             {
                 SceneManager.LoadScene(4);
                 GameObject gameObjectCible = GameObject.Find("Player Variant");
@@ -28,9 +31,7 @@ namespace Valve.VR.InteractionSystem.Sample
                 GameObject gameObjectClickCible = GameObject.Find("clickManager");
                 ClickManager scriptClickCible = gameObjectClickCible.GetComponent<ClickManager>();
                 scriptClickCible.clickQuiz();
-                GameObject gameObjectClickPlaneteCible = GameObject.Find("ClickedPlanetManager");
-                ClickedPlanetManager scriptClickPlaneteCible = gameObjectClickPlaneteCible.GetComponent<ClickedPlanetManager>();
-                string namePlanet =scriptClickPlaneteCible.getNamePlanetClicked();
+                string namePlanet = scriptClickPlaneteCible.getNamePlanetClicked();
                 Debug.Log("Nom planet");
                 Debug.Log(namePlanet);
                 GameObject gameObjectQuizCible = GameObject.Find("QuizManager");
@@ -55,10 +56,20 @@ namespace Valve.VR.InteractionSystem.Sample
             }
             else if(this.name == "quitSceneQuiz")
             {
-                SceneManager.LoadScene(2);
+
                 GameObject gameObjectCible = GameObject.Find("Player Variant");
                 PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
-                scriptCible.setPosition(5.0, -0.7, 5.0);
+                if (scriptClickPlaneteCible.getSceneAvant() == "solarScene")
+                {
+                    SceneManager.LoadScene(2);
+                    scriptCible.setPosition(5.0, -0.7, 5.0);
+                }
+                else
+                {
+                    SceneManager.LoadScene(5);
+                    scriptCible.setPosition(-0.1, 0.0009, -0.2);
+                }
+                
             }
         }
 

@@ -59,11 +59,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 181940662272
-    m_Localized: "Uranus a une mauvaise odeur d'\u0153uf pourri !"
+    m_Localized: "Uranus a une odeur d'\u0153uf pourri "
     m_Metadata:
       m_Items: []
   - m_Id: 182410424320
-    m_Localized: "Uranus a une odeur agr\xE9able de fleurs"
+    m_Localized: Uranus sent bon
     m_Metadata:
       m_Items: []
   - m_Id: 223149699072
@@ -71,11 +71,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 223653015552
-    m_Localized: "Uranus est la plan\xE8te du syst\xE8me solaire la plus chaude"
+    m_Localized: "Uranus est la plan\xE8te la plus chaude du syst\xE8me solaire"
     m_Metadata:
       m_Items: []
   - m_Id: 224118583296
-    m_Localized: "Uranus est la plan\xE8te du syst\xE8me solaire la plus froide"
+    m_Localized: "Uranus est la plan\xE8te la plus froide du syst\xE8me solaire"
     m_Metadata:
       m_Items: []
   references:

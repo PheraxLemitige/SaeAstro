@@ -46,13 +46,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1397593874432
     m_Localized: "Lunar rocks: \nThese rocks had been collected on the Moon, the
-      natural satellite of the Earth. "
+      natural satellite of the Earth. From 1969 to 1972, the first ones were collected."
     m_Metadata:
       m_Items: []
   - m_Id: 1451012530176
-    m_Localized: "Picture of the first steps on the Moon (1969): \n\"It's a small
-      step for a man, but a big jump for humanity !\"\nThese words had been pronounced
-      by Neil Armstrong while he was stepping on the Moon the 20 of July 1969. "
+    m_Localized: "Picture on the Moon (1969): \n\"It's a small step for a man, but
+      a big jump for humanity!\"\r\nThese words were pronounced by Neil Armstrong
+      while he was stepping on the moon on July 20, 1969."
     m_Metadata:
       m_Items: []
   - m_Id: 1638044934144
@@ -62,14 +62,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1555060629504
-    m_Localized: "Blue Giant: \nA Blue Giant is a star, like our Sun, that is hotter
-      than it. It is so hot that it adopts this fluorescent blue color."
+    m_Localized: "Blue Giant: \nThe Blue Giant is a star, similar to our Sun, that
+      is hotter than its counterpart. It is so hot that it has adopted a fluorescent
+      blue color."
     m_Metadata:
       m_Items: []
   - m_Id: 1701295038464
-    m_Localized: "Exoplanet Kepler 22b: \nAn exoplanet is a planet that is located
-      in a different solar system than ours ! They turn around a different star than
-      the Sun. They are very similar to our planets. "
+    m_Localized: "Exoplanet Kepler 22b: \nAn exoplanet is a planet that resides outside
+      the solar system of ours! They orbit around a different star than the Sun.
+      They are very similar to our planets."
     m_Metadata:
       m_Items: []
   - m_Id: 1779908878336
@@ -81,7 +82,7 @@ MonoBehaviour:
   - m_Id: 1837895131136
     m_Localized: "Rover: \nA rover is a vehicule build with the purpose to explore
       planets that aren't our Earth. It's goal is to explore the environment on these
-      planets. It is able to take samples from their ground. "
+      planets, while taking samples from their ground. "
     m_Metadata:
       m_Items: []
   references:

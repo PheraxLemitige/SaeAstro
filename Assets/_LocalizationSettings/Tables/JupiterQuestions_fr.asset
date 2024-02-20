@@ -47,7 +47,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 134620524544
-    m_Localized: "Entre -161 et -108 \xB0C"
+    m_Localized: "Entre -161 \xB0C et -108 \xB0C"
     m_Metadata:
       m_Items: []
   - m_Id: 135492939776
@@ -71,7 +71,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 256523776000
-    m_Localized: Une grande fissure
+    m_Localized: Une grande faille
     m_Metadata:
       m_Items: []
   - m_Id: 256926429184
