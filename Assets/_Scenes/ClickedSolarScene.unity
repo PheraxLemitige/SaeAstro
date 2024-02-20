@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!54 &203804220
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -578,6 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!1 &272451004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5658589710933653667, guid: 1dedff8b20f64b54e95be4751b41cf04,
@@ -744,6 +746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!1 &514474567
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +974,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.41, y: -1.21}
+  m_AnchoredPosition: {x: -6.3, y: -1.21}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &570030809
@@ -995,7 +998,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 116\u202F460 km\r\nTemp\xE9rature:
-    -179\xB0C\r\nDistance Terre: 1,3 milliard km\r\n"
+    -179\xB0C\r\nDistance avec la Terre: 1,3 milliard km\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1058,14 +1061,14 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.900265, w: 3.3419313}
+  m_margin: {x: 0, y: 0, z: 17.329727, w: 3.3419313}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
   m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 570030810}
+  m_renderer: {fileID: 0}
   m_maskType: 0
 --- !u!23 &570030810
 MeshRenderer:
@@ -1385,7 +1388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.92, y: -0.72}
+  m_AnchoredPosition: {x: -3.75, y: -0.72}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638533083
@@ -1793,7 +1796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &656922069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1810,7 +1813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.01, y: -1.2}
+  m_AnchoredPosition: {x: -5.75, y: -1.2}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656922070
@@ -1833,8 +1836,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 139\u202F820 km\r\nTemp\xE9rature:
-    Entre -161 et -108 \xB0C\r\nDistance Terre: 780 millions km\r"
+  m_text: "Planet Type: Gas Giant\nDiameter: 86,880 Mi \nTemperature: Between -161\xB0C
+    and -108\xB0C\nDistance with Earth: 484 million Mi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1897,7 +1900,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.530565, w: 3.0102763}
+  m_margin: {x: 0, y: 0, z: 16.78948, w: 3.0102763}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -2364,7 +2367,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample text
+  m_text: "Classification: Satellite naturel \r\nDiam\xE8tre: 3474,8 km\r\nTemp\xE9rature
+    moyenne: Entre -248 \xB0C et 123 \xB0C\r\nDistance avec la Terre: 384\u202F400
+    km\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2427,7 +2432,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 17.282417, w: 2.8908634}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -4470,8 +4475,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Classification: Plan\xE8te Naine\r\nDiam\xE8tre: 2 372 km\r\r\nTemp\xE9rature:
-    -223\xB0C \r\nDistance Terre: 4,8 milliards km \r\n"
+  m_text: "Classification: Dwarf Planet \nDiameter: 1,473 Mi\nTemperature: -223\xB0C
+    \nDistance with Earth: 2.9 billion Mi "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4534,14 +4539,14 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.708557, w: 3.73333}
+  m_margin: {x: 0, y: 0, z: 17.15499, w: 3.73333}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
   m_hasFontAssetChanged: 0
-  m_renderer: {fileID: 1079634152}
+  m_renderer: {fileID: 0}
   m_maskType: 0
 --- !u!23 &1079634152
 MeshRenderer:
@@ -4691,7 +4696,7 @@ PrefabInstance:
     - target: {fileID: 2708029453308587143, guid: 1dedff8b20f64b54e95be4751b41cf04,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3255815098948477934, guid: 1dedff8b20f64b54e95be4751b41cf04,
         type: 3}
@@ -4758,6 +4763,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5148758159468008389, guid: 1dedff8b20f64b54e95be4751b41cf04,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5658589710933653667, guid: 1dedff8b20f64b54e95be4751b41cf04,
         type: 3}
       propertyPath: m_Name
@@ -4771,6 +4781,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2971503740531138524, guid: 1dedff8b20f64b54e95be4751b41cf04, type: 3}
     - {fileID: 3099203156295079290, guid: 1dedff8b20f64b54e95be4751b41cf04, type: 3}
+    - {fileID: 5148758159468008389, guid: 1dedff8b20f64b54e95be4751b41cf04, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2529993017193316915, guid: 1dedff8b20f64b54e95be4751b41cf04, type: 3}
     - {fileID: 7475314692067120400, guid: 1dedff8b20f64b54e95be4751b41cf04, type: 3}
@@ -5304,6 +5315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1221528946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6404,6 +6416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1374725678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6501,6 +6514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1504714904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6822,8 +6836,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Type de plan\xE8te: Rocheuse \r\nDiam\xE8tre: 6\u202F779 km\r\nTemp\xE9rature:
-    -63\xB0C\r\nDistance Terre: 62,1 millions km\r\n"
+  m_text: "Planet Type: Telluric\nDiameter: 4,212 Mi\nTemperature: -63\xB0C \nDistance
+    with Earth: 38 million Mi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6886,7 +6900,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.638721, w: 3.6291728}
+  m_margin: {x: 0, y: 0, z: 17.079739, w: 3.6291728}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7154,7 +7168,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 49\u202F244 km\r\nTemp\xE9rature:
-    -213\xB0C\r\nDistance Terre: 4,3 milliards km\r\n"
+    -213\xB0C\r\nDistance avec la Terre: 4,3 milliards de km\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7217,7 +7231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.767715, w: 3.8008976}
+  m_margin: {x: 0, y: 0, z: 17.277477, w: 3.8008976}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -8163,6 +8177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!54 &1835648574
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8287,6 +8302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &1859330700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8626,7 +8642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.28, y: -1}
+  m_AnchoredPosition: {x: -6.3, y: -1}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1883715642
@@ -8650,7 +8666,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Type de plan\xE8te: Gazeuse\r\nDiam\xE8tre: 50\u202F724 km\r\nTemp\xE9rature:
-    -226 \xB0C\r\nDistance Terre: 2,3 milliards km\r\n"
+    -226 \xB0C\r\nDistance Terre: 2,3 milliards de km\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8713,7 +8729,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.732368, w: 3.4604344}
+  m_margin: {x: 0, y: 0, z: 17.228226, w: 3.4604344}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -9430,7 +9446,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 16.48762, w: 2.8316007}
+  m_margin: {x: 0, y: 0, z: 17.25165, w: 2.8316007}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -10014,6 +10030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53e2c3cf43faa3d408895b07a7dfc657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 1
 --- !u!114 &2077394757
 MonoBehaviour:
   m_ObjectHideFlags: 0

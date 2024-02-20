@@ -19,8 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 40673615872
-    m_Localized: "Tu peux cliquer sur une plan\xE8te pour acc\xE9der \xE0 ses informations
-      !"
+    m_Localized: "Tu peux pointer et cliquer sur une plan\xE8te pour acc\xE9der \xE0
+      ses informations !"
     m_Metadata:
       m_Items: []
   - m_Id: 126400995328
@@ -28,12 +28,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 350540406784
-    m_Localized: "Tu peux presser le buzzer pour acc\xE8der au quizz !"
+    m_Localized: "Tu peux presser le buzzer avec ta main pour acc\xE8der au quizz
+      !"
     m_Metadata:
       m_Items: []
   - m_Id: 282026450944
-    m_Localized: "Tu peux cliquer sur la plan\xE8te aggrandie pour retourner au syst\xE8me
-      solaire !"
+    m_Localized: "Tu peux viser et cliquer sur la plan\xE8te aggrandie pour retourner
+      \xE0 l'endroit pr\xE9c\xE9dent !"
     m_Metadata:
       m_Items: []
   - m_Id: 149050236928
@@ -41,12 +42,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1756139757568
-    m_Localized: Tu peux te diriger vers les objets pour avoir plus d'informations
-      sur eux !
+    m_Localized: "Tu peux te t\xE9l\xE9porter vers les objets pour avoir plus d'infos
+      sur eux !"
     m_Metadata:
       m_Items: []
   - m_Id: 1752180334592
-    m_Localized: "Tu peux attraper certains objets dans le mus\xE9e."
+    m_Localized: "Tu peux attraper certains objets dans le mus\xE9e avec la gachette
+      du bas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562315413237760
+    m_Localized: "Tu peux pointer et cliquer sur la Lune pour acc\xE9der \xE0 ses
+      infos !"
     m_Metadata:
       m_Items: []
   references:

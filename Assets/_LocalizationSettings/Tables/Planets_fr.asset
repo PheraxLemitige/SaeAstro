@@ -45,17 +45,17 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 389165752320
     m_Localized: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 116\u202F460 km\r\nTemp\xE9rature:
-      -179\xB0C\r\nDistance avec la Terre: 1,3 milliard km\r\n"
+      -179\xB0C\r\nDistance avec la Terre: 1,3 milliards de km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 426209845248
     m_Localized: "Type de plan\xE8te: Gazeuse\r\nDiam\xE8tre: 50\u202F724 km\r\nTemp\xE9rature:
-      -226 \xB0C\r\nDistance avec la Terre: 2,3 milliards km\r\n"
+      -226 \xB0C\r\nDistance avec la Terre: 2,3 milliards de km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 467783786496
     m_Localized: "Type de plan\xE8te: Gazeuse \r\nDiam\xE8tre: 49\u202F244 km\r\nTemp\xE9rature:
-      -213\xB0C\r\nDistance avec la Terre: 4,3 milliards km\r\n"
+      -213\xB0C\r\nDistance avec la Terre: 4,3 milliards de km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 505163423744
@@ -65,7 +65,8 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 383974627225600
     m_Localized: "Classification: Satellite naturel \r\nDiam\xE8tre: 3474,8 km\r\nTemp\xE9rature
-      moyenne: Entre -248 et 123 \xB0C\r\nDistance avec la Terre: 384\u202F400 km\r\n"
+      moyenne: Entre -248 \xB0C et 123 \xB0C\r\nDistance avec la Terre: 384\u202F400
+      km\r\n"
     m_Metadata:
       m_Items: []
   - m_Id: 4332499664777216

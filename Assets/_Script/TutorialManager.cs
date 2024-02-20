@@ -1,7 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
-using UnityEngine.Localization.Settings;
 using UnityEngine.Localization.Components;
 using System.Linq;
 
@@ -17,7 +15,7 @@ public class TutorialManager : MonoBehaviour
     private bool activeLocalTutorial = true; 
 
     private int nbTutoSolar = 2;
-    private int nbTutoClickSolar = 2;
+    private int nbTutoClickSolar;
     private int nbTutoQuiz = 1;
     private int nbTutoMuseum = 2;
 
@@ -47,6 +45,15 @@ public class TutorialManager : MonoBehaviour
             currentScene = SceneManager.GetActiveScene().name;
             currentTuto = 1;
             activeLocalTutorial = true; 
+        }
+        if (SceneManager.GetActiveScene().name == "ClickedSolarScene")
+        {
+            GameObject clickedPlanetManager = GameObject.Find("ClickedPlanetManager");
+            ClickedPlanetManager clickedPlanetScript = clickedPlanetManager.GetComponent<ClickedPlanetManager>();
+
+            if (clickedPlanetScript.getNamePlanetClicked() == "Earth")
+                nbTutoClickSolar = 3;
+            else nbTutoClickSolar = 2; 
         }
         if (activeTuto && activeLocalTutorial && sceneWithTuto.Contains(SceneManager.GetActiveScene().name))
         {
@@ -138,6 +145,7 @@ public class TutorialManager : MonoBehaviour
     {
         activeTuto = activate;
         UnShowTuto();
+        tempsEcoule = 0;
     }
 
 

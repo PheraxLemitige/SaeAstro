@@ -59,13 +59,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 25065043101360128
-    m_Localized: 'Click on the rocket to enter the solar system!
+    m_Localized: 'Aim and click on the rocket to enter the solar system!
 
 '
     m_Metadata:
       m_Items: []
   - m_Id: 25441394133536768
-    m_Localized: "\rClick on the museum to enter it !"
+    m_Localized: Aim and click on the museum to enter it !
     m_Metadata:
       m_Items: []
   - m_Id: 25441440228937728

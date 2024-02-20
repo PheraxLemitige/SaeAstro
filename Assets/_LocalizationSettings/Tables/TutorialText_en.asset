@@ -19,7 +19,8 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 40673615872
-    m_Localized: You can click on a planet to have access to its informations !
+    m_Localized: You can aim and click on a planet to have access to its informations
+      !
     m_Metadata:
       m_Items: []
   - m_Id: 126400995328
@@ -31,20 +32,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 350540406784
-    m_Localized: You can press the buzzer to access the quizz !
+    m_Localized: You can press the buzzer with your hand to access the quizz !
     m_Metadata:
       m_Items: []
   - m_Id: 282026450944
-    m_Localized: You can click on the zoomed in planet to go back to the solar system
-      !
+    m_Localized: You can aim and click on the zoomed in planet to go back to the
+      previous place !
     m_Metadata:
       m_Items: []
   - m_Id: 1756139757568
-    m_Localized: You can go to the objects to get more informations about them !
+    m_Localized: You can teleport towards the objects to get more infos about them
+      !
     m_Metadata:
       m_Items: []
   - m_Id: 1752180334592
-    m_Localized: 'You can grab some objects inside of the museum. '
+    m_Localized: 'You can grab some objects inside of the museum with the trigger
+      on the back. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2562315413237760
+    m_Localized: You can aim and click on the Moon to access its infos too !
     m_Metadata:
       m_Items: []
   references:

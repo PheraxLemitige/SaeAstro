@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -42,8 +39,8 @@ public class ClickedPlanetManager : MonoBehaviour
 
             Debug.Log("Passage dans le manager");
         }
-        
-        else if(SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
+
+        else if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
         {
             GameObject gameObjectCible = GameObject.Find("Player Variant");
             PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
@@ -80,6 +77,8 @@ public class ClickedPlanetManager : MonoBehaviour
             scriptCible.setPosition(0, 0, positionz);
             scenaName = SceneManager.GetActiveScene().name;
         }
+        else if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "MuseumScene")
+            scenaName = SceneManager.GetActiveScene().name;
     }
 
     public void setPlanetClicked(string planetName) {
@@ -106,7 +105,6 @@ public class ClickedPlanetManager : MonoBehaviour
     }
     public void setSceneAvant(string sceneName)
     {
-        Debug.Log("Nom Scene");
         Debug.Log(scenaName);
         this.sceneAvant = sceneName;
     }
