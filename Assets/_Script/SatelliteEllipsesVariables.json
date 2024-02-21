@@ -1,9 +1,0 @@
-{
-    "Moon": {
-      "resolution": 2000,
-      "xRadius": 100,
-      "yRadius": 0,
-      "zRadius": 120,
-      "center": "Earth"
-    }
-  }

@@ -1,7 +1,5 @@
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
-using Valve.VR.InteractionSystem.Sample;
 
 public class MuseumObject : MonoBehaviour
 {

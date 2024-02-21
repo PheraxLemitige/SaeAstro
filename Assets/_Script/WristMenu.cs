@@ -251,8 +251,7 @@ public class WristMenu : MonoBehaviour {
 
     public void setGrab(bool grab)
     {
-        Debug.Log("Je passe dans le grab");
-        Debug.Log(grab);
+        //Debug.Log(grab);
         this.isGrab = grab;
     }
 }

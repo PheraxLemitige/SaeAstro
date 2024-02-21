@@ -171,11 +171,11 @@ public class PlanetManager : MonoBehaviour
         string jsonContent;
         if (scene != "solarScene")
         {
-            jsonContent = File.ReadAllText("./Assets/_Script/PlanetsCliquedVariables.json");
+            jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/PlanetsCliquedVariables.json");
         }
         else
         {
-            jsonContent = File.ReadAllText("./Assets/_Script/PlanetsVariables.json");
+            jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/PlanetsVariables.json");
         }
         return jsonContent;
     }
@@ -234,8 +234,8 @@ public class PlanetManager : MonoBehaviour
 
     public void onClick() {
         isClicked = !isClicked;
-        Debug.Log("PlanetManager");
-        Debug.Log(isClicked);
+        //Debug.Log("PlanetManager");
+        //Debug.Log(isClicked);
         //GameObject gameObjectCible = GameObject.Find("Player Variant");
         //PlayerManager scriptCible = gameObjectCible.GetComponent<PlayerManager>();
 

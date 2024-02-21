@@ -34,7 +34,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 282026450944
     m_Localized: "Tu peux viser et cliquer sur la plan\xE8te aggrandie pour retourner
-      \xE0 l'endroit pr\xE9c\xE9dent !"
+      en arri\xE8re !"
     m_Metadata:
       m_Items: []
   - m_Id: 149050236928
@@ -54,6 +54,26 @@ MonoBehaviour:
   - m_Id: 2562315413237760
     m_Localized: "Tu peux pointer et cliquer sur la Lune pour acc\xE9der \xE0 ses
       infos !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2908721244155904
+    m_Localized: "Tu peux te d\xE9placer en te t\xE9l\xE9portant avec le stick analogique
+      !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2908750151299072
+    m_Localized: "Tu peux incliner l\xE9g\xE8rement ton poignet pour acc\xE9der au
+      menu du jeu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2910189531574272
+    m_Localized: "Tu peux pointer et cliquer sur une plan\xE8te pour acc\xE9der \xE0
+      ses informations !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2912027098099712
+    m_Localized: Tu peux viser et cliquer sur les boutons du menu avec la gachette
+      du bas.
     m_Metadata:
       m_Items: []
   references:

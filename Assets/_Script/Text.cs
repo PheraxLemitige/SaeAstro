@@ -13,7 +13,7 @@ public class Text : MonoBehaviour
     {
         chemin = Application.streamingAssetsPath + "/_Json/text.json";
         jsonString = File.ReadAllText(chemin);
-        Debug.Log(jsonString);
+        //Debug.Log(jsonString);
     }
 
     // Update is called once per frame

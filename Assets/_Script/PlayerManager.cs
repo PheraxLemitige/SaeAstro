@@ -29,7 +29,7 @@ public class PlayerManager : MonoBehaviour
         {
             if(sceneName != null && sceneName != SceneManager.GetActiveScene().name)
             {
-                Debug.Log("Je passe!");
+                //Debug.Log("Je passe!");
                 
                 Vector3 newVector = new Vector3((float)positionX, (float)positionY, (float)positionZ);
                 transform.position = newVector;

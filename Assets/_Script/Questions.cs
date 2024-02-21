@@ -62,7 +62,7 @@ public class QuestionFaire
     public void retirerElt(string elt, int index)
     {
 
-        Debug.Log("Je passe et suppr");
+        //Debug.Log("Je passe et suppr");
         switch (elt)
         {
             case "Mercury":

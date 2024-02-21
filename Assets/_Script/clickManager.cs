@@ -19,7 +19,7 @@ public class ClickManager : MonoBehaviour {
         GameObject clickedPlanet = GameObject.Find("ClickedPlanetManager");
         ClickedPlanetManager scriptClickedPlanet = clickedPlanet.GetComponent<ClickedPlanetManager>();
         
-        Debug.Log(planet);
+        //Debug.Log(planet);
         scriptClickedPlanet.setPlanetClicked(planet);
         if (isClicked)
         {
@@ -50,7 +50,7 @@ public class ClickManager : MonoBehaviour {
 
     public void clickSatellite()
     {
-        Debug.Log("Satellite cliqué !");
+        //Debug.Log("Satellite cliqué !");
         isSatelliteClicked = !isSatelliteClicked;
 
 
@@ -58,7 +58,7 @@ public class ClickManager : MonoBehaviour {
         ClickedPlanetManager scriptClickedPlanetManager = clickedPlanetManager.GetComponent<ClickedPlanetManager>();
 
         scriptClickedPlanetManager.setSatelliteClicked();
-        Debug.Log("isSatelliteClicked = " + isSatelliteClicked + " | getReloadCounter = " + scriptClickedPlanetManager.getReloadCounter());
+        //Debug.Log("isSatelliteClicked = " + isSatelliteClicked + " | getReloadCounter = " + scriptClickedPlanetManager.getReloadCounter());
 
         if (scriptClickedPlanetManager.getReloadCounter() != 0)
         {

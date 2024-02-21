@@ -16388,7 +16388,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.021196365, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -27876,7 +27876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.95}
+  m_AnchoredPosition: {x: 0.005, y: 0.95}
   m_SizeDelta: {x: 0.8, y: 0.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888086251
@@ -27899,9 +27899,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sputnik1:\nSputnik a \xE9t\xE9 le premier satellite artificiel de la Terre,
-    exactement comme ce qui permet \xE0 ton t\xE9l\xE9phone de t\u2019indiquer la
-    route ! Il a \xE9t\xE9 lanc\xE9 en 1957. "
+  m_text: 'Sputnik1:
+
+    Sputnik is the first artificial satellite of the Earth,
+    Exactly like the one that makes the GPS work on your phone ! It was launched
+    in 1957.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -27964,7 +27966,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.0075559616, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

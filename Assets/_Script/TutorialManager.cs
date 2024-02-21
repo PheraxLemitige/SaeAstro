@@ -17,9 +17,10 @@ public class TutorialManager : MonoBehaviour
     private int nbTutoSolar = 2;
     private int nbTutoClickSolar;
     private int nbTutoQuiz = 1;
-    private int nbTutoMuseum = 2;
+    private int nbTutoMuseum = 3;
+    private int nbTutoMenu = 3; 
 
-    private string[] sceneWithTuto = new string[4] { "solarScene", "ClickedSolarScene", "Quiz", "MuseumScene" };
+    private string[] sceneWithTuto = new string[5] { "solarScene", "ClickedSolarScene", "Quiz", "MuseumScene", "MenuPrincipal" };
 
 
     private int currentTuto = 1;
@@ -117,6 +118,22 @@ public class TutorialManager : MonoBehaviour
                             break;
                         case "Quiz":
                             if (currentTuto >= nbTutoQuiz)
+                            {
+                                UnShowTuto();
+
+                                tempsEcoule = 0;
+
+                                activeLocalTutorial = false;
+                            }
+                            else
+                            {
+                                tempsEcoule = 0;
+
+                                currentTuto += 1;
+                            }
+                            break;
+                        case "MenuPrincipal":
+                            if (currentTuto >= nbTutoMenu)
                             {
                                 UnShowTuto();
 

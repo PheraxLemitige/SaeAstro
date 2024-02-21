@@ -50,7 +50,7 @@ public class PlanetEllipseManager : MonoBehaviour
     }
 
     public void loadVariables() {
-        string jsonContent = File.ReadAllText("./Assets/_Script/PlanetsEllipsesVariables.json");
+        string jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/PlanetsEllipsesVariables.json");
         PlanetsEllipses planetsEllipses = JsonConvert.DeserializeObject<PlanetsEllipses>(jsonContent);
         PlanetsEllipsesVariables planetsEllipsesVariables = null;
         switch (gameObject.name) {

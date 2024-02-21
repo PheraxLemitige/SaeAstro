@@ -70,7 +70,7 @@ public class SatelliteEllipseManager : MonoBehaviour
     }
 
     public void loadVariables() {
-        string jsonContent = File.ReadAllText("./Assets/_Script/SatelliteEllipsesVariables.json");
+        string jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/SatelliteEllipsesVariables.json");
         SatelliteEllipses satelliteEllipses = JsonConvert.DeserializeObject<SatelliteEllipses>(jsonContent);
         SatelliteEllipsesVariables satelliteEllipsesVariables = null;
         switch (gameObject.name)

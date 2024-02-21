@@ -32,8 +32,8 @@ namespace Valve.VR.InteractionSystem.Sample
                 ClickManager scriptClickCible = gameObjectClickCible.GetComponent<ClickManager>();
                 scriptClickCible.clickQuiz();
                 string namePlanet = scriptClickPlaneteCible.getNamePlanetClicked();
-                Debug.Log("Nom planet");
-                Debug.Log(namePlanet);
+                //Debug.Log("Nom planet");
+                //Debug.Log(namePlanet);
                 GameObject gameObjectQuizCible = GameObject.Find("QuizManager");
                 QuizManager scriptQuizCible = gameObjectQuizCible.GetComponent<QuizManager>();
                 scriptQuizCible.SetPlanetClicked(namePlanet);
@@ -41,7 +41,7 @@ namespace Valve.VR.InteractionSystem.Sample
             }
             else if(this.name == "response1")
             {
-                Debug.Log("Reponse 1");
+                //Debug.Log("Reponse 1");
                 GameObject gameObjectCible = GameObject.Find("QuizManager");
                 QuizManager scriptCible = gameObjectCible.GetComponent<QuizManager>();
 
@@ -49,7 +49,7 @@ namespace Valve.VR.InteractionSystem.Sample
             }
             else if (this.name == "response2")
             {
-                Debug.Log("Reponse 2");
+                //Debug.Log("Reponse 2");
                 GameObject gameObjectCible = GameObject.Find("QuizManager");
                 QuizManager scriptCible = gameObjectCible.GetComponent<QuizManager>();
                 scriptCible.chooseResponse("reponse2");

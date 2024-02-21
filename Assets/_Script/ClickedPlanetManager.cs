@@ -37,7 +37,7 @@ public class ClickedPlanetManager : MonoBehaviour
             scenaName = SceneManager.GetActiveScene().name;
             reloadCounter = 0;
 
-            Debug.Log("Passage dans le manager");
+            //Debug.Log("Passage dans le manager");
         }
 
         else if (SceneManager.GetActiveScene().name != scenaName && SceneManager.GetActiveScene().name == "solarScene" && SceneManager.GetActiveScene().name != "Quiz")
@@ -105,7 +105,7 @@ public class ClickedPlanetManager : MonoBehaviour
     }
     public void setSceneAvant(string sceneName)
     {
-        Debug.Log(scenaName);
+        //Debug.Log(scenaName);
         this.sceneAvant = sceneName;
     }
     public string getSceneAvant()

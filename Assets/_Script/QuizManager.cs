@@ -30,12 +30,12 @@ public class QuizManager : MonoBehaviour
         if(!change && SceneManager.GetActiveScene().name == "Quiz")
         {
             change = true;
-            Debug.Log(this.planetCliked);
+            //Debug.Log(this.planetCliked);
             switch (this.planetCliked)
             {
                 case "Mercury":
                     this.questionPlanet = this.questionFaire.Mercury;
-                    Debug.Log("Mercure quiz");
+                    //Debug.Log("Mercure quiz");
                     break;
                 case "Venus":
                     this.questionPlanet = this.questionFaire.Venus;
@@ -72,9 +72,9 @@ public class QuizManager : MonoBehaviour
                 
                 Questions questions;
                 if (LocalizationSettings.SelectedLocale.name == "English (en)")
-                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionEn.json"));
+                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText(Application.streamingAssetsPath + "/questionEn.json"));
                 else
-                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText("./Assets/_Script/questionFr.json"));
+                    questions = JsonConvert.DeserializeObject<Questions>(File.ReadAllText(Application.streamingAssetsPath + "/questionFr.json"));
 
                 int numQuestion = Random.Range(0, this.questionPlanet.Count - 1);
 
@@ -152,7 +152,7 @@ public class QuizManager : MonoBehaviour
         }
         else if(change && SceneManager.GetActiveScene().name != "Quiz")
         {
-            Debug.Log("Je met a false");
+            //Debug.Log("Je met a false");
             this.change = false;
             this.question = null;
         }
@@ -186,13 +186,13 @@ public class QuizManager : MonoBehaviour
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
                 this.point += 1;
                 this.wristMenu.GetComponent<WristMenu>().Score(this.point);
-                Debug.Log("is True");
+                //Debug.Log("is True");
             }
             else
             {
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("BadAnswer");
-                Debug.Log("is False");
+                //Debug.Log("is False");
             }
         }
         else
@@ -203,13 +203,13 @@ public class QuizManager : MonoBehaviour
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("GoodAnswer");
                 this.point += 1;
                 this.wristMenu.GetComponent<WristMenu>().Score(this.point);
-                Debug.Log("is True");
+                //Debug.Log("is True");
             }
             else
             {
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetTable("Quiz");
                 textObjectCible.GetComponent<LocalizeStringEvent>().SetEntry("BadAnswer");
-                Debug.Log("is False");
+                //Debug.Log("is False");
             }
         }
     }

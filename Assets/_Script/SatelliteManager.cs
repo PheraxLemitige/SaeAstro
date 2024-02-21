@@ -142,11 +142,11 @@ public class SatelliteManager : MonoBehaviour
         string jsonContent;
         if (scene != "solarScene")
         {
-            jsonContent = File.ReadAllText("./Assets/_Script/SatelliteClickedVariables.json");
+            jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/SatelliteClickedVariables.json");
         }
         else
         {
-            jsonContent = File.ReadAllText("./Assets/_Script/SatelliteVariables.json");
+            jsonContent = File.ReadAllText(Application.streamingAssetsPath + "/SatelliteVariables.json");
         }
         return jsonContent;
     }
@@ -179,11 +179,11 @@ public class SatelliteManager : MonoBehaviour
     }
 
     public void onClick() {
-        Debug.Log("Click Satellite");
+        //Debug.Log("Click Satellite");
 
         isClicked = !isClicked;
 
-        Debug.Log(isClicked);
+        //Debug.Log(isClicked);
         
     }
 

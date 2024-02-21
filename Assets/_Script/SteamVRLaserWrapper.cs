@@ -18,7 +18,7 @@ public class SteamVRLaserWrapper : MonoBehaviour {
     }
 
     private void OnPointerClick(object sender, PointerEventArgs e) {
-        Debug.Log(e.target.name);
+        //Debug.Log(e.target.name);
         //setLaserVisible(true);
 
         if (e.target.name == "Button") {

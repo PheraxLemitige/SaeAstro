@@ -47,6 +47,22 @@ MonoBehaviour:
     m_Key: ClickedSolarScene3
     m_Metadata:
       m_Items: []
+  - m_Id: 2908721244155904
+    m_Key: MenuPrincipal1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2908750151299072
+    m_Key: MenuPrincipal2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2910189531574272
+    m_Key: MuseumScene3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2912027098099712
+    m_Key: MenuPrincipal3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
